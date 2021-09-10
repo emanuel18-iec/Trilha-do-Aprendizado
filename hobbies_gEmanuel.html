@@ -1,0 +1,233 @@
+<!--
+    1. Para este exercício eleja um Hobbie.
+    2. Crie um documento .html chamado hobbie_nome_sobrenome.html
+    3. Coloque o título na barra de títulos
+    4. Coloque uma imagem inicial que ilustre o seu hobbie
+    5. Coloque o título a sua escolha
+    6. Escreva no um texto sobre o seu hobbie, neste parágrafo deve ter as tags de
+    parágrafo, itálico, negrito, listas não-ordenadas, lista-ordenadas, lista detalhada.
+    7. Coloque no mínimo quatro figura para ilustrar o conteúto
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "img/favicon2.ico" type = "image/x-icon">
+        <title>Meu hobbie</title>
+    </head>
+    <body style="background-color: #000; color: #FFF;font-family: Verdana;">
+        <h1 style="text-align: center;">Meu hobbie</h1>
+        <p>Um dos meus grandes e favoritos hobbies, é jogar <tt style="font-size: 20px;"><big>Xadrez!</big></tt></p>
+        <img src="https://www3.unicentro.br/petfisica/wp-content/uploads/sites/54/2020/08/Xadrezada-e1596727912950.jpg"  alt="Xadrez">
+        <h2>Como jogar xadrez?</h2>
+        <p>Para início de conversa, jogamos xadrez em um <tt style="font-size: 20px;"">TABULEIRO</tt> 8x8, visto que possuí 8 linhas  e 8 colunas</p>
+        <img src="img/tabuleiro.jpg" alt = "Tabuleiro de Xadrez">
+        <p><i>Podemos associar a ideia do tabuleiro, como uma matriz de 8 linhas e 8 colunas: </i><tt>matriz[8][8]</tt></p>
+        <br>
+        <h2>Peças de Xadrez</h2>
+        <p>Ao todo, cada jogador inicia a partida com <strong>16 peças</strong>, e dessas, <b>6 peças são diferentes.</b><br>
+        São ao todo:</p>
+        <ol>
+            <li>1 rei</li>
+            <li>1 dama</li>
+            <li>2 torres</li>
+            <li>2 bispos</li>
+            <li>2 cavalos</li>
+            <li>8 peões</li>
+        </ol>
+        <br>
+        <dl>
+            <dt><h3>Torres</h3></dt>
+                <dd>As torres são posicionadas nas extremidades do tabuleiro, na primeira linha.</dd>
+                <br>
+                <img style="padding-left:3%;" src="img/localização_torres.jpg" alt = "Localização das torres">
+                <ul>
+                    <br>
+                    <li style="margin-left:3.5%"><i>MOVIMENTO</i>: o movimento executado pelas torres é sempre em paralelas (linhas ou colunas), quantas casas desejar desde que haja espaço livre.</li>
+                    <br>
+                    <img style="padding-left:4%;" src="img/movimento_torre.jpg" alt = "Movimento da Torre">
+                    <br>
+                    <br>
+                    <li style="margin-left:3%">Lembre-se de que as peças não podem "saltar" outras, tanto horizontais quanto verticais, veja a ilustração a baixo:</li>
+                    <br>
+                    <img style="margin-left:3.5%" src="img/movimento_torre-exemplo.jpg">
+                    <br>
+                    <br>
+                    <li style="margin-left:3%"><i>CAPTURA</i>: em todas as casas em que pode se movimentar.</li>
+
+                </ul>
+            <br>
+            <dt><h3>Cavalos</h3></dt>
+                <dd>Os cavalos deverão ser posicionados cada um ao lado interno de cada torre.</dd>
+                <br>
+                <img style="padding-left:3%;" src="img/localização_cavalos.jpg">
+                <ul>
+                    <li style="margin-left:3%"><i>MOVIMENTO:</i> o cavalo anda em um formato que reproduz a letra L, ou seja, duas casas, na direção horizontal ou vertical, e mais uma, em ângulo reto à direção anterior. É a única peça que pode pular as próprias peças ou as do adversário. Embora o número de movimentos possíveis do cavalo seja maior, seu uso é limitado pelo número de casas em que ele consegue se mover (uma em qualquer direção, outra em diagonal).</li>
+                    <br>
+                    <img style="padding-left:3.5%;" src = "img/movimento_cavalo.jpg" alt = "Exemplo do Movimento do Cavalo"  style="padding-right: 5%" >
+                    <img style="padding-left:5%;" src = "img/movimento_cavalo[lichess].jpg" alt="Exemplo do Movimento do Cavalo" height="499">
+                    <br>
+                    <LI style="margin-left:3%">Nota-se que sempre que movemos o cavalo a partir de uma casa com determinada cor, passando-o para uma casa de outra cor.</li>
+                    <li style="margin-left:3%"><i>CAPTURA:</i> a peça adversária que se encontrar na casa onde o cavalo terminar seu movimento.</li>
+                </ul>
+            <br>
+            <dt><h3>Bispos</h3></dt>
+                <dd>Os bispos posicionam-se um ao lado interno de cada cavalo</dd>
+                <br>
+                <img style="padding-left:3%;" src="img/localização_bispos.jpg">
+                <ul>
+                    <li style="margin-left:3%"><i>MOVIMENTO:</i> seu movimento é <I>sempre</I> em diagonal, obedecendo à cor de sua casa inicial, ou seja, o bispo da casa branca não pode ocupar uma casa preta e vice-versa, ficando eternamente na mesma cor desde o inicio até o final do jogo. Observe a ilustração ao lado. O bispo ao lado, por ser da casa de cor branca, jamais poderá conseguir ameaçar uma peça do adversário que ande nas casas de cor preta.</LI>
+                    <br>
+                    <img style="padding-left:3.5%; padding-right: 5%" src="img/movimento_bispo_casas_claras.jpg" alt = "Exemplo do Movimento do Bispo das Casas Claras">
+                    <img src="img/movimento_bispo_casas_escuras.jpg" alt = "Exemplo do Movimento do Bispo das Casas Escuras">
+                    <br>
+                    <li style="margin-left:3%"><i>CAPTURA:</i> em todas as casas em que pode se movimentar</li>
+                </ul>
+            <br>
+            <dt><h3>Dama (ou Rainha)</h3></dt>
+                <dd>A dama é posicionada no centro do tabuleiro, na casa de sua cor.</dd>
+                <br>
+                <img style="padding-left:3%;" src="img/localização_damas.jpg">
+                <ul>
+                    <li style="margin-left:3%"><i>MOVIMENTO:</i> peça mais poderosa e versátil do tabuleiro, a dama pode movimentar-se como a torre e como o bispo, ou seja, anda tanto em paralelas (linhas ou colunas) quanto em diagonais, tantas casas quanto se desejar, desde que haja espaço no tabuleiro.</li>
+                    <BR>
+                    <img style="padding-left:3.5%;" src="img/movimento_dama.jpg" alt = "Exemplo do Movimento da Dama">
+                    <br>
+                    <li style="margin-left:3%"><i>CAPTURA:</i> em todas as casas em que pode se Movimentar</li>
+                    
+                </ul>
+            <dt><h3>Rei</h3></dt>
+                <dd>Rei, entre seu bispo e a dama, sempre observando que o REI branco fica na casa de cor PRETA e o REI preto fica na casa de cor BRANCA (invertido).</dd>
+                <br>
+                <img style="padding-left:3%;" src="img/localização_reis.jpg">
+                <ul>
+                    <li style="margin-left:3%"><i>MOVIMENTO:</i> somente anda uma casa por lance em todas as direções. Não pode situar- se em casa sob domínio de peça adversária, pois o rei não pode se entregar ou se colocar em situação de XEQUE jamais. Esta jogada não é permitida e ambos os jogadores devem estar atentos.</li>
+                    <br>
+                    <img  style="padding-left:3.5%;" src = "img/movimento_rei.jpg" alt = "Exemplo do Movimento do Rei">
+                    <br>
+                    <li style="margin-left:3%"><i>CAPTURA:</i> em todas as casas em que pode se movimentar. Não pode capturar peças defendidas pelo adversário, pois seria capturado no próximo lance, colocando-se antecipadamente em XEQUE, o que também não é permitido.</li>
+                </ul>
+            
+            <dt><h3>Peões</h3></dt>
+                <dd>É a peça mais simples e a mais encontrada no tabuleiro: são ao total, 8 peões para cada jogador</dd>
+                <dd>Os devem ser posicionados à frente das outras peças, portanto, na segunda linha</dd>
+                <br>
+                <img style="padding-left:3%;" src="img/localização_peões.jpg">
+                <br>
+                <ul>
+                    <li style="margin-left:3%">Uma casa desocupada à frente</li>
+                    <br>
+                    <img style="padding-left:3.5%;" src="img/movimento_peão.jpg" alt = "Exemplo do Movimento do Peão">
+                    <br>
+                    <br>
+                    <li style="margin-left:3%">Quando o peão está em sua casa inicial, pode mover-se uma ou duas casas adiante, somente no primeiro movimento de cada peão. </li>
+                    <br>
+                    <img style="padding-left:3.5%;" src="img/movimento_peão_inicial.jpg" alt="Exemplo do Movimento do Peão em Acão pela primeira vez!">
+                    <br>
+                    <br>
+                    <li style="margin-left:3%">O Peão não pode andar para trás em hipótese alguma.</li>
+                    <li style="margin-left:3%">Se você andar pela primeira vez com o peão somente uma casa, na próxima jogada, não é permitido usar a opção de abrir com 2 casas.</li>
+                    <br>
+                    <img style="padding-left:3%;" src="img/movimento_peões_comparativo.jpg">
+                    <br>
+                    <br>
+                    <li style="margin-left:3%">CAPTURA: somente nas casas em diagonal (uma casa apenas) à frente, conforme mostra a flecha.</li>
+                    <br>
+                    <img style="margin-left:3%" src="img/captura_peões.jpg" alt = "Exemplo do Momento de Captura com Peões">
+                </ul>
+        </dl>
+
+        <br>
+        <h2>Algumas regras básicas para início do jogo:</h2>
+        <ul>
+            <li>As peças brancas iniciam a partida.</li>
+            <li>As peças não podem saltar sobre peças do adversário, com eh3xceção do cavalo.</li>
+            <li>Ao se tomar uma peça do adversário, a peça jogada deverá ocupar esta mesma posição</li>
+            <li>Por convenção, quando um tabuleiro é mostrado em um diagrama, as pretas ficam na
+                parte de cima</li>
+            <li>Não é permitido que se coloque o próprio rei em xeque, o jogador, nesse caso, deve ser avisado e a jogada retornada</li>
+            <li>Quando o rei estiver em xeque, este deve ser protegido, não sendo permitido outro tipo de jogada.</li>
+            <li>Não é permitido a volta de lances, isto é, quando um jogador pega, intencionalmente ounão, em uma peça, deve, necessariamente, efetuar a jogada com esta peça. Salvo casos em que a peça tocada não tiver lance legal possível. E ainda, se, com sua mão ou peça, um jogador tocar em alguma peça do adversário, com a intenção de capturá-la ou não,deve, necessariamente, efetuar a captura. Salvo casos em que a jogada não for legalmente possível</li>
+        </ul>
+        <br>
+        <h2>Xeque e Xeque Mate</h2>
+        <dl>
+            <dt><h3>XEQUE</h3></dt>
+            <dd>Toda vez que o rei estiver sob ataque direto, significa que ele está em xeque. Dar xeque em um rei é movimentar uma peça cujo sua, em que o raio de ação ataque diretamente o rei inimigo.</dd>
+            <br>
+            <img style="margin-left:3%" src = "img/xeque-exemplo.jpg" alt = "Exemplo de um xeque">
+            <br>
+            <dt><h3>XEQUE-MATE</h3></dt>
+            <dd>Xeque-mate é quando o rei está sob ataque de peça contrária e não tem como sair da situação. Significa o término da partida, com a vitória para quem deu o xeque-mate. <strong>Este é o objetivo do jogo</strong>: <big>deixar o Rei inimigo totalmente encurralado e sem saída.</big></dd>
+            <br>
+            <img style="margin-left:3%" src = "img/xeque-mate-exemplo.jpg" alt = "Exemplo de um xeque">
+            <dd><i>Observe, que a dama cobre todas as casas de fuga do rei. A única possibilidade, seria a tomada da dama. Porém, a torre defende e impede essa tomada. Assim sendo, o rei não tem como fugir, culminando em XEQUE-MATE e consequente VITÓRIA PARA AS BRANCAS.</i></dd>
+            <br>
+        </dl>
+
+        <h2>Aberturas e Defesas mais comuns e mais utilizadas</h2>
+        <p><i>Retirado e adaptado de: <a href="https://www.chess.com/pt-BR/article/view/aberturas-xadrez-para-iniciantes">https://www.chess.com/pt-BR/article/view/aberturas-xadrez-para-iniciantes</a></i></p>
+        <p>As aberturas e defesas sitadas abaixo são consideradas <em>regulares</em>.</p>
+        <dl>
+            <dt><h3>Abertura Ruy Lopez</h3></dt>
+                <dd>A Ruy Lopez é uma das aberturas mais antigas e clássicas de todas. O nome foi dado após um bispo espanhol escrever um dos primeiros livros de xadrez. A Ruy Lopez ataca o cavalo que defende o peão 5e. As brancas usam esse ataque na esperança de causar pressão ao centro das pretas.</dd>
+            <br>
+            <img width="35%" style="margin-left:3%" src="img/abertura-ruy-lopez[chess.com].gif" alt ="Abertura Ruy Lopez"><i style="margin-left: 3%">Créditos: <a href="https://www.chess.com/">https://www.chess.com/</a></i>
+            <br><br>
+            
+            <dt><h3>Abertura Italiana</h3></dt>
+            <dd>O objetivo é controlar rapidamente o centro com o seu peão e cavalo, e então colocar o bispo em uma das casas mais perigosas. O jogador também estará se preparando para fazer o roque.</dd>
+            <br>
+            <img width="35%" style="margin-left:3%" src="img/abertura-italiana[chess.com].gif" alt ="Abertura Italiana"><i style="margin-left: 3%">Créditos: <a href="https://www.chess.com/">https://www.chess.com/</a></i>
+            <br><br>
+
+            <dt><h3>Defesa Siciliana</h3></dt>
+            <dd>A Defesa Siciliana é a escolha mais popular para jogadores agressivos quando estão com as pretas. Normalmente as brancas vão jogar ganhando a casa central, mas permite às pretas se beneficiar trocando o peão central pelo peão do bispo</dd>
+            <br>
+            <img width="35%" style="margin-left:3%" src="img/defesa-siciliana[chess.com].gif" alt ="Defesa Siciliana"><i style="margin-left: 3%">Créditos: <a href="https://www.chess.com/">https://www.chess.com/</a></i>
+            <br><br>
+
+            <dt><h3>Defesa Francesa</h3></dt>
+            <dd>A Defesa Francesa é uma das primeiras estratégias de abertura que um jogador de xadrez deve aprender. Depois de e5 (agora ou mais tarde), ambos os lados terão fileiras de peões. Um dos riscos da Defesa Francesa é que pode ser bem difícil desenvolver o bispo em c8.</dd>
+            <br>
+            <img width="35%" style="margin-left:3%" src="img/defesa-francesa[chess.com].gif" alt ="Defesa Francesa"><i style="margin-left: 3%">Créditos: <a href="https://www.chess.com/">https://www.chess.com/</a></i>
+            <br><br>
+            
+            <dt><h3>Defesa Eslava</h3></dt>
+            <dd>A Defesa Eslava é uma abertura bastante sólida que defende o peão d5 de forma segura. As peças das Pretas podem se desenvolver para as casas naturais, mas as Pretas geralmente ficam com pouco espaço.</dd>
+            <br>
+            <img width="35%" style="margin-left:3%" src="img/defesa-eslava[chess.com].gif" alt ="Defesa Eslava"><i style="margin-left: 3%">Créditos: <a href="https://www.chess.com/">https://www.chess.com/</a></i>
+            <br><br>
+        </dl>
+        <br><br>
+        <p>As aberturas e defesas sitadas abaixo são consideradas <em>irregulares</em>.</p>
+        <dt><h3>Ataque Bongcloud</h3></dt>
+        <dd>É considerada uma abertura de piada e está associada ao humor do xadrez na Internet. Seu uso pode insinuar que o branco está se auto-prejudicando, como um desafio auto-imposto. Os <i>streamers</i> da Twitch, como o <i>Grandmaster</i> Hikaru Nakamura, o usaram no xadrez blitz <i>(partida rápida que dura  3 ou 5 minutos)</i> online, incluindo jogos contra adversários de alto nível, como o campeão mundial de xadrez Magnus Carlsen. O nome também foi aplicado a outras sequências de abertura nas quais um dos jogadores move o rei no segundo lance.
+        </dd>
+        <br>
+        <img style="margin-left:3%" src="img/abertura-bongcloud.jpg" alt ="Abertura Bongcloud">
+        <br><br>
+        
+        <dt><h3>Abertura Grob</h3></dt>
+        <dd>É provavelmente uma das mais excêntrica de todas as aberturas ao lado da própria Defesa Grob porque na teoria o avanço inicial g4 contribui em nada para o desenvolvimento e/ou domínio das casas central, segundo a <i>teoria clássica do xadrez</i>, e ainda enfraquece a ala do rei das brancas.
+        </dd>
+        <br>
+        <img style="margin-left:3%" src="img/abertura-grob.jpg" alt ="Abertura Grob">
+        <br><br>
+        
+        <dt><h3>Defesa Grob</h3></dt>
+        <dd>É provavelmente uma das mais excêntrica de todas as defesas ao lado da própria Abertura Grob porque na teoria o avanço inicial g5 não contribui em nada para o desenvolvimento e/ou domínio das casas centrais, segundo a teoria clássica do xadrez, e ainda enfraquece a ala do rei das negras. Ainda se não bastasse a iniciativa das brancas na abertura.
+        </dd>
+        <br>
+        <img style="margin-left:3%" src="img/defesa-grob.jpg" alt ="Defesa Grob">
+        <br><br>
+
+        <br><br><br>
+        <p>Todas as imagens foram geradas por mim mesmo através da ferramenta de <a href="https://www.chess.com/analysis">editor de tabuleiro do Chess.com</a></p>
+        <p>As imagens que não foram geradas lá, foram retiradas de um artigo na mesma plataforma</p>
+    </body>
+</html><br>
+                    

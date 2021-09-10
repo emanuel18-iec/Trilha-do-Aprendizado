@@ -1,0 +1,113 @@
+<!-- Crie um documento HTML apresentando o conteúdo em hipertexto da aula de hoje
+devidamente separado por títulos e formatação. A formatação do texto deve conter as
+tags de: parágrafo, as duas formas de negrito, as duas formas de itálico.
+Ao final do documento coloque:
+a. um parágrafo com seu nome completo tamanho da fonte alterada para 14
+b. um parágrafo com o curso e quebra de linha com a sua e respectiva turma em itálico
+todos com fonte na cor verde e tamanho da fonte alterada para 14
+c. um título com Instituto Federal do Paraná Campus Irati em cor verde,
+d. um parágrafo com endereço completo do IFPR, inclusive com telefone separado por
+quebras de linhas
+Dicas:
+    • elabore o texto simultaneamente enquanto assiste ao vídeo
+    • para exibir os parênteses angulares “< >” (sinal de maior e sinal de menor) das tags
+        no navegador você deve inserir o código HTML &lt; (less than) e &gt; (greater than).
+Exemplo:
+Em HTML:
+&lt; tag &gt;
+<tag>
+
+Resultado no Navegador:
+<tag>
+tag -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "img/favicon.aula04.ex02.ico" type = "image/x-icon">
+        <title>Conteúdo da Aula</title>
+        <style>
+            dt{
+                padding-left: 2%;
+            }
+            dd{
+                padding-left: 4%;
+            }
+            tt{
+                font-size: 24px;
+                
+            }
+        </style>
+    </head>
+
+    <body style = "font-family: Verdana;">
+        <h1 style="text-align: center;">Resumo do conteúdo da aula "RDE 03"</h1>
+        <h2>H's e parágrafo</h2>
+        <img src="img/H's.jpg">
+        <dl>
+            <dt><h3>• &lt;h1&gt;</h3></dt>
+                <dd><p>Usado para definir <b>títulos princípais</b> e possui <strong>maior grau de importância</strong> para mecanismos de busca!</dd>
+                <dd><p style="font-family: Roboto Mono; color: blue;font-style:italic;">&lt;h1&gt;Sintaxe da tag <spam style="color:red; font-weight: bold;">h1</spam>&lt;/h1&gt;</p></dd><br>
+
+            <dt><h3>• &lt;h2&gt;</h3></dt>
+                <dd><p>Usado para definir <i>subtítulos</i> e títulos com um <em>segundo grau de importância</em> perante mecanismos de busca!</p></dd>
+                <dd><p style="font-family: Roboto Mono; color: blue;font-style:italic;">&lt;h2&gt;Sintaxe da tag <spam style="color:red; font-weight: bold;">h2</spam>&lt;/h2&gt;</p></dd><br>
+            
+            <dt><h3>• &lt;p&gt;</h3></dt>
+                <dd><p>Tag usada para definir paragráfos, ou seja, um bloco de texto.</p></dd>
+                <dd><p style="font-family: Roboto Mono; color: blue;font-style:italic;">&lt;p&gt;Sintaxe da tag <spam style="color:red; font-weight: bold;">p</spam>&lt;/p&gt;</p></dd><br>
+        </dl>
+
+    <h2>Negrito e Itálico</h2>
+    <img src = "img/negrito_italico.png" alt = "Negrito e itálico">
+        <ul style="list-style: square;">
+            <li><tt>Negrito</tt></li>
+            <dl>
+                <dt><h3>• &lt;strong&gt;</h3></dt>
+                    <dd>Tag usada para definir <strong>negrito</strong> em um determinado trecho, trazendo uma <strong>importância maior</strong> a este elemento.</dd>
+                    <dd><p style="font-family: Roboto Mono; color: blue;font-style:italic;">&lt;strong&gt;Sintaxe da tag <spam style="color:red; font-weight: bold;">strong</spam>&lt;/strong&gt;</p></dd>
+                <dt><h3>• &lt;b&gt;</h3></dt>
+                    <dd>Tag usada para também definir <b>negrito</b> em um determinado trecho, <b>sem interferir na sua importância</b></dd>
+                    <dd><p style="font-family: Roboto Mono; color: blue;font-style:italic;">&lt;b&gt;Sintaxe da tag <spam style="color:red; font-weight: bold;">b</spam>&lt;/b&gt;</p></dd>
+            </dl>
+                <li><tt>Itálico</tt></li>
+                <dt><h3>• &lt;em&gt;</h3></dt>
+                    <dd><p>Tag usada para também definir <em>itálico</em> em um determinado trecho, trazendo uma <em>importância maior</em> a este elemento.</p>
+                    <dd><p style="font-family: Roboto Mono; color: blue;font-style:italic;">&lt;em&gt;Sintaxe da tag <spam style="color:red; font-weight: bold;">em</spam>&lt;/em&gt;</p>      </dd>
+                <dt><h3>• &lt;i&gt;</h3></dt>
+                    <dd><p>Tag usada para também definir <i>itálico</i> em um determinado trecho, <i>sem interferir na sua importância</i></p></dd>
+                    <dd><p style="font-family: Roboto Mono; color: blue;font-style:italic;">&lt;i&gt;Sintaxe da tag <spam style="color:red; font-weight: bold;">i</spam>&lt;/i&gt;</p></dd>
+        </ul>
+    </dl>    
+          
+    <h2>Mais tags</h2>
+        <h3>• &lt;big&gt;</h3>
+        <img src="img/big.png" alt="tag big">
+        <p>Tag usada para definir um texto com fonte ligeiramente <big>aumentada</big>  </p>
+        <p style="font-family: Roboto Mono; color: blue;font-style:italic;">&lt;big&gt;Sintaxe da tag <spam style="color:red; font-weight: bold;">big</spam>&lt;/big&gt;</p><br>
+
+        <h3>• &lt;br&gt;</h3>
+        <img src="img/html-br-tag2.png" alt="representação de uma quebra de linha">
+        <p>Tag usada como quebra de linha, da mesma forma que era usado o <i>\n</i> em <i>Java</i></p>
+        <p style="font-family: Roboto Mono; color: blue;font-style:italic;">Sintaxe da tag<spam style="color:red; font-weight: bold;"> br</spam>: &lt;br&gt;</p>
+
+        <br><br><br>
+
+        <!--a. um parágrafo com seu nome completo tamanho da fonte alterada para 14-->
+        <p style = "font-size: 14;"><b>Nome completo:</b> Gabriel Emanuel</p>
+
+        <!--b. um parágrafo com o curso e quebra de linha com a sua e respectiva turma em itálico
+        todos com fonte na cor verde e tamanho da fonte alterada para 14-->
+        <p style = "font-size: 14; color: #080;">Curso: Informática<br><i>3° Ano Manhã</i></p>
+
+        <!--c. um título com Instituto Federal do Paraná Campus Irati em cor verde,-->
+        <h1 style = "color: #080">Instituto Federal do Paraná - Campus Irati</h1>
+        <img src="img/IFPR-Campus-Irati-284x300.png">
+        <!--d. um parágrafo com endereço completo do IFPR, inclusive com telefone separado por
+        quebras de linhas-->
+        <p><b>Endereço: </b>R. Pedro Koppe, 100 - Vila São João, Irati - PR, 84507-302<br><b>Telefone: </b>(42) 2104-0200</p>
+    </body>
+</html>

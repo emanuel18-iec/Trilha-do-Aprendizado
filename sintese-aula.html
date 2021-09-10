@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintese - Hyperlinks</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "img/favicon.link.ico" type = "image/x-icon">
+
+</head>
+<body>
+    <div id="conteudoPrincipal">
+        <h1>Síntese - Aula de Hyperlinks</h1>
+        <details>
+            <summary>Atalhos</summary>
+                <p id="pAtalho">
+                    Tipos de link → 
+                    <a class="linkatalhos" href="#definicao">Definição</a>
+                    <a class="linkatalhos" href="#remotos">Remotos</a>
+                    <a class="linkatalhos" href="#internos">Internos</a>
+                    <a class="linkatalhos" href="#locais">Locais</a>
+                    <a class="linkatalhos" href="#imagens">Imagens</a>
+                    <a class="linkatalhos" href="#enderecoCorreio">Endereço de Correio</a>
+                    <a class="linkatalhos" href="#arquivos">Arquivos</a>
+                </p>
+        </details><br>
+        <h2><a name="definicao">➪ O que é um Hyperlink?</a></h2>
+        <p>É uma referência na qual cada usuário pode interagir diretamente através do clique, toque ou até mesmo passando o mouse durante a navegação.</p>
+        <p>Os hiperlinks criam ligações e estabelecem vínculos entre endereços na web, criam pontes de ligação entre documentos, direcionam até partes específicas dentro do próprio documento HTML dentre outras funções.</p>
+        <h3>Sintaxe padrão de um Hyperlink:</h3>
+        <p><img src="img/hyperlink-sintaxe-padrão.jpeg" alt="Imagem ilustrando como é a Sintaxe Padrão do Hyperlink"></p><br>
+
+        <h2><a name="remotos">➪ Hyperlinks Remotos</a></h2>
+        <p>Hyperlinks remotos, ou também chamados de externos, são <i>links</i> que referenciam a <i>sites</i> ou páginas da <i>web</i>.</p>
+        <p>No atributo <span class="atrib">href</span>, indicaremos a página na qual o link vai redirecionar através da <strong><big>URL</big></strong> <i>(<b>U</b>niform <b>R</b>esource <b>L</b>ocator)</i>, como por exemplo, ao site &lt;<a href="https://www.google.com.br"><i>https://www.google.com.br</i></a>&gt;</p>
+        <p>Para isso, utilizaremos da seguinte sintaxe padrão:</p>
+        <p><img src="img/hyperlink-sintaxe-LinkRemoto.jpeg" alt="Imagem ilustrando como é a Sintaxe Padrão do Hyperlink Remoto"></p>
+
+        <p>Por exemplo: </p>
+        <p><img src="img/hyperlink-exemplo01-LinkRemoto.jpeg" alt="Imagem com um exemplo utilizando o site da Google"></p>
+        <h3>Atributos que podem ser utilizados:</h3>
+        <ul>
+            <li><span class="atrib">target</span>: Define onde a página será aberta atráves de dois valores possíveis:<span style="margin-left:3px;"><br><br></span>
+            
+                <ul>
+                    <li><span class="valoratrib">_blank</span>: O link abre em um nova aba.</li><span style="margin-left:2px;"><br></span>
+                    <li><span class="valoratrib">_self</span>: O link abre na própria aba que está sendo visualizada a página HTML. Além do mais, caso o atributo não venha a ser declarado, ele assume este valor padrão! </li>
+                </ul>
+                <span style="margin-left:3px;"><br></span>
+            
+            <li><span class="atrib">rel</span>: Define o tipo de link que está sendo utilizado, neste caso, o valor é <span class="valoratrib">external</span>. Porém, para outros tipos de links, o valor desse atributo será diferente. Para ter mais informações sobre os valores desse atributo, acessar <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types" target="_blank">esse site</a>!<span style="margin-left:3px;"><br><br></span>
+            <li><span class="atrib">hreflang</span>: Define o idioma da página que está sendo referenciada no link, com o intuito de preparar o navegador e, caso esteja em inglês, por exemplo, o navegador abre a possibilidade para o usuário, caso ele deseje, de realizar a tradução da página. Alguns valores possíveis seriam:<span style="margin-left:3px;"><br><br></span>
+            
+                <ul>
+                    <li><span class="valoratrib">pt-BR</span>: Português Brasileiro</li><span style="margin-left:2px;"><br></span>
+                    <li><span class="valoratrib">es-ES</span>: Espanhol da Espanha</li><span style="margin-left:2px;"><br></span>
+                    <li><span class="valoratrib">en-GB</span>: Inglês Britânico</li><span style="margin-left:2px;"><br></span>
+                    <li><span class="valoratrib">fr</span>: Francês</li><span style="margin-left:2px;"><br></span>
+                    <li>Para saber mais sobre o assunto e sobre como funcionam os códigos, recomendo esse site que comenta sobre o <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#User-assigned_code_elements">ISO 639</a> e sobre o <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#User-assigned_code_elements">ISO 3166-1 alpha-2</a></li>
+                </ul>
+                <span style="margin-left:3px;"><br></span>
+        </ul>
+        <p>Assim, para exemplificarmos o uso desses atributos, podemos utilizar-se do seguinte comando:</p>
+        <p><img src="img/hyperlink-exemplo02-LinkRemoto.jpeg" alt="Imagem com um exemplo aplicando os novos atributos ainda no site da Google"></p><br>
+        
+        <h2><a name="internos">➪ Links Internos</a></h2>
+        <p>São <i>links</i> que apontam a um lugar diferente dentro da mesma página e quem possibilitam acessar diferentes parágrafos e seções quando o documento é extenso.</p>
+        <p><img src="img/hyperlink-sintaxe-LinkInterno.jpeg" alt="Imagem ilustrando como é a Sintaxe Genérica dos Links Internos"></p>
+        <p>Como exemplo, podemos ter o seguinte código:</p>
+        <p><img src="img/hyperlink-exemplo03-LinkInterno.jpeg" alt="Imagem ilustrando um exemplo prático de utilização de Links Internos."></p><br>
+
+        <h2><a name="locais">➪ Hyperlinks Locais</a></h2>
+        <p>São links que apontam para outras páginas dentro de um mesmo <i>site</i>.</p>
+        <p>Sua sintaxe padrão seria:</p>
+        <p><img src="img/hyperlink-sintaxe-LinkLocal.jpg" alt="Imagem ilustrando como é a Sintaxe Padrão/Genérica dos Links Locais"></p>
+        <p>Como exemplo, suponhamos que um site precisa ter um link que permita o usuário retornar à página inícial, assim que desejar. Portanto, podemos ter:</p>
+        <p><img src="img/hyperlink-exemplo04-LinkLocal.jpeg" alt="Imagem ilustrando um exemplo prático de utilização de Links Locai"></p><br>
+
+        <h2><a name="imagens">➪ Hyperlinks em Imagens</a></h2>
+        <p>É possível realizar hiperlinks envolvendo a tag de imagem com a tag de hiperlink.</p>
+        <p>Sua sintaxe básica, poderia ser:</p>
+        <p><img src="img/hyperlink-sintaxe-LinkImagem.jpeg" alt="Imagem ilustrando como é a Sintaxe Genérica dos Links em Imagens"></p>
+        <p>Como exemplo, podemos ter a seguinte situação:</p>
+        <p><img src="img/hyperlink-exemplo05-LinkImagem.jpeg" alt="Imagem ilustrando um exmeplo prático de utilização de Links em Imagens"></p>
+        <p><i>Note que as imagens são diferentes!</i></p>
+        <p>Na prática, o exemplo ficaria da seguinte forma:</p>
+        <p><a href="img/Tim_Berners_Lee.jpg" target="_blank"><img src="img/TimBernersLee.jpg" alt="Tim Berners Lee"></a></p>
+
+        <h2><a name="arquivos">➪ Hyperlinks para Download de Arquivos</a></h2>
+        <p>São links que apontam para arquivos e possibilitam realizar o download destes arquivos.</p>
+        <p>Para a utilização deste tipo de link, faz-se necessário seguir-se a seguinte sintaxe:</p>
+        <p><img src="img/hyperlink-sintaxe-LinkDownload.jpeg" alt="Imagem ilustrando como é a Sintaxe Padrão/Genérica dos Links para Download"></p>
+        <p>Para a exemplificação, utilizarei um arquivo compactado referente a atividade <span>Meu Hobbie</span>, que fora desenvolvida anteriormente para a disciplina, cujo nome do arquivo é <span id="exDown">atividade-Aula07[GabrielEmanuel].zip</span></p>
+        <p>Para o atributo <span class="atrib">type</span>, também conhecido como <b style="background-color: #CCFF33; padding: 0.5%;">Media Types</b>, é um identificador padrão utilizado na Internet para indicar o tipo de dado de um arquivo. Neste caso, por se tratar de um arquivo compactado em formato <i>.zip</i>, utilizaremos o valor <span class="valoratrib">application/zip</span>.</p>
+        <p>Consequentemente, caso você escolha, por exemplo, uma foto e queira disponibilizar para o usuário efetuar o download, o valor para o atributo <span class="atrib">type</span> será diferente. Assim, pode-se consultar mais valores possíveis através do site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" href="en" target="_blank">Media Type</a>.</p>
+        <p>Sendo assim, podemos ter o seguinte código:</p>
+        <p><img src="img/hyperlink-exemplo06-LinkDownload.jpeg" alt="Imagem ilustrando como é a Sintaxe Genérica dos Links para Download"></p>
+        <p>Na prática, temos o seguinte:</p>
+        <p><a class="linkesp" href="atividade-Aula07[GabrielEmanuel].zip" download="atividade-Aula07[GabrielEmanuel].zip" type="application/zip">Download</a></p><br><br>
+
+        <h2><a name="enderecoCorreio">➪ Hyperlinks para Endereço Eletrônico</a></h2>
+        <p>São links que apontam para um email</p>
+        <p>Utilizam a seguinte sintaxe:</p>
+        <p><b style="background-color: #CCFF33; padding: 0.5%;">ATENÇÃO:</b> É necessário o uso da sintaxe "<span class="atrib">mailto:</span>" antes de definir o endereço eletrônico</p>
+        <p><img src="img/hyperlink-sintaxe-LinkEmail.jpeg" alt="Imagem ilustrando como é a Sintaxe Genérica dos Links para Endereço Eletrônico (Email)"></p>
+        <p>Para ficar mais prático, vamos a um exemplo:</p>
+        <p><img src="img/hyperlink-exemplo07-LinkEmail.jpeg" alt="Imagem ilustrando como é a utilização de links para endereço eletrônico"></p>
+        <p>Na prática, o link ficaria assim:</p>
+        <p style="text-align: center;"><a  class="linkesp" style="margin:0% 15% 0% 15%;" href="mailto:gabriel.emanuel.michalski@gmail.com">Contato com o autor da página</a></p>
+        <br><br><br>
+
+        <h2>➪ Sobre o autor...</a></h2>
+        <ul>
+            <li>Autor: Gabriel Emanuel</li>
+            <li>Contato: <a href="mailto:gabriel.emanuel.michalski@gmail.com">gabriel.emanuel.michalski@gmail.com</a></li>
+            <li>Atualmente cursando o 3° ano técnico em Informática no <a class="if" href="https://www.google.com/maps/place/Instituto+Federal+do+Paran%C3%A1+Campus+Irati/@-25.4925829,-50.6373837,17z/data=!4m5!3m4!1s0x94e7d5a87aa70723:0xb1d0fe142b556d36!8m2!3d-25.4921471!4d-50.6359031" target="_blank">Instituto Federal de Irati</a></li>
+            <li>Professor: Francis Baranoski</li>
+            <li>Data: 06/08/2021</li>
+        </ul>
+
+    </div>
+</body>
+</html>

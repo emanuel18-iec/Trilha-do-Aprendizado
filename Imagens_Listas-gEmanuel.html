@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel = "icon" href = "img/favicon.listas.imagens.ico" type = "image/x-icon">
+    </head>
+
+    <body style = "font-family: Verdana;">
+        <h1 style="text-align: center;">Resumo do conteúdo da aula "RDE 04"</h1>
+        <h2>Imagem</h2>
+        <ul>
+            <li>Imagem é a representação visual de alguma coisa</li>
+            <li>Imagem digital é a representação de uma imagem em duas dimensão (bidimensional) usando números binários codificados.</li>
+            <li>Essas imagens, através de processamento eletrônico,  podem ser armazenadas, transferidas, impressas ou reproduzidas</li>
+            <li>Formatos: <i>.bmp</i>, <i>.tiff</i>, <i>.gif</i>, <i>.svg</i>, <i>.ico</i>, <i>.jpeg</i>, <i>.png</i>, dentre outros.</li>
+        </ul>
+        <h3>Licenças e Repositórios de Imagem</h3>
+        <p>Repositórios Gratuitos:</p>
+        <i><ul>
+            <li>Unsplash</li>
+            <li>Wikimedia Commons</li>
+            <li>Pixabay</li>
+            <li>Rawpixel</li>
+            <li>Freepixel</li>
+            <li>Vintage Stock Photos</li>
+        </ul></i>
+        <h2>&lt;img&gt;</h2>
+        <i><p style = "font-family: Roboto Mono; text-align: center; font-size: 30px"><spam style = "color:#00F; font-weight:bold;font-size:25px;">&lt;img</spam> <spam style="color:rgb(18, 161, 161); font-weight:bold;">src</spam> = <spam style="color: rgb(219, 168, 1);">"imagem.extensão"</spam> <spam style="font-weight:bold; color:rgb(18, 161, 161)"> width</spam> = <spam style="color: rgb(219, 168, 1);">"largura"</spam><spam style="font-weight:bold; color:rgb(18, 161, 161)"> height</spam> = <spam style="color: rgb(219, 168, 1);">"altura"</spam><spam style="color:rgb(18, 161, 161);font-weight:bold;"> alt</spam> = <spam style="color: rgb(219, 168, 1);">"descrição"</spam><spam style = "color:#00F; font-weight:bold;">&gt;</spam></p></i>
+        <img src = "img/imagem_arco_iris.jpg" alt = "Paisagem com arco-íris"><br><br>
+
+        <h2>&lt;figure&gt; e &lt;figcaption&gt;</h2>
+        <ul>
+            <li><i>Tags</i> semânticas</li>
+            <li>Servem para organização do documento e dá significado</li>
+            <li><i>&lt;figure&gt;</i>: Determina um espaço para a marcação da imagem</li>
+            <li><i>&lt;figcaption&gt;</i>: Define uma legenda a imagem</li>
+        </ul><br>
+
+        <h3 style="color:#250">Redimencionando a imagem</h3>
+        <ol>
+            <b><li>Utilizando-se de porcentagem</li></b><br>
+            <img src = "img/imagem_arco_iris.jpg" width="25%" height="30%" alt = "Paisagem com arco-íris">
+            <i><p style = "font-family: Roboto Mono; font-size: 25px"><spam style="color:#000; font-style:normal;">Código: </spam><spam style = "color:#00F; font-weight:bold;font-size:23px;">&lt;img</spam> <spam style="color:rgb(18, 161, 161); font-weight:bold;">src</spam> = <spam style="color: rgb(219, 168, 1);">"img/imagem_arco_iris.jpg"</spam> <spam style="font-weight:bold; color:rgb(18, 161, 161)"> width</spam> = <spam style="color: rgb(219, 168, 1);">"25%"</spam><spam style="font-weight:bold; color:rgb(18, 161, 161)"> height</spam> = <spam style="color: rgb(219, 168, 1);">"30%"</spam><spam style="color:rgb(18, 161, 161);font-weight:bold;"> alt</spam> = <spam style="color: rgb(219, 168, 1);">"Paisagem com arco-íris"</spam><spam style = "color:#00F; font-weight:bold;">&gt;</spam></p></i><br><br>
+
+            <b><li>Utilizando-se de <i>px</i> (pixels)</li></b><br>
+            <img src = "img/imagem_arco_iris.jpg" width="700px" height="400px" alt = "Paisagem com arco-íris">
+            <i><p style = "font-family: Roboto Mono; font-size: 25px"><spam style="color:#000; font-style:normal;">Código: </spam><spam style = "color:#00F; font-weight:bold;font-size:23px;">&lt;img</spam> <spam style="color:rgb(18, 161, 161); font-weight:bold;">src</spam> = <spam style="color: rgb(219, 168, 1);">"img/imagem_arco_iris.jpg"</spam> <spam style="font-weight:bold; color:rgb(18, 161, 161)"> width</spam> = <spam style="color: rgb(219, 168, 1);">"700px"</spam><spam style="font-weight:bold; color:rgb(18, 161, 161)"> height</spam> = <spam style="color: rgb(219, 168, 1);">"400px"</spam><spam style="color:rgb(18, 161, 161);font-weight:bold;"> alt</spam> = <spam style="color: rgb(219, 168, 1);">"Paisagem com arco-íris"</spam><spam style = "color:#00F; font-weight:bold;">&gt;</spam></p></i><br><br>
+
+            <b><li>Transformando a imagem em Quadrado</li></b><br>
+            <img src = "img/imagem_arco_iris.jpg" width="450px" height="450px" alt = "Paisagem com arco-íris">
+            <i><p style = "font-family: Roboto Mono; font-size: 25px"><spam style="color:#000; font-style:normal;">Código: </spam><spam style = "color:#00F; font-weight:bold;font-size:23px;">&lt;img</spam> <spam style="color:rgb(18, 161, 161); font-weight:bold;">src</spam> = <spam style="color: rgb(219, 168, 1);">"img/imagem_arco_iris.jpg"</spam> <spam style="font-weight:bold; color:rgb(18, 161, 161)"> width</spam> = <spam style="color: rgb(219, 168, 1);">"450px"</spam><spam style="font-weight:bold; color:rgb(18, 161, 161)"> height</spam> = <spam style="color: rgb(219, 168, 1);">"450px"</spam><spam style="color:rgb(18, 161, 161);font-weight:bold;"> alt</spam> = <spam style="color: rgb(219, 168, 1);">"Paisagem com arco-íris"</spam><spam style = "color:#00F; font-weight:bold;">&gt;</spam></p></i> <br>
+            
+            
+            <b><li>Utilizando-se de uma fonte externa</li></b>
+            <i><p style = "font-family: Roboto Mono; font-size: 25px"><spam style="color:#000; font-style:normal;">Código: </spam><spam style = "color:#00F; font-weight:bold;font-size:23px;">&lt;img</spam> <spam style="color:rgb(18, 161, 161); font-weight:bold;">src</spam> = <spam style="color: rgb(219, 168, 1);">"Endereço Web da Imagem"</spam> <spam style="font-weight:bold; color:rgb(18, 161, 161)"> width</spam> = <spam style="color: rgb(219, 168, 1);">"largura"</spam><spam style="font-weight:bold; color:rgb(18, 161, 161)"> height</spam> = <spam style="color: rgb(219, 168, 1);">"altura"</spam><spam style="color:rgb(18, 161, 161);font-weight:bold;"> alt</spam> = <spam style="color: rgb(219, 168, 1);">"Descrição da imagem"</spam><spam style = "color:#00F; font-weight:bold;">&gt;</spam></p></i>
+            <img src = "https://i1.trekearth.com/photos/69092/arco_iris.jpg" alt = "Paisagem com arco-íris">
+            
+            <br><br><p>Para a imagem utilizei do seguinte código:</p>
+            <i><p style = "font-family: Roboto Mono; font-size: 25px"><spam style = "color:#00F; font-weight:bold;font-size:23px;">&lt;img</spam> <spam style="color:rgb(18, 161, 161); font-weight:bold;">src</spam> = <spam style="color: rgb(219, 168, 1);">"https://i1.trekearth.com/photos/69092/arco_iris.jpg"</spam><spam style="color:rgb(18, 161, 161);font-weight:bold;"> alt</spam> = <spam style="color: rgb(219, 168, 1);">"Paisagem com arco-íris"</spam><spam style = "color:#00F; font-weight:bold;">&gt;</spam></p></i>
+        </ol>
+
+        <h2>&lt;favicon&gt;</h2>
+        <ul>
+            <li>Define o ícone da página que aparece na aba de titulos</li>
+            <li>Utiliza-se da seguinte sintaxe</li>
+            <link rel = "icon" href = "img/favicon.ico" type="image/x-icon">
+            <i><p style = "font-family: Roboto Mono; font-size: 25px"><spam style = "color:#00F; font-weight:bold;font-size:23px;">&lt;link</spam> <spam style="color:rgb(18, 161, 161); font-weight:bold;">rel </spam> = <spam style="color: rgb(219, 168, 1);">"icon"</spam> <spam style="font-weight:bold; color:rgb(18, 161, 161)"> href</spam> = <spam style="color: rgb(219, 168, 1);">"Endereço do icone.ico"</spam><spam style="font-weight:bold; color:rgb(18, 161, 161)"> type</spam> = <spam style="color: rgb(219, 168, 1);">"image/x-icon"</spam><spam style="color:rgb(18, 161, 161);font-weight:bold;"></spam><spam style = "color:#00F; font-weight:bold;">&gt;</spam></p></i>
+            <li>Nesse arquivo, a sintaxe utilizada ficou assim:</li>
+            <i><p style = "font-family: Roboto Mono; font-size: 25px"><spam style = "color:#00F; font-weight:bold;font-size:23px;">&lt;link</spam> <spam style="color:rgb(18, 161, 161); font-weight:bold;">rel </spam> = <spam style="color: rgb(219, 168, 1);">"icon"</spam> <spam style="font-weight:bold; color:rgb(18, 161, 161)"> href</spam> = <spam style="color: rgb(219, 168, 1);">"img/favicon.ico"</spam><spam style="font-weight:bold; color:rgb(18, 161, 161)"> type</spam> = <spam style="color: rgb(219, 168, 1);">"image/x-icon"</spam><spam style="color:rgb(18, 161, 161);font-weight:bold;"></spam><spam style = "color:#00F; font-weight:bold;">&gt;</spam></p></i>
+            <li>Alguns sites que podem ser utilizados para criar, gerar ou encontrar um icon:</li>
+            <ul>
+                <i><li><a href = "https://iconarchive.com">Icon Archive</a></li></i>
+                <i><li><a href = "https://www.favicon.cc/">Favicon.cc</a></li></i>
+                <i><li><a href = "https://favicon.io/">Favicon.io</a></li></i>
+            </ul>
+        </ul>
+        <br>
+        <h2>Listas</h2>
+        <p>As listas podem ser de três tipos:</p> 
+        <ul>
+            <li>Não-ordenadas</li>
+            <li>Ordenadas</li>
+            <li>Detalhada</li>
+        </ul><br>
+        <h3>Listas Não Ordenadas</h3>
+        <p>Utiliza-se da tag <i>&lt;ul&gt;</i> para a marcação da lista e da tag <i>&lt;li&gt;</i> para a marcação dos itens</p>
+        <p>Sintaxe:</p>
+        <i><p style = "font-family: Roboto Mono; font-size: 23px; color: #00F;font-weight: bold;">&lt;ul&gt;<br>
+            <spam style="padding-left:2.5%;"></spam>&lt;li&gt;<spam style="color:rgb(2, 196, 83);">item 1</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">item 2</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">item 3</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">item n</spam>&lt;/li&gt;<br></spam>&lt;/ul&gt;
+        </p></i>
+        
+        Exemplo: alguns livros da Colleen Hoover
+        <ul>
+            <li>É assim que acaba</li>
+            <li>Novembro, 9</li>
+            <li>Todas as suas (im)perfeições</li>
+            <li>Confesse</li>
+            <li>Talvez um dia</li>
+        </ul><br>
+        Código:
+        <i><p style = "font-family: Roboto Mono; font-size: 23px; color: #00F;font-weight: bold;">&lt;ul&gt;<br>
+            <spam style="padding-left:2.5%;"></spam>&lt;li&gt;<spam style="color:rgb(2, 196, 83);">É assim que acaba</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">Novembro, 9</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">Todas as suas (im)perfeições</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">Confesse</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">Talvez um dia</spam>&lt;/li&gt;<br></spam>&lt;/ul&gt;
+        </p></i>
+
+        <br>    
+
+        <h3>Listas Ordenadas</h3>
+        <p>Utiliza-se da tag <i>&lt;ol&gt;</i> para a marcação da lista, da tag <i>&lt;li&gt;</i> para a marcação dos itens e do atributo <i>type</i>, que define em qual elemento e qual o tipo de caractere para os marcadores</p>
+        <p>Sintaxe:</p>
+        <i><p style = "font-family: Roboto Mono; font-size: 23px; color: #00F;font-weight: bold;">&lt;ol&gt;<br>
+            <spam style="padding-left:2.5%;"></spam>&lt;li&gt;<spam style="color:rgb(2, 196, 83);">item 1</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">item 2</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">item 3</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">item n</spam>&lt;/li&gt;<br></spam>&lt;/ol&gt;
+        </p></i>
+        
+        Exemplo: sumário de um livro 
+        <ol>
+            <li>Introdução</li>
+            <li>Conceitos Iniciais</li>
+            <li>Títulos e Parágrafos</li>
+            <li>Imagens e Listas</li>
+        </ol><br>
+        Código:
+        <i><p style = "font-family: Roboto Mono; font-size: 23px; color: #00F;font-weight: bold;">&lt;ol&gt;<br>
+            <spam style="padding-left:2.5%;"></spam>&lt;li&gt;<spam style="color:rgb(2, 196, 83);">Introdução</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">Conceitos Iniciais</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">Títulos e Parágrafos</spam>&lt;/li&gt;</spam><br>
+            <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">Imagens e Listas</spam>&lt;/li&gt;</spam><br>&lt;/ol&gt;
+        </p></i>
+        <h3>Atributo <i>type</i></h3>
+        <p style="padding-left: 2%">É um atributo que é responsável por controlar os marcadores.<br><br>Alguns exemplos de valores e de sua respectiva utilidade:</p>
+        <ul>
+            <li><spam style="font-family: Roboto Mono; font-size: 23px; font-style: italic; font-weight: bold;; color:rgb(219, 168, 1)">type = "1"</spam> --> define que os marcadores são numéricos e que eles começam no número 1</li><br>
+            <ol type="1">
+                <li>1° Item</li>
+                <li>2° Item</li>
+            </ol>
+            <i><p style = "font-family: Roboto Mono; font-size: 23px; color: #00F;font-weight: bold;">&lt;ol <spam style="color:rgb(219,168,1)">type = "1"</spam>&gt;<br>
+                <spam style="padding-left:2.5%;"></spam>&lt;li&gt;<spam style="color:rgb(2, 196, 83);">1° Item</spam>&lt;/li&gt;</spam><br>
+                <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">2° Item</spam>&lt;/li&gt;</spam><br>&lt;/ol&gt;
+            </p></i>
+            <li><spam style="font-family: Roboto Mono; font-size: 23px; font-style: italic; font-weight: bold;; color:rgb(219, 168, 1)">type = "a"</spam> --> define que os marcadores são letras e que eles começam na letra a <spam style="background-color: aqua;">minúscula</spam></li><br>
+            <ol type="a">
+                <li>1° Item</li>
+                <li>2° Item</li>
+            </ol>
+            <i><p style = "font-family: Roboto Mono; font-size: 23px; color: #00F;font-weight: bold;">&lt;ol <spam style="color:rgb(219,168,1)">type = "a"</spam>&gt;<br>
+                <spam style="padding-left:2.5%;"></spam>&lt;li&gt;<spam style="color:rgb(2, 196, 83);">1° Item</spam>&lt;/li&gt;</spam><br>
+                <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">2° Item</spam>&lt;/li&gt;</spam><br>&lt;/ol&gt;
+            </p></i>
+           
+            <li><spam style="font-family: Roboto Mono; font-size: 23px; font-style: italic; font-weight: bold;; color:rgb(219, 168, 1)">type = "A"</spam> --> define que os marcadores são letras e que eles começam na letra a <spam style="background-color: aqua;">maiscula</spam></li><br>
+            <ol type="A">
+                <li>1° Item</li>
+                <li>2° Item</li>
+            </ol>
+            <i><p style = "font-family: Roboto Mono; font-size: 23px; color: #00F;font-weight: bold;">&lt;ol <spam style="color:rgb(219,168,1)">type = "A"</spam>&gt;<br>
+                <spam style="padding-left:2.5%;"></spam>&lt;li&gt;<spam style="color:rgb(2, 196, 83);">1° Item</spam>&lt;/li&gt;</spam><br>
+                <spam style="padding-left:2.5%;">&lt;li&gt;<spam style="color:rgb(2, 196, 83);">2° Item</spam>&lt;/li&gt;</spam><br>&lt;/ol&gt;
+            </p></i>
+        </ul><br><br>
+
+        <h3>Listas Detalhadas</h3>
+        <p>Utiliza-se da tag <i>&lt;dl&gt;</i> para a marcação da lista, da tag <i>&lt;dt&gt;</i> para a marcação dos itens e da tag <i>&lt;dl&gt;</i> que define o detalhamento dos itens</p>
+        <p>Sintaxe:</p>
+        <i><p style = "font-family: Roboto Mono; font-size: 23px; color: #00F;font-weight: bold;">&lt;dl&gt;<br>
+            <spam style="padding-left:2.5%;"></spam>&lt;dt&gt;<spam style="color:rgb(2, 196, 83);">item 1</spam>&lt;/dt&gt;</spam><br>
+                <spam style="padding-left:5%;"></spam>&lt;dd&gt;<spam style="color:rgb(2, 196, 83);">detalhamento do item 1</spam>&lt;/dd&gt;</spam><br>
+            <spam style="padding-left:2.5%;"></spam>&lt;dt&gt;<spam style="color:rgb(2, 196, 83);">item 2</spam>&lt;/dt&gt;</spam><br>
+                <spam style="padding-left:5%;"></spam>&lt;dd&gt;<spam style="color:rgb(2, 196, 83);">detalhamento do item 2</spam>&lt;/dd&gt;</spam><br>
+            <spam style="padding-left:2.5%;"></spam>&lt;dt&gt;<spam style="color:rgb(2, 196, 83);">item 3</spam>&lt;/dt&gt;</spam><br>
+                <spam style="padding-left:5%;"></spam>&lt;dd&gt;<spam style="color:rgb(2, 196, 83);">detalhamento do item 3</spam>&lt;/dd&gt;</spam><br>
+        &lt;/dl&gt;</p></i>
+        
+        Exemplo: Programação
+        <i>
+        <dl>
+            <dt>Linguagens envolvendo Lógica</dt>
+                <dd>Portugol</dd>
+                <dd>MySQL</dd>
+                <dd>Java</dd>
+            <dt>Linguagens Web</dt>
+                <dd>HTML</dd>
+                <dd>CSS</dd>
+                <dd>JavaScript</dd>
+        </dl>
+        </i>
+        Código:
+        <i><p style = "font-family: Roboto Mono; font-size: 23px; color: #00F;font-weight: bold;">&lt;i&gt;<br>&lt;dl&gt;<br>
+        <spam style="padding-left:2.5%;"></spam>&lt;dt&gt;<spam style="color:rgb(2, 196, 83);">Linguagens envolvendo Lógica</spam>&lt;/dt&gt;</spam><br>
+            <spam style="padding-left:5%;"></spam>&lt;dd&gt;<spam style="color:rgb(2, 196, 83);">Portugol</spam>&lt;/dd&gt;</spam><br>
+            <spam style="padding-left:5%;"></spam>&lt;dd&gt;<spam style="color:rgb(2, 196, 83);">MySQL</spam>&lt;/dd&gt;</spam><br>
+            <spam style="padding-left:5%;"></spam>&lt;dd&gt;<spam style="color:rgb(2, 196, 83);">Java</spam>&lt;/dd&gt;</spam><br>
+        <spam style="padding-left:2.5%;"></spam>&lt;dt&gt;<spam style="color:rgb(2, 196, 83);">Linguagens Web</spam>&lt;/dt&gt;</spam><br>
+            <spam style="padding-left:5%;"></spam>&lt;dd&gt;<spam style="color:rgb(2, 196, 83);">HHTML</spam>&lt;/dd&gt;</spam><br>
+            <spam style="padding-left:5%;"></spam>&lt;dd&gt;<spam style="color:rgb(2, 196, 83);">CSS</spam>&lt;/dd&gt;</spam><br>
+            <spam style="padding-left:5%;"></spam>&lt;dd&gt;<spam style="color:rgb(2, 196, 83);">JavaScript</spam>&lt;/dd&gt;</spam><br>
+        &lt;/dl&gt;<br>&lt;/i&gt;</p></i>
+    </body>
+</html>

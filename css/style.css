@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+h1, h3, p, li, summary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgba(30, 60, 66, 0.89);
+}
+.req{
+    font-weight: bold;
+}
+#conteudoPrincipal{
+    border: 5px groove #000;
+    padding: 1%;
+    margin: 0% 7.5% 0% 7.5%;
+    background-color: rgba(126, 207, 223, 0.651);
+    box-shadow: 5px 5px 35px #000;
+    
+}
+
+#CdaS{
+    float: right;
+    padding-right: 3%;
+    margin: 2%;
+    margin-left: 4%;
+}
+.notmarc{
+    padding-left: -0.5%;
+    list-style-type: none;
+}
+.linkatalhos{
+    padding: 1%;
+    margin-left:2%
+}
+
+#exDown{
+    color:rgb(14, 48, 143);
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#pAtalho{
+    text-align: center;
+}
+
+.linkesp{
+    text-align: center;
+    padding: 3%;
+    border: 6px dashed rgb(116, 2, 2);
+    margin:0% 40% 0% 40%;
+    font-weight: bold;
+}
+
+#if:link, .if:visited{
+    color:rgb(12, 122, 17);
+    font-weight: bold;
+}
+#if:hover{
+    color: rgb(12, 90, 16);
+    font-weight: bold;
+}
+
+.linkesp:hover{
+    color:rgb(55, 76, 133);
+}
+
+p{
+    text-align: justify;
+    text-indent: 3.5%;
+}
+
+h2{
+    font-family: 'Black Ops One', cursive;
+    margin-left: 0%
+}
+
+.atrib{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+.valoratrib{
+    font-family: 'Acme', sans-serif;
+    font-size: 17px;
+}
+
+li{
+    text-align:justify;
+}
+
+.linkatalhos:hover{
+    background-color: rgba(9, 82, 95, 0.582);
+    color:#FFF;
+    box-shadow: 5px 5px 10px #000;
+    text-decoration:none;
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: rgba(121, 7, 7, 0.986);
+    
+}
