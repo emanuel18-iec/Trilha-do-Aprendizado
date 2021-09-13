@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tableAtributoDel.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>RDE 08 - G. Emanuel</title>
+        <style>
+            td, th {
+                border: 1px solid rgb(190,190,190);
+                padding: 10px 20px;
+            }
+            .info-table {
+                border-spacing: 0;
+                border-collapse: separate;
+                width: 90%;
+                color: #314351;
+                font-size: 0.857em;
+                line-height: 1em;
+                margin-bottom: 17px;
+                font-family: "museo-sans",sans-serif;
+            }
+            .info-table a {
+                color: #4183C4;
+                text-decoration: none;
+            }
+            .info-table a:hover {
+                color: #2a5886;
+                text-decoration: none;
+                background-color: inherit;
+            }
+            .info-table th, .info-table td {
+                border: 1px solid #BCBABA;
+                border-top-color: #FFF;
+                border-right: none;
+                padding: 8px 20px 8px 23px;
+                text-align: left;
+                vertical-align: middle;
+                background: #EEE;
+                margin: 0;
+            }
+            .info-table th {
+                background: #58a7e6;
+                text-align: left;
+                font-size: 1.083em;
+                line-height: 1.538em;
+                padding: 6px 20px 5px 23px;
+                color: #ddedfa;
+                text-shadow: 0px -1px 1px rgba(0, 81, 168, 0.38);
+                border-color: #2c90df;
+                font-weight: 900;
+            }
+            .info-table th:last-child {
+                border-right: 1px solid #BCBABA;
+                text-align: center;
+            }
+            .info-table td.last, .info-table td:last-child {
+                border-right: 1px solid #C2CAD0;
+            }
+            .info-table .even td, .info-table tr:nth-child(even) td {
+                background: #E7E7E7;
+            }
+
+        </style>
+
+        <!--<script>
+            var name = prompt("Qual o seu nome?");
+            alert("Seja muito bem vindo, " + name + "!!");
+        </script>-->
+    </head>
+    <body>
+        <div id="conteudoPrincipal">
+            <h1>RDE 08</h1>
+            <p style="
+                       text-align: center;
+                       font-weight: bold;
+                       font-family: 'Acme', sans-serif;
+                       font-size: 20px;
+                       text-indent: 0%;">por: Gabriel Emanuel</p>
+            <figure>
+                <details>
+                    <summary class="tg">TAGS</summary>
+                    <div id="listTags" >
+                        <table id="table-listTags" style="border-color:cyan">
+                            <caption>Listagem das TAG'S</caption>
+                            <td style="font-style: none;">
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagTABLE">tag <i>&lt;table&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagDEL">tag <i>&lt;del&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagINS">tag <i>&lt;ins&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagSUB">tag <i>&lt;sub&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagSUP">tag <i>&lt;sup&gt;</i></a></li></p>
+                            </td>
+                            <td>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagBLOCKQUOTE">tag <i>&lt;blockquote&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagQ">tag <i>&lt;q&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagABBR">tag <i>&lt;abbr&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagADDRESS">tag <i>&lt;address&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagCITE">tag <i>&lt;cite&gt;</i></a></li></p>
+                            </td>
+                            <td>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagBDO">tag <i>&lt;bdo&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagCODE">tag <i>&lt;code&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagPRE">tag <i>&lt;pre&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagKBD">tag <i>&lt;kbd&gt;</i></a></li></p>
+                                <p><span style="font-style: bold; font-size: 1.5em;">&#8618;</span>  <a href="#tagSemâ">Extra <span style="font-size: 16px;">(Tags Semânticas)</span></a></li></p>
+                                
+                            </td>
+                        </table>                        
+                    </div>
+                </details>
+            </figure>
+
+            <br><br>
+            <a name="tagTABLE"></a><br>
+            <h2>Tag: <span>&lt;TABLE&gt;</span></h2>
+            <p>A tag <i>&lt;table&gt;</i> é responsável por definir a demarcação de uma tabela. Tabela, basicamente, é a disposição de dados em duas dimensões: linhas e colunas. Uma tabela permite consultar de forma rápida e fácil valores que indicam algum tipo de conexão entre diferentes tipos de dados, por exemplo, uma pessoa e sua idade, ou um dia da semana, ou os horários de uma piscina local.</p>
+            <figure class="fc"><br>
+                <img src="img/swimming-timetable.png" alt="Exemplificando o que é uma tabela"><br><br>
+            </figure>
+            <p>É possível facilmente relacioná-la com matrizes</p><br>
+            <figure class="fc">
+                <img src="img/matriz.jpg" alt="Exemplificando a matriz"><br><br>
+            </figure>
+            <p>As tabelas possuem estrutura. As informações são facilmente interpretadas fazendo associações visuais entre os cabeçalhos de linha e coluna.</p>
+            <p>O conteúdo de cada tabela é delimitada por estas duas tags: &lt;table&gt;&lt;/table&gt;. Dentro delas, trabalha-se com outras tags e atributos para manipular as linhas e colunas.</p>
+            <h3 style="margin-right: 2%;"><span style="font-size: 1.3em;">&#10149;</span> &lt;td&gt; <span style="font-size: 1.3em;">&#10170;	</span><span style="font-size: 16px;">É a tag responsável por criar células em uma linha. Por exemplo, se forem utilizados "<i>4 &lt;td&gt;s</i>", seriam criados 4 células em uma linha. Observe:</span></h3>
+            <p>Código:</p>
+            <figure class="fc"><img src="img/td.jpg" alt="Exemplicando a tag <td>"></figure>
+            <p>O resultado deve ficar semelhante a esse:</p><br>
+            <figure class="fc"><img src="img/td-result.jpg" alt="Exemplicando a tag <td> na prática"></figure>
+            
+            <h3 style="margin-right: 2%;"><span style="font-size: 1.3em;">&#10149;</span> &lt;tr&gt; <span style="font-size: 1.3em;">&#10170;</span><span style="font-size: 16px;"> É responsável por interromper o crescimento desta linha e começar a colocar células subsequentes em uma segunda linha, precisamos usar o elemento &lt;tr&gt; ('tr' significa 'linha da tabela'). Vamos trabalhar isso agora.</span></h3>
+            <p>Inicialmente, criamos algumas células que constituem uma linha. Mas, do ponto de vista do HTML, são consideradas apenas 4 colunas. Sendo assim, vamos definir que elas constituem uma linha, da seguinte forma:  </p><br>
+            <figure class="fc"><img src="img/tr.jpg" alt="Exemplicando a tag <tr>"></figure>
+            <br><p>Observe que a exibição da tabela não mudou.</p><br>
+            <figure class="fc"><img src="img/tr-tdadap.jpg" alt="Visualizando a mudança após adicionar a <tr> ao código anterior"></figure><br>
+            <p>Agora, vamos adicionar mais uma ou mais linhas à nossa tabela. Lembrando que, para tal, é necessário utilizar a tag <i>&lt;tr&gt;</i> envolvendo as células que serão criadas com a tag <i>&lt;td&gt;</i>. No meu caso, criarei duas linhas além daquela já criada e, para cada célula, usarei uma notação matricial. Observe:</p><br>
+            <figure class="fc"><img src="img/tr-ex3liCOD.jpg" alt="Exemplicando a utilização das tags <tr> em sequencia -  COD"></figure><br>
+            <p>Na prática, a tabela fica assim:</p><br>
+            <figure class="fc"><img src="img/tr-ex3liPRAT.jpg" alt="Exemplicando a utilização das tags <tr> em sequencia -  PRAT"></figure><br>
+            <h3 style="margin-right: 2%;"><span style="font-size: 1.3em;">&#10149;</span> &lt;th&gt; <span style="font-size: 1.3em;">&#10170;	</span><span style="font-size: 16px;">É uma tag que corresponde a uma função de cabeçalho, "nomeando" a linha ou a coluna em questão. Para ficar mais claro, vamos utilizar uma tabela para dividir os números de 0 a 10 na sua respectiva coluna que indique se ele é par ou impar, da seguinte forma:</span></h3><br>
+            <figure class="fc"><img src="img/tablenmrs.jpg" alt="Tabela solicitada"></figure><br>
+            <p>Para esse caso, utilizei-me deste código:</p><br>
+            <figure class="fc"><img src="img/tablenmrscdg.jpg" alt="Resolução da tabela solicitada"></figure><br>
+            <p>Mas, e se fossemos "capotar" a tabela, deixando os números agora dispostos nas linhas, ao contrário do caso anterior, no qual eles estavam dispostos em coluna?</p><br>
+            <figure class="fc"><img src="img/tablenmrcol.jpg" alt="Tabela solicitada"></figure><br>
+            <p>O seguinte código, resolveria muito bem à situação: </p><br>
+           <figure class="fc"><img src="img/tablenmrcolcdg.jpg" alt="Resolução da tabela solicitada"></figure><br>
+            <p>Ainda é possível usar outros elementos em tabelas, como, por exemplo, <a href="http://comhtml.blogspot.com/2013/07/mesclando-as-celulas-de-uma-tabela-com.html" target="_blank">mesclar células</a>, através do atributo <span class="atr">colspan</span> para as colunas ou do atributo <span class="atr">rowspan</span> para as fileiras, também é possível trabalhar com <a href="https://www.w3schools.com/tags/tag_colgroup.asp" target="_blank">grupos de cores</a>, através da tag &lt;coulgroup&gt; e &lt;col&gt;</p>
+            <br>
+            <details>
+                <summary>O que é mesclar células em uma tabela? Exemplo prático!</summary>
+                <br>
+                <p>Tabela:</p><br>
+                <div style="overflow: hidden;"><iframe style="  width: 80%;
+                                                                height: 75%;
+                                                                margin-left: 10%;"
+                src="exampleTableExtra.html" frameborder="0"></iframe>            
+                </div><br>
+                <p>Código:</p>
+                <figure class="fc"><img src="img/tableEXF-cdg.jpg" alt="Código do Exemplo Prático"></figure><br>
+                <p>Exemplo retirado e adaptado de:<a href="https://fir3.net/JzsH" target="_blank"> Tabela com células mescladas</a></p>
+            </details>
+
+            <a name="tagDEL"></a><br><br>
+            <h2>Tag: <span>&lt;DEL&gt;</span></h2><br>
+            <p>O elemento  HTML &lt;del&gt; (ou  <i>Elemento  HTML  de Texto Excluído</i> ) representa uma parte do texto que foi "excluída" de um documento. Este elemento é <i>(não necessariamente)</i> renderizado pelos navegadores com uma linha sobre o texto. De forma mais simples, é um traço que é colocado sobre um texto que é conhecido como <strong>Texto Tachado</strong>.</p>
+            <p>Para isso, basta usar a tag &lt;del&gt; no conteúdo que será tachado.</p><br>
+            <figure class="fc"><img src="img/delsint.jpg" alt="Sintaxe da tag <del>"></figure><br>
+            <p>Vamos a um exemplo mais prático de um texto com uma parte suprimida, e, uma parte nova inserido:
+            </p>
+            <p>Código:</p>
+            <br><figure class="fc"><img src="img/cdgExDel.jpg" alt="Codigo de Exemplo"></figure><br>
+            <p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 20%;
+                        margin-left: 40%;
+                        ">
+                <big>
+                    <center>
+                        <p>Minha cor favorita é <font color=red><del>vermelha</del></font> azul!</p>
+                    </center>
+                </big>
+            </div>
+            <br><br><a name="tabAtrDEL"></a><p>Mesmo sendo uma tag que altere um aspecto visual de uma página HTML, ele pode conter dois atributos:</p><br>
+            <table class="info-table" style="margin-left: 5%;">
+                <tr>
+                    <th>Atributo</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td><span class="atr">cite</span></td>
+                    <td>URL</td>
+                    <td>Especifica uma URL para um documento que explica a razão pela qual o texto foi suprimido</td>
+                </tr>
+                <tr>
+                    <td><span class="atr">datetime</span></td>
+                    <td>YYYY-MM-DDThh:mm:ssTZD</td>
+                    <td>Especifica a data e hora de quando o texto foi suprimido</td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <br><br>
+            <a name="tagINS"></a><br>
+            <h2>Tag: <span>&lt;INS&gt;</span></h2><br>
+            <p>Em termos muito práticos, funciona da mesma forma que com a tag <a href="#tagDEL" style="text-decoration: none;">&lt;del&gt;</a> porém, o efeito visual causado é diferente. Ao invés de tachar, a tag <ins>sublinhará</ins> o texto!</p>
+            <p>Por formalidade, a sua sintaxe padrão é:</p>
+            <br><figure class="fc"><img src="img/inssint.jpg" alt="Codigo de Exemplo"></figure><br>
+            <p>Exemplo prático:</p>
+            <br><figure class="fc"><img src="img/cdgExIns.jpg" alt="Codigo de Exemplo"></figure><br>
+            <p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 20%;
+                        margin-left: 40%;
+                        ">
+                <big>
+                    <center>
+                        <p>Minha cor favorita é <font color=red><del>vermelha</del></font> <ins>azul!</ins></p>
+                    </center>
+                </big>
+            </div>
+            
+            <br><p>Os mesmos atributos que são válidos para a tag &lt;del&gt;, também são válidas para a tag &lt;ins&gt;. <i> (<a href="#tabAtrDEL">Clique aqui para revisá-los</a>)</i></p><br><br>
+            
+            <a name="tagSUB"></a><br>
+            <h2>Tag: <span>&lt;SUB&gt;</span></h2><br>
+            <p>O marcador &lt;sub&gt; (<i>"Subscript Element"</i>) ou subscrito, é utilizado escrever um texto com letras menores e com o alinhamento abaixo das que do resto do conteúdo.</p>
+            <p>Sua sintaxe segue a padrão das outras duas anteriores:</p><br>
+            <figure class="fc"><img src="img/subsint.jpg" alt="Sintaxe da tag <sub>"></figure>
+            <br><p>Código de exemplo contextualizado:</p><br>
+            <figure class="fc"><img src="img/cgdExSub.jpg" alt="Exemplo <sub>"></figure>
+            <br><p>Resultado final:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 70%;
+                        margin-left: 15%;
+                        ">
+                <big>
+                    <center>
+                        <p>O benzeno é um hidrocarboneto aromático cuja fórmula química é:<br>
+                        C<sub>6</sub>H<sub>6</sub> - Seis átomos de carbono e seis de hidrogênio.</p>
+                    </center>
+                </big>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <a name="tagSUP"></a><br>
+            <h2>Tag: <span>&lt;SUP&gt;</span></h2><br>
+            <p>O marcador &lt;sup&gt; (<i>"Superscript Element"</i>) ou sobrescrito é utilizado escrever um texto com letras menores e com o alinhamento acima das que do resto do conteúdo.</p>
+            <p>Sua sintaxe segue a padrão das outras três anteriores:</p><br>
+            <figure class="fc"><img src="img/supsint.jpg" alt="Sintaxe da tag <sup>"></figure>
+            <br><p>Código de exemplo contextualizado:</p><br>
+            <figure class="fc"><img src="img/cdgExSup.jpg" alt="Exemplo <sup>"></figure>
+            <br><p>Resultado final:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 90%;
+                        margin-left: 5%;
+                        ">
+                <big>
+                    <center>
+                        <p>O teorema de Pitágoras diz que:
+                            <br>Em qualquer triângulo retângulo, o quadrado do comprimento da hipotenusa (o lado oposto ao ângulo reto) é igual à soma dos quadrados dos comprimentos dos catetos (lados que formam o ângulo reto).
+                            <br>Se a hipotenusa for definida com a e os outros dois lados, os catetos, como b e c, pode-se afirmar que:<br>
+                            a<sup>2</sup>=b<sup>2</sup>+c<sup>2</sup></p>
+                    </center>
+                </big>
+            </div>
+            <br><br>
+            <a name="tagBLOCKQUOTE"></a><br>
+            <h2>Tag: <span>&lt;BLOCKQUOTE&gt;</span></h2><br>
+            <p>A tag &lt;blockquote&gt; define uma <n>LONGA</n> citação em bloco no documento HTML de outra fonte. Os navegadores tradicionalmente renderizam o texto encontrado nessa tag como texto recuado.</p><br>
+            <figure class="fc"><img src="img/blockquotesint.jpg" alt="Sintaxe da tag <blockquote>"></figure><br><br>
+            <p>Podemos também, fazer uso do atributo <span class="atr">cite</span> que conterá o link que contém a citalção.</p>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExBlockquote.jpg" alt="Exemplo <blockquote>"></figure>
+            <br><p>Resultado final:</p><br>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                Há 50 anos, o WWF protege o futuro da natureza. Organização de conservação líder mundial, o WWF atua em 100 países e é apoiado por 1,2 milhão de membros nos Estados Unidos e cerca de 5 milhões em todo o mundo;
+            </blockquote><br>
+            <p><big>NOTA:</big> Usamos a tag &lt;blockquote&gt; para textos <ins>longos</ins>. Para textos curtos, utilizaremos a <a href="#tagQ">tag &lt;q&gt;</a> que trabalharemos no próximo item.</p>
+            
+            <br>
+            <br>
+            
+            <a name="tagQ"></a><br>
+            <h2>Tag: <span>&lt;Q&gt;</span></h2><br>
+            <p>A tag &lt;q&gt; é usada para indicar citações <n>CURTAS</n> (ou seja, citações que precisam ser exibidas dentro de um parágrafo).</p>
+            <P>Os navegadores geralmente colocam o texto &lt;q&gt; entre aspas.</p>
+            <p>Se a citação se estender por várias linhas, você deve usar a <a href="#tagBLOCKQUOTE">tag &lt;blockquote&gt;</a>. A maioria dos navegadores envolve o texto em bloco como texto recuado.</P><br>                
+            <figure class="fc"><img src="img/qsint.jpg" alt="Sintaxe da tag <q>"></figure><br><br>
+            <p>Podemos também, fazer uso do atributo <span class="atr">cite</span> que conterá o link que contém a citalção.</p>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExQ.jpg" alt="Exemplo <q>"></figure>
+            <br><p>Resultado final:</p><br>
+            
+            <p style="color: rgb(255, 51, 0);"><cite>Sean Stephenson</cite> said <b><q cite="http://seanstephenson.com">YOU'LL ALWAYS HAVE AN EGO. THE MOMENT YOU FORGET THAT, IT WILL START RUNNING THE SHOW</q></b> and I tend to agree.</p>
+
+            <br>
+            <br>
+            <br>
+            <a name="tagABBR"></a><br>
+            <h2>Tag: <span>&lt;ABBR&gt;</span></h2><br>
+            <p>O Elemento HTML &lt;abbr&gt; (ou <i>Elemento de Abreviação HTML</i>) representa uma abreviação e opcionalmente fornece uma descrição completa para ela. Se presente, o atributo title deve conter a descrição completa e apenas ela.</p>
+            <p><big>Nota:</big> Quando presente, o número gramatical (singular/plural) do texto no atributo <span class="atr">title</span>, deve ser correspondente ao do conteúdo do elemento &lt;abbr&gt;. Isso também deve ocorrer no caso das linguagens com mais de dois números gramaticais (por exemplo, em árabe não há somente palavras no singular e plural, mas tem também uma categoria dual).</p>
+            <p>Sintaxe:</p>
+            <figure class="fc"><img src="img/abbrsint.jpg" alt="Sintaxe <abbr>"></figure>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExAbbr.jpg" alt="Exemplo <abbr>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 75%;
+                        margin-left: 12.5%;
+                        ">
+                <big>
+                    <center>
+                        <p><abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem de marcação utilizada na construção de páginas na Web."</p>
+                    </center>
+                </big>
+            </div>
+            <br><p>Efeito causado na prática:</p><br>
+            <figure class="fc">
+                <video width="80%" controls style="box-shadow: 5px 5px 20px #000">
+                    <source src="vid/abbrNaPrat.mp4" type="video/mp4">
+                </video>
+            </figure><br><br>
+
+            <a name="tagADDRESS"></a><br>
+            <h2>Tag: <span>&lt;ADDRESS&gt;</span></h2><br>
+            <p>A tag &lt;address&gt; define as informações de contato do autor / proprietário de um documento ou artigo.</p>
+            <p>A informação de contato fornecida por um conteúdo do elemento &lt;address&gt; pode tomar qualquer forma que é apropriada para o contexto, e pode incluir qualquer tipo de informação de contato necessária, como endereço físico, URL, email, telefone, mídia social, coordenadas geográficas, por aí vai. Deve incluir o nome da pessoa, grupo, ou organização para qual as informações de contato se referem.</p>
+            <p>&lt;address&gt; pode ser usado em uma variedade de contextos, como fornecer informação de contato de uma empresa no <a href="#tagSemâ">header</a> da página, ou indicar o autor de um artigo incluindo um elemento &lt;address&gt; dentro do <a href="#tagSemâ">&lt;article&gt;&lt;/article&gt;</a></p><br>
+            <p><big>Notas de Uso:</big></p>
+            <ul style="
+                        margin-left: 4%;
+                        margin-right: 2%;">
+                <li>Para representar um endereço arbitrário, um que não é relacionado à informação para contato, use um elemento &lt;p&gt; ao invés do elemento &lt;address&gt;.</li>
+                <li>Este elemento não deve conter mais informação além da informação de contato, como uma data de publicação (a qual pertence ao elemento <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/time" target="_blank">&lt;time&gt;</a>).</li>
+                <li>Tipicamente um elemento &lt;address&gt; pode ser posicionado dentro do elemento <a href="#tagSemâ">&lt;footer&gt;</a> da seção atual, se houver um.</li>
+            </ul>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/addresssint.jpg" alt="Sintaxe <address"></figure>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExAddress.jpg" alt="Exemplo <address>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 75%;
+                        margin-left: 12.5%;
+                        ">
+                <big>
+                    <center>
+                        <address>
+                            Você pode entrar em contato conosco em:<br>
+                            <a href="https://irati.ifpr.edu.br/">IFPR - Campus Irati</a><br>
+                            R. Pedro Koppe, 100 - Vila São João<br>
+                            84.507-302<br>
+                            (42) 2104-0200<br>
+                            Irati - PR
+                          </address>
+                    </center>
+                </big>
+            </div>
+            <br><br>
+
+            <a name="tagCITE"></a><br>
+            <h2>Tag: <span>&lt;CITE&gt;</span></h2><br>
+            <p>A tag &lt;cite&gt; representa uma referência a um trabalho artístico. Deve incluir o título do trabalho ou uma URL de referência, que pode ser em uma forma abreviada de acordo com as convenções usadas para a adição dos metadados de citação.</p>
+            <p>O texto no &lt;cite&gt; elemento geralmente é processado em itálico.</p><br>
+            <p><big>Notas de Uso:</big></p>
+            <ul style="
+                        margin-left: 4%;
+                        margin-right: 2%;">
+                <li>Um trabalho criativo deve conter uma citação de um livro, um documento, um ensaio, um poema, um filme, um programa de televisão, um videogame, uma escultura, uma pintura, uma produção cinematográfica, um jogo, uma ópera, um musical , uma exibição, um relatório de um caso legal, um programa de computador, um site, uma página da web, um post de um blog ou comentário, um post em um fórum ou um comentário no mesmo, um tweet, uma obra ou discurso , etc.</li>
+                <li>O W3C específicou que alguns estados, para referenciar um trabalho criativo, deve incluir o nome do autor, enquanto um WHATWG específico que não deve ser incluído o nome do autor sob nenhuma circustância.</li>
+                <li>Use o atributo <span class="atr">cite</span> em um elemento &lt;blockquote&gt; ou &lt;q&gt; para referenciar uma fonte online.
+                </li>
+            </ul>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/citesint.jpg" alt="Sintaxe <cite>"></figure>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExCite.jpg" alt="Exemplo <cite>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 75%;
+                        margin-left: 12.5%;
+                        ">
+                <big>
+                    <center>
+                        <p>Mais informações podem ser encontradas em <cite>[ISO-0000]</cite>.</p>
+                    </center>
+                </big>
+            </div>
+            <br><br>
+            
+            <a name="tagBDO"></a><br>
+            <h2>Tag: <span>&lt;BDO&gt;</span></h2><br>
+            <p>A tag &lt;bdoe&gt; (<i>bidirectional override</i>) é usada para substituir a direcionalidade atual do texto. Isso faz com que a direcionalidade dos objetos seja ignorada em favor da direcionalidade especificada</p><br>
+            <p><big>Atributo</big> <span class="atr"></span></p>
+            <h3 style="margin-right: 2%;"><span style="font-size: 1.3em;">&#10149;</span> &lt;dir&gt; <span style="font-size: 1.3em;">&#10170;	</span><span style="font-size: 16px;">Determina a direção do texto neste elemento. Os valores possíveis são:</span></h3><br>
+            <table class="info-table" style="margin-left: 5%;">
+                <tr>
+                    <th>Valor:</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td><span class="atr">ltr</span></td>
+                    <td>Indica que o texto ficará da <big>Esquerda para a Direita</big> (<span class="CR">L</span>eft-<span class="CR">T</span>o-<span class="CR">R</span>ight).</td>
+                </tr>
+                <tr>
+                    <td><span class="atr">rtl</span></td>
+                    <td>Indica que o texto ficará da <big>Direita para a Esquerda</big> (<span class="CR">R</span>eft-<span class="CR">T</span>o-<span class="CR">L</span>ight).</td>
+                </tr>
+            </table>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/bdosint.jpg" alt="Sintaxe <bdo>"></figure>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExBdo.jpg" alt="Exemplo <bdo>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 50%;
+                        margin-left: 25%;
+                        ">
+                <big>
+                    <center>
+                        <p>Este texto ficará da esquerda para a direita.</p>
+                        <p><bdo dir="rtl">Este texto ficará da direita para a esquerda.</bdo></p>
+                    </center>
+                </big>
+            </div>
+            <br><br>
+
+            
+            <a name="tagCODE"></a><br>
+            <h2>Tag: <span>&lt;CODE&gt;</span></h2><br>
+            <p>A tag &lt;code&gt; apresenta seu conteúdo estilizado de maneira a indicar que o texto é um pequeno fragmento de código. Por padrão, o conteúdo é exibido utilizando a fonte monoespaçada padrão do <abbr title="Ou apenas agente de usuário, é um programa de computador que representa uma pessoa, por exemplo, um navegador em um contexto da web.">user agent's</abbr></p>
+            <p>Ou seja, tag &lt;code&gt; é usada para definir um pedaço de código de computador. O conteúdo interno é exibido na fonte monoespaçada padrão do navegador.</p>
+            <p><big>Dica:</big> esta tag não está obsoleta. No entanto, é possível obter um efeito mais rico usando CSS</p>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/codesint.jpg" alt="Sintaxe <code>"></figure>
+            <br><p>Exemplo:</p><br>
+            <figure class="fc"><img src="img/cdgExCode.jpg" alt="Exemplo <code>"></figure>
+            <br><p>Resultado:</p><br>
+            <figure class="fc"><img src="img/-res-cdgExCode.jpg" alt="Resultado <code>"></figure>
+            <p style="text-align: right;">Exemplo adaptado de: <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_code">https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_code</a></p>
+            <br><br>
+            <p><big>Compatibilidade com Navegadores</big></p><br>
+            <figure class="fc" style="width: 100%;"><img src="img/compartCode.jpg" alt="Compatibilidade com navegadores da tag <code>"></figure>
+            
+            <br><br>
+            <a name="tagPRE"></a><br><br>
+            <h2>Tag: <span>&lt;PRE&gt;</span></h2><br>
+            <p>O marcador &lt;pre&gt; (<i>"Preformatted Text Element"</i>) ou texto pré-formatado, é utilizado para inserir um conteúdo que se deseja seja visualizado do modo como foi editado. Para destacar o conteúdo a fonte visualizada é <span style="font-family: monospace;">"monospace"</span>.</p>
+            <p>As tags &lt;p&gt;&lt;/p&gt; e &lt;br&gt; não devem ser utilizadas, pois descaracterizam as funções da tag &lt;pre&gt;&lt;/pre&gt;</p>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/presint.jpg" alt="Sintaxe <pre>"></figure>
+            <br><p>Exemplo 1)</p><br>
+            <figure class="fc"><img src="img/cdgExPre.jpg" alt="Exemplo <pre>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 50%;
+                        margin-left: 25%;
+                        ">
+                <big>
+                    <center>
+                        <pre>
+                            p {
+                                background: #000000;
+                                color: #FFFFFF;
+                                margin-left: 0px;
+                                padding: 10px;
+                                text-align: left;
+                            }</pre>    
+                    </center>
+                </big>
+            </div><br>
+            <p>Exemplo 2)</p>
+            <p>Se fizermos uma sutil alteração na IDENTAÇÃO deste mesmo código:</p><br>
+            <figure class="fc"><img src="img/cdgExTwoPre.jpg" alt="Exemplo <pre>"></figure>
+            <br><p>Que resulta num aspecto visual consideravelmente diferente do que o anterior, observe:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 50%;
+                        margin-left: 25%;
+                        ">
+                <big>
+                    <center>
+                        <pre>
+            p {
+                background: #000000;
+                color: #FFFFFF;
+                margin-left: 0px;
+                padding: 10px;
+                text-align: left;
+            }</pre>    
+                    </center>
+                </big>
+            </div>
+
+            <br><br>
+            <a name="tagKBD"></a><br><br>
+            <h2>Tag: <span>&lt;KBD&gt;</span></h2><br>
+            <p>O marcador &lt;kbd&gt; (<i>"Keyboard Input Element"</i>) ou chave(s) de entrada ou comando(s) é utilizado para orientar usuários em instruções normalmente "on line", ou impressas. Para destacar o(s) comando(s) a fonte visualizada é <span style="font-family: monospace;">"monospace"</span>.</p>
+            <p>O elemento HTML representa uma extensão de texto embutido denotando a entrada textual do usuário a partir de um teclado, entrada de voz ou qualquer outro dispositivo de entrada de texto. Por convenção, o padrão do agente do usuário é renderizar o conteúdo de um elemento usando sua fonte monoespaçada padrão, embora isso não seja obrigatório pelo padrão HTML.</p><br>
+            <p><big>Notas de Uso:</big></p><br>
+            <p>Outros elementos podem ser usados ​​em conjunto &lt;kbd&gt; para representar cenários mais específicos:
+            </p>
+            <ul style="
+                        margin-left: 4%;
+                        margin-right: 2%;">
+                <li>Aninhar um &lt;kbd&gt; elemento dentro de outro &lt;kbd&gt; elemento representa uma chave real ou outra unidade de entrada como uma parte de uma entrada maior.</li>
+                <li>Aninhar um &lt;kbd&gt; elemento dentro de um <abbr title="O elemento HTML é usado para incluir o texto embutido que representa a saída de amostra (ou entre aspas) de um programa de computador. Seu conteúdo é normalmente renderizado usando a fonte monoespaçada padrão do navegador
+                    
+Para ler mais: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp">&lt;samp&gt;</abbr> elemento representa a entrada que foi ecoada de volta para o usuário pelo sistema.</li>
+                <li>Aninhar um &lt;samp&gt; elemento dentro de um &lt;kbd&gt; elemento, por outro lado, representa uma entrada baseada no texto apresentado pelo sistema, como nomes de menus e itens de menu, ou nomes de botões exibidos na tela.</li>
+            </ul><br>
+            <p><big>Dica:</big> esta tag não está obsoleta. No entanto, é possível obter um efeito mais rico usando CSS</p>
+            <br><p>Sintaxe:</p>
+            <figure class="fc"><img src="img/kbdsint.jpg" alt="Sintaxe <kbd>"></figure>
+            <br><p>Exemplo 1)</p><br>
+            <figure class="fc"><img src="img/cdgExKbd.jpg" alt="Exemplo <kbd>"></figure>
+            <br><p>Resultado:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 80%;
+                        margin-left: 10%;
+                        ">
+                <big>
+                    <center>
+                        <p>Para preencher várias células de uma planilha Excel da Microsoft ou Calc da Organização OpenOffice, com o mesmo valor <kbd>marcam-se</kbd> as <kbd>células</kbd> a serem preenchidas, independente de estarem ou não juntas <kbd>digite</kbd> então o <kbd>valor</kbd> e a seguir aperte a tecla <kbd>Crtl</kbd> e depois a tecla <kbd>Enter</kbd>.</p>
+                    </center>
+                </big>
+            </div><br><br>
+            <p>Exemplo 2)</p>
+            <p>Nesse exemplo, vamos usar um pequeno trecho em CSS e demonstrar, na prática, uma utilidade muito legal para essa tag html.</p><br>
+            <p>Usaremos o seguinte código HTML:</p><br>
+            <figure class="fc"><img src="img/cdgEx2KbdHTML.jpg" alt="Exemplo 2 - HTML <kbd>"></figure>
+            <br><p>Que resulta no seguinte aspecto visual, observe:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 80%;
+                        margin-left: 10%;
+                        ">
+                <big>
+                    <center>
+                        <p>Por favor, pressione <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> para renderizar novamente a página</p>
+                    </center>
+                </big>
+            </div><br><br>
+            <p>Agora, usaremos o seguinte código CSS: <big><font color="red">(NÃO é necessário compreendê-lo no momento!!)</font></big></p><br>
+            <figure class="fc"><img src="img/cdgEx2KbdCSS.jpg" alt="Exemplo 2 - CSS <kbd>"></figure>
+            <br><p>E agora, unindo o HTML ao CSS, temos o seguinte efeito:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 80%;
+                        margin-left: 10%;
+                        ">
+                <big>
+                    <center>
+                        <p>Por favor, pressione <kbd class="tecla">Ctrl</kbd> + <kbd class="tecla">Shift</kbd> + <kbd class="tecla">R</kbd> para renderizar novamente a página</p>
+                    </center>
+                </big>
+            </div><br><br>
+            <p>Extra:</p><br>
+            <div style="border: 2px solid #000;
+                        padding: 1%;
+                        width: 50%;
+                        margin-left: 25%;
+                        ">
+                <big>
+                    <center>
+                        <p>Press <kbd class="tecla">Ctrl</kbd> + <kbd class="tecla">C</kbd> para copiar o texto (Windows).</p><br>
+                        <p>Press <kbd class="tecla">Cmd</kbd> + <kbd class="tecla">C</kbd> para copiar o texto (Mac OS).</p>
+
+                    </center>
+                </big>
+            </div><br>
+            <br><a name="tagSemâ"></a><br>
+            <h2>Conteúdo Extra!</h2><br>
+            <details>
+                <summary>O que são Tags Semânticas e quais são elas?</summary><br>
+                <div style="overflow: hidden;"><iframe style="  width: 80%;
+                                                                height: 200px;
+                                                                margin-left: 10%;
+                                                                border: 2px solid #000"
+                src="tagsSemanticas.html" frameborder="0"></iframe>
+                <br><br>
+                <p id="am" style="text-align: center; color:red; margin:0; border: 5px outset red; padding: 1.5%;  cursor: pointer; width: 40%; margin-left:30%; font-size: 18px; "><a href="tagsSemanticas.html" target="_blank">CLIQUE AQUI PARA AMPLIAR!!</a></p><br>
+                </div>
+            </details>
+            <br><br>
+            <div style="border: 5px dashed #F00 ;"></div>
+            <br><br><br>
+            
+            <div id="citacoes">
+                <ul>
+                    <b style="font-family: 'Rock Salt', cursive;">CITAÇÕES</b>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del</a> - acesso em 11/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tag_ins.asp">https://www.w3schools.com/tags/tag_ins.asp</a> - acesso em 11/09/2021</li>
+                    <li><a href="https://www.portaldefinancas.com/html/sub.html">https://www.portaldefinancas.com/html/sub.html</a> - acesso em 11/09/2021</li>
+                    <li><a href="https://www.portaldefinancas.com/html/sup.html">https://www.portaldefinancas.com/html/sup.html</a> - acesso em 11/09/2021</li>
+                    <li><a href="https://www.techonthenet.com/html/elements/blockquote_tag.php">https://www.techonthenet.com/html/elements/blockquote_tag.php</a> - acesso em 11/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tag_blockquote.asp">https://www.w3schools.com/tags/tag_blockquote.asp</a> - acesso em 11/09/2021</li>
+                    <li><a href="https://www.quackit.com/html_5/tags/html_q_tag.cfm">https://www.quackit.com/html_5/tags/html_q_tag.cfm</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/abbr">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/abbr</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tag_address.asp">https://www.w3schools.com/tags/tag_address.asp</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/address">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/address</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.techonthenet.com/html/elements/address_tag.php">https://www.techonthenet.com/html/elements/address_tag.php</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/cite">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/cite</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tag_cite.asp">https://www.w3schools.com/tags/tag_cite.asp</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/bdo">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/bdo</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/User_agent">https://developer.mozilla.org/en-US/docs/Glossary/User_agent</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tag_code.asp">https://www.w3schools.com/tags/tag_code.asp</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/code">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/code</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.portaldefinancas.com/html/pre.html">https://www.portaldefinancas.com/html/pre.html</a> - acesso em 12/09/2021</li>
+                    <li><a href="https://www.portaldefinancas.com/html/kbd.html">https://www.portaldefinancas.com/html/kbd.html</a> - acesso em 13/09/2021</li>
+                    <li><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_kbd">https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_kbd</a> - acesso em 13/09/2021</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd</a> - acesso em 13/09/2021</li>
+                </ul>
+            </div>
+            <br><br>
+            <p><big>Ultima modificação em</big>: 13/09/2021 às 02:42, horário oficial de Brasilia - Brasil</b></p><br>
+            <footer>
+                <object width="100%" data="rodapéFinal.html"></object>
+            </footer>   
+        </div>
+    </body>
+</html>
