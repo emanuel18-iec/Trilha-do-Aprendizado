@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RDE06</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="conteudoPrincipal">
+            <a name="topo"></a>
+            <h1>Síntese sobre Softwares de Versionamento <span style="font-size: 18px; font-family: 'Cherry Cream Soda', cursive;">(RDE 06)</span></h1><br>
+            <details style="text-align: right;">
+                <summary>Atalhos</summary><br>  
+                <ul style="list-style: none;">
+                    <li><a href="#definicao">O que é?</a></li>
+                    <li><a href="#tipos">Tipos de Software de Controle de Versão</a></li>
+                    <li><a href="#git">GIT</a></li>
+                    <li><a href="#gitHub">GIT HUB</a></li>
+                    <li><a href="#prepAmb">Preparando o ambiente</a></li>
+                    <li><a href="#criarRep">Como criar um repositório no Git Hub!</a></li>
+                    <li><a href="#comandos">Comandos GIT</a></li>
+                    <li><a href="#manipRep">Manipulando um Repositório do Git Hub!</a></li>
+                    <li><a href="#clonRep">Clonando um Repositório</a></li>
+                    <li><a href="#PreexRep">Projetos Pré-Existentes</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#desen">Sobre o Desenvolvedor</a></li>
+                    
+                </ul>
+            </details><br><br>
+            <a name="definicao"></a>
+            <h2>O que é?</h2><br>
+            <p>É um sistema que tem por objetivo realizar o controle de versões de um código, documentos ou de qualquer outro tipo de arquivo e pode ser utilizado por um desenvolvimento ou por uma equipe de desenvolvedores.</p>
+            <br>
+            <p>Geralmente quando vamos desenvolver um projeto ou realizar uma atividade, geralmente criamos uma pasta e dentro da mesma, colocamos o(s) devido(s) arquivo(s) e/ou documento(s), como podemos reparar na ilustração abaixo.</p><br>
+            <figure class="container-img">
+                <img src="img/img1.png" class="imgDef" alt="Uma representação de um computador, uma representação de um arquivo HTML e uma representação de um pasta de computador">
+            </figure>
+            <br><br>
+            <p>Caso, por exemplo, se trate de uma atividade na qual seja necessário entregar um software, pode-se ter a necessidade de realizar algumas correções ou até mesmo, realizar alguma atualização no(s) arquivo(s), como o incremento de novas funcionalidades no mesmo. Sendo assim, gera uma segunda versão que é um aprimoramento da primeira.</p><br>
+            <figure class="container-img">
+                <img class="imgDef" src="img/img2.png" alt="Uma representação de um computador, duas representações de um arquivo HTML e uma representação de um pasta de computador">
+            </figure>
+            <br><br>
+            <p>Porém, se o software for de um projeto como para um TCC ou até mesmo for uma aplicação pronta, o arquivo pode vir a passar por constantes atualizações, resultando sempre em novas versões e consequentes novos arquivos</p><br>
+            <figure class="container-img">
+                <img class="imgDef" src="img/img3.png" alt="Uma representação de um computador, duas representações de um arquivo HTML e uma representação de um pasta de computador">
+            </figure>
+            <br><br>
+            <p>E pode ser que isso se estenda por mais inumeras vezes, resultando em inumeras versões. Dessa forma é muito complicado manter um controle e gerenciar de forma fácil e prática todas essas versões.</p>
+            <p>Com isso, entram em cena, os <b>SOFTWARES DE VERSIONAMENTO</b> que, através de um<span class="dest">  REPOSITÓRIO LOCAL </span>, farão todo o gerenciamento através do<span class="dest"> Histórico de Versões </span>.</p><br>
+            <figure class="container-img">
+                <img style="width: 40%;" src="img/img4.png" alt="Uma representação de um servidor, duas representações de um arquivo HTML e uma representação de um pasta de computador">
+            </figure>
+            <br>
+            <p>Dessa forma, o projeto agora estará <i>versionado</i>, ou seja, em cada arquivo constarão todas as alterações que o mesmo passou.</p>
+            <p>Porém, quanto o projeto é desenvolvido por uma equipe de pessoas ou de programadores, o Repositório Local acaba não sendo muito util. Dessa forma, tem-se os<span class="dest">  REPOSITÓRIO REMOTOS </span>, onde, o desenvolvedor ou a equipe de desenvolvedores terá um servidor específico para trabalhar e gerenciar o repositório, fazendo uso de um Software de Versionamento, que vai gerenciar tanto o Repositório Local, como o Repositório Remoto, fazendo com que todos os arquivos que estiveres em um dos repositórios, estejam também no outro e vice-versa.</p>
+            <figure class="container-img">
+                <img style="width: 40%;" src="img/img6.png" alt="Uma representação de um computador, duas representações de um arquivo HTML e uma representação de um pasta de computador">
+            </figure>
+            <br>
+            <p>No conjunto, o Repósito Local e o Repósito Remoto trabalharia mais ou menos da forma que ilustra a figura abaixo:</p>
+            <br>
+            <figure class="container-img" style="background-color: rgb(43, 168, 226); margin-left: 5%; margin-right: 5%;">
+                <br>
+                <img class="imgDef" src="img/img4.png" alt="Uma representação de um computador, duas representações de um arquivo HTML e uma representação de um pasta de computador">
+                <img style="width: 12%;" src="img/img5.png" alt="Uma globo terrestre envolto por duas setas amarelas">
+                <img class="imgDef" src="img/img6.png" alt="Uma representação de um computador, duas representações de um arquivo HTML e uma representação de um pasta de computador">
+                <br><br>
+            </figure><br><br>
+            <p>É muito complicado realizar o gerenciamento de versões de um arquivo. Porém, é ainda mais complicado e complexo quando se trata de mais de uma máquina trabalhando no mesmo repositório. Assim, caso não haja o uso de um Software de Versionamento e se trate de um projeto que trabalhe com o acesso dos usuários aos arquivos, a chance de algum arquivo ser modificado ou excluido indevidamente é muito alta</p>
+            <p>Analise a situação disposta a seguir:</p><br>
+            <figure class="container-img">
+                <img style="width: 90%;" src="img/situação-exemplo-aula.jpeg" alt="Uma representação de um computador, duas representações de um arquivo HTML e uma representação de um pasta de computador">
+            </figure>
+            <br>
+            <p>Nela, notamos a presença de dois usuários: o<span class="letras"> A </span> e o<span class="letras"> B </span>, onde ambos trabalham no mesmo projeto porém cada um deles possui o seu Repositório Local.</p>
+            <p>Ambos os usuários, têm ciencia das alterações que estão sendo realizadas porque o Software realiza esse controle de versão</p>
+            <p>No entanto, quando os usuários forem sincronizar, o Software irá controlar as ações, isto é, ele vai gerenciar quais ações dos usuários podem ser realizadas ou não e vai notificar, inclusive, caso as ações não sejam de fato realizadas no Repositório Remoto.</p>
+            <p>A partir da sincronização dos Repositórios Locais, cria-se uma <span class="dest">Versão Corrente</span> que vai se distribuida para os usuários, que têm ciencia das alterações que form feitas.</p>
+            <p>Assim, fica muito mais fácil e produtivo trabalhar em projetos em equipe utilizando-se dos Softwares de Versionamento. Além de eliminar possíveis desencontros, de alguém acidentalmente apagar um arquivo ou alterar algo indevidamente.</p><br><br>
+
+            <a name="tipos"></a>
+            <h2>Tipos de Software de Controle de Versão</h2><br>
+            <table>
+                <tr style="text-align: center; font-weight: bold; background-color: rgba(131, 131, 131, 0.658);">
+                    <td>CENTRALIZADO</td>
+                    <td>DISTRIBUÍDO</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Possui um repositório central em um servidor com controle de versões</td>
+                    <td>Possui um repositório local com o controle de versões. Ou seja, o usuário pode trabalhar localmente e apenas fazer a atualização apenas quando concluir.</td>
+                </tr>
+                <tr>
+                    <td>Atualizações no Repositório Central (ou Repositório Remoto)</td>
+                </tr>
+                <tr>
+                    <td><span class="und">Dependente</span> do servidor: se o servidor parar, todo o projeto que está sendo desenvolvido também para!</td>
+                    <td><span class="und">Independente</span> do servidor: se o servidor parar, todo o projeto que está sendo desenvolvido também para!</td>
+                </tr>
+                <tr>
+                    <td>Exemplo de software: <i>Subversion</i></td>
+                    <td>Exemplo de softwares: <i>Mercurial</i> e <i>Git</i></td>
+                </tr>
+            </table>
+            <br><br>
+
+            <a name="git"></a>
+            <h2>GIT</h2><br>
+            <img class="iesq" src="img/git.png" alt="Git Logo">
+            <p>É um software livre de versionamento que surgiu para o desenvolvimento do Kernel do Linux, foi projetado e desenvolvido por <a href="https://is.gd/b3wt0K" target="_blank">Linus Torvallds</a>, em 2005</p>
+            <p>Cada diretório de trabalho do Git é um repositório com um histórico completo e habilidade total de acompanhamento das revisões, não dependente de acesso a uma rede ou a um servidor central.</p><br>
+            <img class="dile" src="img/torvalds.jpg" alt="Linus Torvalds"><br><br><br>
+            <p style="font-style: italic;">I'm an egotistical bastard, and I name all my projects after myself. First Linux, now git.</p><br>
+            <p>Sou um bastardo egoísta, e dou o meu nome a todos os meus projectos. Primeiro o Linux, agora o git.</p>
+            <br><br><br>
+
+            <a name="gitHub"></a>
+            <H2>GIT HUB</H2>
+            <img style="float:left;" src="img/git-hub-mascote.png">    
+            <img class="iesq" style="width: 20%; margin-right:5%;" src="img/GitHub-logo.png" alt="Git Hub Logo">
+
+            <ul><br>
+                <li>Plataforma de hospedagem de código-fonte e arquivos com controle de versão</li><br></ul><ul>
+                <li>Surgiu em 2008 e foi adquirido em 2018 pela Microsoft, por US$ 7,5 bilhões</li><br>
+                <li>≈ 100 milhões de projetos</li><br> 
+                <li>≈ 56 milhões de usuários</li><br>
+                <li>OctoCat, mascote do Git Hub:</li>
+            </ul>
+            <br><br><br>
+            <img src="img/git.png" style="width: 15%; float: right;" alt="Logo GIT">
+
+            <a name="prepAmb"></a>
+            <h2>Preparando o ambiente</h2><br>
+            <h3>GIT</h3><br><br>
+            <div class="sec-down">
+                <a class="down" href="https://git-scm.com/download/" target="_blank">Download no Site Oficial</a>
+                <a class="down" style="margin-left: 10%;" href="softwares/setup-GIT[gEmanuel].zip" type="application/zip" download="setup-GIT[gEmanuel].zip">Download do arquivo para Windows</a>
+            </div>
+            <br><br><br><img src="img/GitHubDesktop-logo.png" style="width: 15%; float: right;" alt="Git Hub Desktop Logo"><br>
+            
+            <h3>GitHub Desktop</h3><br><br>
+            <div class="sec-down">
+                <a class="down" href="https://desktop.github.com/" target="_blank">Download no Site Oficial</a>
+                <a class="down" style="margin-left: 10%;" href="softwares/setup-GitHubDesktopSetup[gEmanuel].zip" type="application/zip" download="setup-GitHubDesktopSetup[gEmanuel].zip">Download do arquivo para Windows</a>
+            </div>
+            <br><br><br><br>
+            <h3>Visual Studio Code</h3>
+            <img src="img/VS.png" style="width: 15%; float: right;" alt="Visual Studio Code Logo">
+            <br><br>
+            <div class="sec-down">
+                <a class="down" href="https://code.visualstudio.com/" target="_blank">Download no Site Oficial</a>
+                <a class="down" style="margin-left: 10%;" href="softwares/setup-VS-Code[gEmanuel].zip" type="application/zip" download="setup-VS-Code[gEmanuel].zip">Download do arquivo para Windows</a>
+            </div>
+            <br><br><br><br>
+            <h3>Git Hub</h3><br><br>
+            <img src="img/GitHub-logo.png" style="float: right; width: 15%;" alt="Git Hub Logo"><div class="sec-down">
+                <a class="down" href="https://github.com/" target="_blank">Criar Conta no Git Hub</a>
+            </div>
+            <br><br><br><br>
+            <h3>Observação:</h3><br>
+            <p>Quando for realizar a instalação do GIT, marque a seguinte opção para que haja a intregação entre o Visual Studio Code e as demais ferramentas que serão utilizadas:</p><br>
+            <p style="font-style: italic; text-align: center;">Use Visual Studio Code as Git's default editor</p><Br>
+                <figure style="text-align: center;">
+                    <img src="img/obs-git.jpeg" alt="Observação GIT">
+                </figure><br>
+                <p>Com tudo instalado e devidamente configurado, vamos manipular o GitHub!</p>
+            
+            <a name="criarRep"></a>
+            <h2>Como criar um repositório no Git Hub!</h2>
+            <p>O primeiro passo vai ser criar um novo repositório. Para isso, clicamos em <span class="italic">File</span>, no menu superior e em seguida em <span class="italic">New Repository...</span> ou então, podemos usar o comando de atalho <span class="italic">"CTRL + N"</span></p><br>
+            <figure style="text-align: center;"><img src="img/newRepository.jpeg" alt="Novo Repositório"></figure><br>
+            <p>Após isso, damos um nome e uma descrição para o nosso repositório.</p>
+            <p>Iremos selecionar a opção <span class="italic">Initialize this repository with a README</span></p>
+            <p>Podemos ainda, escolher entre diversas licenças. Porém, para o curso da disciplina, determinaremos a licença <span class="dest">MIT Lincense</span>, que basicamente, ao ser enviado ao repositório remoto, tornará o repositório como público</p><br>
+            <figure style="text-align: center;">
+                <img src="img/licença.jpeg" alt="Lista de Licenças de um Repositório">
+            </figure><br>
+            <p>Com isso pronto, podemos clicar em <span class="italic">Create Repository</span></p><br>
+            <figure style="text-align: center;"><img src="img/CreateNewRepository.jpeg" alt="Criar Novo Repositório"></figure><br>
+            <p>Note que, automaticamente, alguns arquivos foram criados no diretório especificado no momento da criação do Repositório.</p><br>
+            <figure style="text-align: center;">
+                <img src="img/PrimeiroRepositorioView.jpeg" alt="Como ficou o primeiro repositório">
+            </figure><br>
+            <p>Até o momento, os arquivos criados estão salvos no Repositório LOCAL! Ou seja, não foram publicados ainda!</p>
+            <a name="publishRepository"></a>
+            <p>Para publicar o Repositório, clica em <span class="italic">Publish Repository</span> ou então acessa pelo atalho pressionando as teclas <span class="italic">"CTRL + P"</span></p><br>
+            <figure style="text-align: center;"><img src="img/PublishRepository.jpeg" alt="Publicar o Repositório"></figure><br>
+            <p>Feito isso, desmarque a opção <span class="italic">Keep this code private</span> e clique em <span class="italic">Publish Repository</span></p>
+            <br><figure style="text-align: center;"><img src="img/PublishRepositoryConfig.jpeg" alt="Publicar o Repositório - Configurações"></figure><br>
+            <p>Após o carregamento da tela, vamos acessar o nosso servidor na web, através do site do <a href="https://github.com/" target="_blank">https://github.com/</a>.</p><br>
+            <figure style="text-align: center;">
+                <img style="width: 80%;" src="img/PrimeiroRepositorio-Web.jpeg" alt="Primeiro Repositório na Web">
+                <a style="margin-left: 3%" href="img/PrimeiroRepositorio-Web.jpeg" target="_blank">ampliar</a>
+            </figure><br>
+            <p>Note que, na parte inferior da imagem, é exibido o arquivo <span class=italic>README</span>, que foi o arquivo que haviamos marcado no processo de criação do repositório. Bom, vamos trabalhar com ele muito em breve.</p><br><br>
+
+            <a name="comandos"></a>
+            <h2>Comandos GIT</h2><br>
+            <table id="table2">
+                <tr>
+                    <td class="n1">commit</td>
+                    <td class="n2">torna permanente um conjunto de alterações em um repositório</td>
+                </tr>
+                <tr>
+                    <td class="n1">push</td>
+                    <td class="n2">envia as alterações para o servidor do repositório remoto</td>
+                </tr>
+                <tr>
+                    <td class="n1">fetch</td>
+                    <td class="n2">verifica se o repositório local está sincronizado com o repositório remoto</td>
+                </tr>
+                <tr>
+                    <td class="n1">pull</td>
+                    <td class="n2">sincroniza o repositório local com o repositório remoto, atualizando as versões</td>
+                </tr>
+            </table>
+            <br><br>
+
+            <a name="manipRep"></a>
+            <h2>Manipulando um Repositório do Git Hub!</h2><br>
+            <p>A partir da tela inicial do Git Hub Desktop, clique em <span class="italic">Open in Visual Studio Code</span> ou então assione as teclas <span class="italic">CTRL + SHIF + A</span></p><br>
+            <figure style="text-align: center;">
+                <img src="img/OpenInVSCode.jpeg" alt="Abrir em Visual Studio Code">
+            </figure><br>
+            <p>A exibição ficará da seguinte forma: </p><br>
+            <figure style="text-align: center;">
+                <img style="width: 90%;" src="img/VSCode-openToGit.jpeg" alt="Tela do Visual Studio Code após ser aberto pelo GIT Desktop">
+            </figure><br>
+            <p>A partir disso, vamos acessar o arquivo <span class="italic">README.md</span>, que inicialmente está assim:</p><br>
+            <figure style="text-align: center;">
+                <img src="img/readme.v1.jpeg" alt="Readme.md versão 1">
+            </figure><br>
+            <p>Agora, vamos realizar uma alteração neste texto adicionando a frase: "Realizando o primeiro commit" e depois salvar esse arquivo</p><br>
+            <figure style="text-align: center;">
+                <img src="img/readme.v2.jpeg" alt="Readme.md versão 2">
+            </figure><br>
+            <p>Essa alteração, está salva apenas no Repositório LOCAL!</p>
+            <p>Ao retornar para o Git Hub Desktop, observe como fica a interface:</p><br>
+            <figure style="text-align: center;">
+                <img style="width: 100%;" src="img/readme.v2[view-to-ghdkt].jpeg" alt="Readme.md no Git Hub Desktop">
+            </figure><br>
+            <p>Observe que o software lista as alterações que realizamos, no caso, adicionando a 3ª linha (note o sinal de "+" no início da linha) e o seu respectivo conteúdo</p>
+            <p>Para colocar essa atualização do repositório remoto, vamos realizar um <span class="italic">commit</span>. Para isso, vamos utilizar o espaço do canto inferior esquerdo para fazer isso:</p>
+            <figure style="text-align: center;">
+                <img src="img/espaçoDoCommit.jpeg" alt="Espaço para Realizar o Commit">
+            </figure><br>
+            <p>Agora, no primeiro e menor campo, preenchemos com o nome da atualização. Neste caso, preencherei como "Primeira Versão". No segundo e maior campo, pode-se preencher com uma descrição dessa atualização que, neste caso, vou deixar em branco mesmo. Após isso, é só clicar em <span class="italic">Commit to main</span></p><br>
+            <figure style="text-align: center;">
+                <img src="img/commit-v1-ok.jpeg" alt="Commit da versão 1 pronto">
+            </figure><br>
+            <P>Para finalizar, só falta sincronizar os repositórios local e remoto, clicando em <span class="italic">Push Origin</span> ou então usando-se do atalho <span class=italic>CTRL + P</span>e, após isso, o repositório remoto estará devidamente atualizado.</P><br>
+            <figure style="text-align: center;">
+                <img src="img/pushOrigin.jpeg" alt="Push Origin">
+            </figure><br>
+            <p>Agora vamos observar como ficou isso na prática, lá no site do Git Hub:</p><br>
+            <figure style="text-align: center;">
+                <img style="width: 100%;" src="img/Repositorio-pósAtualização1.jpg" alt="Resultado após atualização 1">
+            </figure><br>
+            <p>Adicionarei mais uma linha dizendo "Realizando o segundo commit" e continuarei a partir dele. </p><br>
+            <figure style="text-align: center;">
+                <img style="width: 100%;" src="img/Repositorio-pósAtualização2.jpg" alt="Resultado após atualização 2">
+            </figure><br>
+            <p>Retornando ao Git Hub Desktop, no canto superior esquerdo temos a opção de ver o histórico de alterações!</p><br>
+            <figure style="text-align: center;">
+                <img src="img/history.jpeg" alt="Acessando o Histórico">
+            </figure><br>
+            <p>E agora, é possível observar todo o histórico de versões que foram realizadas no arquivo</p><br>
+            <figure style="text-align: center;">
+                <img src="img/versions.jpeg" alt="Listagem das Versões">
+            </figure><br>
+            
+            <details>
+                <summary>Versões</summary><br>  
+                <ul class="ul-versões">
+                    <li>Initial commit</li><br>
+                    <figure style="text-align: center;">
+                        <img style="width: 100%;" src="img/Initial_commit.jpeg" alt="Initial commit">
+                    </figure><br><br>
+                    <li>Primeira Versão</li><br>
+                    <figure style="text-align: center;">
+                        <img style="width: 100%;" src="img/Primeira Versão.jpeg" alt="Primeira Versão">
+                    </figure><br><br>
+                    <li>Segunda Versão</li><br>
+                    <figure style="text-align: center;">
+                        <img style="width: 100%;" src="img/Segunda Versão.jpg" alt="Segunda Versão">
+                    </figure><br>
+                </ul>
+            </details>
+            <br>
+            <a name="fetch"></a>
+            <p>Uma grande vantagem de utilizar um software de versionamento, é a possibilidade de mexer em um mesmo arquivo a partir de maquinas diferentes. Sendo assim, caso uma alteração seja realizada de uma máquina diferente, é necessário dar um <span class="italic">fetch</span> para que os arquivos modificados sejam atualizados na outra máquina e assim, tudo fique sincronizado.</p>
+            <figure style="text-align: center;"><br>
+                <img src="img/fetch.jpg" alt="Fetch">
+            </figure><br>
+            
+            <br><br><br>
+            <p>É possível também, realizar um <span class="italic">commit</span> dentro do próprio Git Hub no site. Para isso, vamos acessar o arquivo, dando um clique sobre ele:</p>
+            <figure style="text-align: center;"><br>
+                <img src="img/acessarArquivo.jpeg" alt="Acessar o Arquivo">
+            </figure><br>
+            <p>Acessamos o modo de edição, clicando no lápis:</p>
+            <figure style="text-align: center;"><br>
+                <img style="width: 100%;" src="img/editarReadme.jpg" alt="Editar o Arquivo">
+            </figure><br>
+            <p>Assim, temos a tela de edição:</p>
+            <figure style="text-align: center;"><br>
+                <img style="width: 100%;" src="img/telaEdition.jpeg" alt="Tela para editar o arquivo">
+            </figure><br>
+            <p>No primeiro campo, vamos realiar as nossas atualizações:</p>
+            <figure style="text-align: center;"><br>
+                <img style="width: 100%;" src="img/terceiroCommit.jpg" alt="Editando o terceiro commit">
+            </figure><br>
+            <p>E efetuamos o processo, nomeado de Terceira Versão:</p>
+            <figure style="text-align: center;"><br>
+                <img style="width: 100%;" src="img/efetuandoCommit.jpg" alt="Efetuando o terceiro commit">
+            </figure><br>
+            <p>O arquivo já está pronto para a visualização no Repositório Remoto!</p>
+            <figure style="text-align: center;"><br>
+                <img style="width: 100%;" src="img/posTerceiroCommit.jpg" alt="Resultado após o terceiro commit">
+            </figure><br>
+            <p>Porém, no repositório local, ele não foi atualizado. Sendo assim, vamos dar um <span class="italic"><a href="#fetch">fetch</a></span>.</p>
+            <p>Note que apareceu uma mensagem em destaque que diz que foram feitas alterações diretamente no Git Hub e que os repositórios não estão sincronizados. Portanto, clique em <span class="italic">Pull Origin</span> ou então use as teclas de atalho <span class="italic">CTRL + SHIFT + P</span> e as alterações serão realizadas nos arquivos que estão na sua máquina. Assim sendo, ambos os repositórios voltarão a estar sincronizados.</p>
+            <figure style="text-align: center;"><br>
+                <img src="img/pullOrigin.jpg" alt="Pull Origin">
+            </figure><br><br><br>
+            
+            <a name="clonRep"></a>
+            <h2>Clonando um Repositório</h2>
+            <p>Para clonarmos um repositório, vamos acessar o seu perfil no Git Hub na internet e criar um segundo repositórios seguindo os seguintes passos:</p><br>
+            <ul class="new-rep">
+                <li>Acessar a aba de repositórios</li>
+                <figure style="text-align: center;"><br>
+                    <img src="img/abaRepositorios.jpg" alt="aba de Repositórios">
+                </figure><br>
+                <li>Clica em <span class="italic">new</span></li>
+                <figure style="text-align: center;"><br>
+                    <img src="img/newRepository.jpg" alt="Novo Repositórios">
+                </figure><br>
+                <li>Criamos e configuramos o nosso <span class="italic">Segundo Repositório</span></li>
+                <figure style="text-align: center;"><br>
+                    <img src="img/segundoRepositorio.jpg" alt="Segundo Repositório">
+                </figure><br>
+                <li>O <span class="italic">Segundo Repositório</span> foi criado</li>
+                <figure style="text-align: center;"><br>
+                    <img src="img/segundoRepositorioCriado.jpg" alt="O Segundo Repositório foi criado">
+                </figure><br>
+            </ul>
+            <p>Agora dentro do Git Hub Desktop, realizamos um <span class="italic">fetch</span>. Note que não aconteceu nada!</p>
+            <p>Mas, para clonar o seu repositório (se aplica a repositórios de outros usuários também), acessa o menu do canto superior esquerdo que está escrito <span class="italic">Current Repository</span>, depois em <span class="italic">Add</span> e em seguida em <span class="italic">Clone Repository</span></p>
+            <figure style="text-align: center;"><br>
+                <img src="img/cloneRepository.jpg" alt="Clonar Repositório">
+            </figure><br>
+            <p>Na tela que aparecerá, selecione o <span class="italic">segundoRepositorio</span> e depois finalize clicando em <span class="italic">Clone</span></p>
+            <figure style="text-align: center;"><br>
+                <img src="img/cloneRepositoryConfig.jpg" alt="Clonar Repositório - Configurações">
+            </figure><br>
+            <p>Pronto!, agora o repositório já pode ser utilizado e manipulado localmente.</p><br><br>
+
+            <a name="PreexRep"></a>
+            <h2>Projetos Pré-Existentes</h2><br>
+            <p>Geralmente, desenvolvemos nossos projetos em pastas. Mas, isso não significa que são repositórios locais, visto que, o Git Hub não possui controle sobre elas. Então, para isso, vamos criar um novo repositório que se chamará <span class="italic">DesenvWeb</span> da seguinte forma</p>:
+            <figure style="text-align: center;">
+                <img src="img/DesenvWebRepository.jpg" alt="Repositório DesenvWeb">
+            </figure><br>
+            <p>Agora, vamos colocar os arquivos do projeto dentro dessa pasta que foi criada:</p><br>
+            <figure style="text-align: center;">
+                <img src="img/arquivosAdicionados.jpg" alt="Arquivos Colocados">
+            </figure><br>
+            <p>Ao retornar ao Git Hub Desktop, note que o próprio software já realizou uma varredura no repositório local e listou todas as alterações de arquivos que foram realizadas. Observe:</p><br>
+            <figure style="text-align: center;">
+                <img src="img/varreduraEmDesenvWeb.jpg" alt="Varredura">
+            </figure><br>
+            <p>Observe que na barra lateral, temos a listagem de todos os repositórios. E além disso: note que esse repositório ficou separado dos demais numa aba <span class="italic">Others</span>. Isso se dá, porque a divisão separa os Repositórios Remotos, acima, dos Repositórios Locais, abaixo.</p><br>
+            <figure style="text-align: center;">
+                <img src="img/listagemRepositorios.jpg" alt="Listagem Repositórios">
+            </figure><br>
+            <p>Para publicar, é muito simples! Basta realizar um <a href="#publishRepository">Publish Repository</a></p>.
+            <P>Ah, só não esqueça de dar um commit antes ^^</P><br>
+            <figure style="text-align: center;">
+                <img style="width: 100%;" src="img/DesenvWebFINALE.jpg" alt="DESENVWEB FINALE!">
+            </figure><br><br><br>
+
+            <a name="links"></a>
+            <h2>Links</h2>
+            <ul>
+                <li>Repositório <span class="italic">primeiroRepositório</span>: <a href="https://github.com/emanuel18-iec/PrimeiroRepositorio" target="_blank">https://github.com/emanuel18-iec/PrimeiroRepositorio</a></li>
+                <li>Repositório <span class="italic">segundoRepositório</span>: <a href="https://github.com/emanuel18-iec/secundoRepositorio" target="_blank">https://github.com/emanuel18-iec/secundoRepositorio</a></li>
+                <li>Repositório <span class="italic">desenWeb</span>: <a href="https://github.com/emanuel18-iec/DesenWeb" target="_blank">https://github.com/emanuel18-iec/DesenWeb</a></li>
+            </ul><br><BR>
+
+            <a name="desen"></a>
+            <h2>Sobre o Desenvolvedor:</h2>
+            <p>Aluno: <a href="https://github.com/emanuel18-iec" target="_blank">Gabriel Emanuel</a> - 3° Info Manhã</p>
+            <p>Professor e Orientador: Francis Baranoski</p>
+            <p><a href="https://www.youtube.com/watch?v=xjX_lqbN-0o" target="_blank">Vídeo Aula - Softwares de Versionamento</a></p>
+            <p><a href="https://irati.ifpr.edu.br/" target="_blank">Instituto Federal do Paraná - Campus Irati</a></p>
+            <p><a href="https://www.google.com/maps/search/R.+Pedro+Koppe,+100+-+Vila+Sao+Joao/@-25.4920265,-50.6382501,17z/data=!3m1!4b1" target="_blank">R. Pedro Koppe, 100</a> - Vila Sao Joao, Irati - PR, 84507-302</p>
+            <p style="text-align: right;"><a href="#topo">TOPO</a></p>
+        </div>
+    </body>
+</html>

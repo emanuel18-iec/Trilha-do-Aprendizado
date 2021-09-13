@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RDE 07 - Gabriel Emanuel</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <style>
+            .img1{
+                width: 40%;
+                float: right;
+                margin: 2%;
+                margin-right: 0%;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(6, 6, 15);">
+        <div id="conteudoPrincipal">
+            <div id="marc">
+                <a name="topo"></a>
+                <h1>Síntese sobre Branches e Hospedagem <span style="font-size: 18px; font-family: 'Rye', cursive;">(RDE 07)<span><br>Por: Gabriel Emanuel</h1>
+                <details style="text-align: right;">
+                    <summary>Atalhos</summary><br>  
+                    <ul style="list-style: none;">
+                        <li><a href="#branches"><b>BRANCHES</b></a></li>
+                        <li><a href="#novaBranch">Como criar uma nova branch?</a></li>
+                        <li><a href="#merge">Como unir branches?</a></li>
+                        <li><a href="#resolvendoConflito">Resolvendo Conflito</a></li>
+                        <li><a href="#updateMain">Como atualizar branches secundárias a partir da branch principal?</a></li>
+                        <li><a href="#BranchDeBranch">Branch de Branch</a></li>
+                        <li><a href="#hospedagem"><b>HOSPEDAGEM</b></a></li>
+                        <li><a href="#desen">Sobre o Desenvolvedor</a></li>
+
+                    </ul>
+                </details>
+                <img class="img1" src="img/branches.png" alt="Ilustração branches">
+
+                <a name="branches"></a>
+                <h2>BRANCHES</h2>
+                <p>São ramificação de um projeto de software ou de um documento qualquer e tem como objetivo o de desenvolvimento paralelo de:</p>
+                <ul>
+                    <li>novas funcionalidades</li>
+                    <li>correção de problemas</li>
+                    <li>alteração de código</li>
+                </ul><br>
+                <p>Os branches são dividos em:</p>
+                <ul>
+                    <li><b>Branch Master ou Main</b>: braço principal de um projeto em um repositório</li>
+                    <li style="list-style: none; margin-left: 17%;">é a versão que o usuário vai visualizar quando acessar a página</li>
+                    <li style="list-style: none; margin-left: 17%;">versão estável</li><br>
+                    <img style="width:100%;" src="img/branches-master.png" alt="Ilustração Branches Master"><br><br><br>
+
+                    <li><b>Branch Secundária</b>: braço secundário de um projeto em um repositório</li>
+                    <li style="list-style: none; margin-left: 14.5%;">atualizações que vão ocorrendo sem que seja exibida ao usuário</li>
+                    <li style="list-style: none; margin-left: 14.5%;">permite realizar alterações paralelas sem que haja um modificação no conteúdo principal, no branch master.</li>
+                    <li style="list-style: none; margin-left: 14.5%;">para efetivar essas atualizações ao usuário é necessário realizar a mesclagem com o Branch Master</li>
+                    <img style="width:100%;" src="img/branches-secundarios.png" alt="Ilustração Branches Secundário">
+                </ul>
+                <br><br>
+                <p>Acessando o nosso perfil no git hub na web, vamos acessar o <i>PrimeiroRepositorio</i></p>
+                <p>Podemos notar, que o nosso repositório possui apenas 1 branch. Observe:</p>
+                <figure style="text-align:center;">
+                    <img src="img/n°_branches.jpeg" alt="Numero de Branches">
+                </figure>
+                <p>Observe ainda, que no lado esquerdo, possui um menuzinho escrito <i>main</i>. Este é o nosso braço principal do repositório, o Branch Master ou Branch Main</p>
+                <figure style="text-align:center;">
+                    <img src="img/branches_exist.jpeg" alt="Branches Existentes">
+                </figure>
+                <br><br>
+                <p>Visualizado isso, vamos abrir o <i>Git Hub Desktop</i> e vamos criar um novo repositório que se chamará <i>primeiro_site</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/repositorio_primeiro_site.jpeg" alt="Criando o repositório primeiro_site">
+                </figure>
+                <p>Lembrando que o repositório foi criado localmente, na máquina. Para disponibilizá-lo remotamente, vamos clicar em <i>Ctrl + P</i> ou então em <i>Publish repository</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/publish_repository.jpeg" alt="Publicando repositório">
+                </figure>
+                <p>E vamos publicar o nosso repositório: (<i>Lembre-se sempre de desmarcar a opção "Keep this code private", para não deixar o arquivo privado.</i>)</p>
+                <figure style="text-align:center;">
+                    <img src="img/publicando_prisit.jpeg" alt="Publicando repositório">
+                </figure>
+                <p>Acessando o nosso perfil no git hub, podemos notar que o nosso repositório foi criado!</p>
+                <figure style="text-align:center;">
+                    <img src="img/primeiro_site_repositoryPublicado.jpeg" alt="Repositório Publicado">
+                </figure>
+                <p>A partir disso, vamos abrir o nosso repositório no <i>Visual Studio Code</i>, criar um documento HTML chamado de <i>index.html</i> e criar a estrutura básica do código através do atalho <i><b>!</b></i> seguido de <i>Enter</i>.</p>
+                <figure style="text-align:center;">
+                    <img style="width: 100%;" src="img/primeiroSite-html-p1.jpeg" alt="Estrutra HTML criada">
+                </figure><br>
+                <p>Agora vamos commitar essas alterações e em seguida realizar o <i>Push Origin</i>:</p>
+                <figure style="text-align:center;">
+                    <img src="img/commit1.jpg" alt="Commit 1"><br>
+                    <img src="img/pushOrigin-primeiroSite.jpg" alt="Push Origin">
+                </figure>
+                <p>Vamos realizar algumas alterações no documento HTML:</p>
+                <figure style="text-align:center;">
+                    <img style="width: 100%;" src="img/primeiroSite-html-p2.jpg" alt="Página HTML - v2"><br>
+                </figure>
+                <p>Note que ao acessar o GIT HUB Desktop, o software aponta todas as alterações que realizamos no <i>index.html</i></p>
+                <figure style="text-align:center;">
+                    <img style="width: 100%;" src="img/alterações-git.jpg" alt="Alterações na Página HTML"><br>
+                </figure>
+                <p>Vamos realizar o commit e o <i>Push Origin</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/commit2.jpg" alt="Commit 2"><br>
+                    <img src="img/pushOrigin2-primeiroSite.jpg" alt="Push Origin 2">
+                </figure>
+                
+                <a name="novaBranch"></a>
+                <p>Vamos considerar hipoteticamente, que este código seja o código final de um projeto. Caso queíramos, por exemplo, implementar e testar uma nova funcionalidade sem que haja interferência na página que está sendo exibida ao usuário, o mais ideal é criar uma nova branch.</p>
+                <p>Para isso, vamos ao menu superior e clicamos em <i>Current Branch:</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/currentBranch.jpg" alt="Branchs criados">
+                </figure>
+                <p>E agora, para criarmos uma nova branch, clicamos em <i>New Branch</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/newBranch.jpg" alt="Nova Branchs">
+                </figure>
+                <p>Vamos nomeá-la como <i>secundaria-01</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/create-secundaria-01.jpg" alt="Criando a Branch Secundária">
+                </figure>
+                <p>Após criarmos a branch, vamos publicá-la através do comando <i>Publish Branch</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/publish-branch.jpg" alt="Publicando a nova branch">
+                </figure>
+                <p>Visualizando o repositório no navegador, podemos notar que agora ele consta que existem duas branchs<i> <span style="font-size: 14px">(Imagem 01)</i> e podemos ainda, verificar, na lista, que a branch <i>secundaria-01</i> foi criada!<i><span style="font-size: 14px"> (Imagem 02)</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/listagem-branchs.jpg" alt="Quantidade de branches">
+                    <p style="text-align: right;">Imagem 01</p>
+
+                    <img src="img/listagemdetodasbranchs.jpg" alt="Listagem de todas as branches">
+                    <p style="text-align: right;">Imagem 02</p>
+                </figure>
+                <p>Clicando no branch, note que a estrutura dos arquivos são semelhantes a branch main o que faz nos levar a pensar que são duas pastas diferentes com cópias do arquivo. </p>
+                <figure style="text-align:center;">
+                    <img src="img/branch-secundaria-01.jpg" alt="Branch secundária">
+                </figure>
+                <p>Agora, vamos passar a trabalhar na branch secundária:<br><center><img src="img/verif.jpg" alt=""></center></p>
+                <p>Agora, vamos abrir o repositório no <i>Visual Studio Code</i>. Nele, vamos adicionar o seguinte conteúdo:</p>
+                <figure style="text-align:center;">
+                    <img style="width: 100%;" src="img/firstCodeBranchSecundary.jpg" alt="Primeiro código da branch secundária">
+                </figure>
+                <p>Vamos realizar um commit:</p>
+                <figure style="text-align:center;">
+                    <img src="img/commit3.jpg" alt="Commit 3"><br>
+                    <img src="img/PushOrigiin-BS.jpg" alt="Push Origin - branch secundário">
+                </figure>
+                <p>Agora, vamos analisar como ficou a branch main e a branch secundária:</p>
+                <figure style="text-align:center;">
+                    <legend>main</legend>
+                    <img style="width: 100%;" src="img/index-MAIN.jpg" alt="index.html - Main"><br><br>
+                    <legend>secundária</legend>
+                    <img style="width: 100%;" src="img/index-SECUNDARIA.jpg" alt="index.html - Secundária ">
+                </figure>
+                <p>Após isso, vamos criar uma segunda branch secundária que se chamará <i>secundaria-02</i>. Nela, vamos criar um documento HTML e ir alterando algumas coisinhas. No meu caso, ficou assim:</p>
+                <figure style="text-align:center;">
+                    <img style="width: 100%;" src="img/primeiroSite-html-p3.jpg" alt="Página 3">
+                </figure>
+                <p>Realize o commit e o <i>Push Origin</i></p>
+
+                <a name="merge"></a>
+                <h3>Juntando os Branchs</h3>
+                <p>O primeiro passo é escolher a branch que será realizado a mesclagem, neste caso, será a branch principal, a <b>main.</b></p>
+                <figure style="text-align:center;">
+                    <img src="img/acessar-main.jpg" alt="main">
+                </figure>
+                <p>Depois, vá até o menu superior, acesse a opção <i>Branch</i> e logo em seguida clique em <i>Merge into current branch</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/merge.jpeg" alt="merje">
+                </figure>
+                <p>Em seguida, vamos fazer o merge com o <i>Secundario-01</i> e depois em <i>Create a merge commit</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/merge-com01.jpg" alt="merge">
+                </figure>
+                <p>O commit já está criado. Apenas falta publicá-lo!</p>
+                <figure style="text-align:center;">
+                    <img src="img/publishOrigi-merge01.jpg" alt="merje">
+                </figure>
+                <p>Vamos fazer o mesmo procedimento com o <i>Secundario-02</i></p>
+                <p><span style="color:red; font-weight: bold; margin-right: 3%; font-size:30px;">OPS!!</span>Deu conflito!!</p>
+                <figure style="text-align:center;">
+                    <img src="img/merge02.jpg" alt="merje">
+                </figure>
+                <a name="resolvendoConflito"></a>
+                <p>Se clicarmos para ver o conflito, temos esta tela:</p>
+                <figure style="text-align:center;">
+                    <img src="img/merge02-error.jpeg" alt="merge 02">
+                </figure>
+                <p>Observe que a área de conflito está indicada:</p>
+                <figure>
+                    <img style="width: 100%;" src="img/conflito-merge02.jpg" alt="conflito merge 02">
+                </figure>
+                <p>Para resolver esse conflito, vamos clicar em <i>Accept Both Changes</i>, ou seja, Aceiitar Ambas Mudanças</p>
+                <figure>
+                    <img style="width: 100%;" src="img/conflitos-resolvidos.jpg" alt="conflito resolvidos 02">
+                </figure>
+                <p>Voltando para o Git Hub Desktop:</p>
+                <figure style="text-align:center;">
+                    <img src="img/conflitoResolvido.jpg" alt="conflito resolvidos 02">
+                </figure>
+                <p>Clicamos em <i>"Continue merge"</i> e em seguida em <i>"Push Origin"</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/pushorigin...2.jpg" alt="conflito resolvidos 02">
+                </figure>
+                <p>Observe agora que no <b>branch main</b> contém todas as versões que estão em <b>branches secundários</b>. Para verificar, acesse o <i>branch main</i> e abra o arquivo <i>index.html</i></p>
+                <figure style="text-align:center;">
+                    <img style="width: 100%;" src="img/versãoFinal-BranchesUnidos.jpg" alt="Versão Final">
+                </figure>
+                <a name="updateMain"></a>
+                <p>Após realizarmos esse procedimento, o branches principal está atualizado com as versões dos branches secundários. Porém, cada branch secundário, não está sincronizado e igual ao principal. Dessa forma, em cada branche secundário, vamos acessar o menu "Branch" e clicar em <i>"Update from main"</i>. Aplicar o mesmo procedimento tanto no <i>Branch secundario-01</i> tanto para o <i>Branch secundario-02</i></p>
+                <figure style="text-align:center;">
+                    <img src="img/updateFromMain.jpeg" alt="Atualizar Branchs Secundários">
+                </figure>
+                <p>Logo após isso, não esquecer de realizar o <i>Push Origin</i></p>
+                <a name="BranchDeBranch"></a>
+                <p>É possível também, criar uma branch da branch. Até agora, criamos branches que tem como referência a branch main, o braço principal. Porém, é possível criar braços dentro dos próprios braços, como por exemplo, uma branch para a branch <i>secundaria-02</i>, que a chamaremos de <i>secundaria-03</i></p>
+                <p>Para isso, vamos até o <i>secundaria-02</i> e abrimos o menu para a criação de uma nova branch como vínhamos fazendo. Porém, note que dessa vez é possível escolher o diretório base para a nova branch. A configuração da nova branch deverá ficar assim:</p>
+                <figure style="text-align:center;">
+                    <img src="img/criando-secundaria-03.jpg" alt="Criando secundaria-03">
+                </figure>
+                <p>Após realizar o <i>Publich Branch</i>, o novo branch está pronto para ser utilizado no repositório remoto.</p><br><br>
+                <a name="hospedagem"></a>
+                <h2>Hospedagem</h2>
+                <p>É, basicamente, o processo no qual os arquivos HTML e CSS são enviados a um servidor para que se tornem um site acessível a todos os usuários que possuam acesso a Internet</p>
+                <p>Em geral, o serviço de hospedagem é pago. Porém, o Git Hub oferece uma ferramenta gratuita, o <b>GitHub Pages</b>. Para fazer uso desse recurso, basta criar uma conta na plataforma e criar repositórios públicos na mesma. Assim, a URL segue o seguinte padrão: </p><br>
+                <figure style="text-align: center;">
+                    <label>https://nomeusuario.github.io/repositorio</label>
+                </figure>
+                <br>
+                <p>Para hospedarmos um site no git hub e disponibilizá-lo para o acesso de usuários, vamos seguir o seguinte passo a passo:</p>
+                <ul>
+                    <li>Acessar o repositório que será hospedado. Neste caso, usaremos o <i>primeiro_site</i>, que fora desenvolvido nessa aula.</li>
+                    <figure style="text-align:center;">
+                        <img style="width: 100%;" src="img/hospedagem-passo1.jpg" alt="Hospedagem - Passo 1">
+                    </figure>
+                    <li>Acessar a aba de configurações (em inglês, <i>settins</i>).</li>
+                    <figure style="text-align:center;">
+                        <img style="width: 100%;" src="img/hospedagem-passo2.jpg" alt="Hospedagem - Passo 2">
+                    </figure>
+                    <li>Desça a página até encontrar a opção: <b>Git Hub Pages</b></li>
+                    <figure style="text-align:center;">
+                        <img style="width: 100%;" src="img/hospedagem-passo3.jpg" alt="Hospedagem - Passo 3">
+                    </figure>
+                    <li>Clique no link disponibilizado sob o texto <i>Chack it out here!</i>).</li>
+                    <figure style="text-align:center;">
+                        <img style="width: 100%;" src="img/hospedagem-passo4.jpg" alt="Hospedagem - Passo 4">
+                    </figure>
+                    <li>Na página carregada, selecione a branch que você gostaria que aparecesse.</li>
+                    <figure style="text-align:center;">
+                        <img style="width: 100%;" src="img/hospedagem-passo5.jpg" alt="Hospedagem - Passo 5">
+                    </figure>
+                    <li>Majoritariamente, usa-se a branch main, porém, não é uma regra!</li>
+                    <figure style="text-align:center;">
+                        <img style="width: 100%;" src="img/hospedagem-passo6.jpg" alt="Hospedagem - Passo 6">
+                    </figure>
+                    <li>Depois de escolher a branch, basta salvar as configurações, clicando no botão de <i>save</i>, logo após o campo de escolha da branch</li>
+                    <figure style="text-align:center;">
+                        <img style="width: 100%;" src="img/hospedagem-passo7.jpg" alt="Hospedagem - Passo 7">
+                    </figure>
+                    <lI>Note que já aparece em destaque o link da página em destaque. Basta utilizar aquele link para que outros usuários agora acesse o site!!!</lI>
+                    <figure style="text-align:center;">
+                        <img style="width: 100%;" src="img/hospedagem-passo8.jpg" alt="Hospedagem - Passo 8">
+                    </figure>
+                    <li>No nosso caso, o site hospedado ficou assim:</li>
+                    <figure style="text-align:center;">
+                        <img style="width: 100%;" src="img/hospedagem-passo9.jpeg" alt="Hospedagem - Passo 9">
+                    </figure>
+                    <p style="text-align: right;"><a href="https://emanuel18-iec.github.io/primeiro_site/" target="_blank">Site Original no GitHub</a></p>
+                </ul>
+
+                <a name="desen"></a>
+                <h2>Sobre o Desenvolvedor</h2>
+                <p><b>Aluno:</b> <a href="https://github.com/emanuel18-iec" target="_blank">Gabriel Emanuel</a> - 3° Info Manhã</p>
+                <p><b>Professor e Orientador:</b> Francis Baranoski</p>
+                <p><a href="https://youtu.be/ECzsJ0nNzok" target="_blank"><b>Vídeo Aula:</b> Branches e Hospedagem</a></p>
+                <p><a href="https://irati.ifpr.edu.br/" target="_blank"><b>Instituto Federal do Paraná</b> - Campus Irati</a></p>
+                <p><a href="https://www.google.com/maps/search/R.+Pedro+Koppe,+100+-+Vila+Sao+Joao/@-25.4920265,-50.6382501,17z/data=!3m1!4b1" target="_blank">R. Pedro Koppe, 100</a> - Vila São João, Irati - PR, 84507-302</p>
+                <p style="text-align: right;"><a href="#topo">TOPO</a></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+
+p{
+    text-align: justify;
+}
+
+#conteudoPrincipal{
+    margin-left: 10%;
+    width: 80%;
+    border: 5px solid #FFF;
+    background-color: rgba(11, 11, 59, 0.699);
+}
+h1, p{
+    color:#FFF;
+}
+h1{
+    margin-top: 0%;
+    font-family: 'Rye', cursive;
+    text-align: center;
+}
+p{
+    text-indent: 4%;
+    font-family: 'Sniglet', cursive;
+}
+label{
+    padding: 2%;
+    background-color: chartreuse;
+    font-size: 25px;
+    color: RED;
+    text-decoration: underline;;
+}
+#marc{
+    padding:3%;
+    font-family: 'Sniglet', cursive;
+    color: #FFF;
+}

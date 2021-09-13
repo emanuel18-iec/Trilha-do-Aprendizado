@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+			.info-table {
+			    border-spacing: 0;
+    			border-collapse: separate;
+    			width: 100%;
+    			color: #314351;
+    			font-size: 0.857em;
+    			line-height: 1em;
+    			margin-bottom: 17px;
+    			font-family: "museo-sans",sans-serif;
+			}
+			.info-table a {
+    			color: #4183C4;
+    			text-decoration: none;
+			}
+			.info-table a:hover {
+    			color: #2a5886;
+    			text-decoration: none;
+    			background-color: inherit;
+			}
+			.info-table th, .info-table td {
+    			border: 1px solid #BCBABA;
+    			border-top-color: #FFF;
+    			border-right: none;
+    			padding: 8px 20px 8px 23px;
+    			text-align: left;
+    			vertical-align: middle;
+    			background: #EEE;
+    			margin: 0;
+			}
+				.info-table th {
+   				background: #58a7e6;
+   				text-align: left;
+   				font-size: 1.083em;
+   				line-height: 1.538em;
+   				padding: 6px 20px 5px 23px;
+   				color: #ddedfa;
+   				text-shadow: 0px -1px 1px rgba(0, 81, 168, 0.38);
+   				border-color: #2c90df;
+   				font-weight: 900;
+			}
+				.info-table th:last-child {
+   				border-right: 1px solid #BCBABA;
+   				text-align: center;
+			}
+				.info-table td.last, .info-table td:last-child {
+   				border-right: 1px solid #C2CAD0;
+			}
+				.info-table .even td, .info-table tr:nth-child(even) td {
+   				background: #E7E7E7;
+		    }
+
+        </style>
+    </head>
+    <body style="background:rgb(56, 233, 33)">
+		<table class="info-table">
+			<tr>
+				<th colspan="3">Tabela de Produtos</th>
+			</tr>
+			<tr>
+				<td>Categoria</td>
+				<td>Produto</td>
+				<td>Preço</td>
+			</tr>
+			<tr>
+				<td rowspan="3">Eletrodomésticos</td>
+				<td>Geladeira</td>
+				<td>R$ 1.000</td>
+			</tr>
+			<tr>
+				<td>Liquidificador</td>
+				<td>R$ 200</td>
+			</tr>
+			<tr>
+				<td>Batedeira</td>
+				<td>R$ 180</td>
+			</tr>		
+		</table>
+    </body>
+</html>
