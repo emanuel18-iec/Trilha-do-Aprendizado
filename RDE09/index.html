@@ -148,7 +148,7 @@
 
             <a name="IncorpAudio"></a>
             <H2>Incorporando &Aacute;udios.</H2>
-            <p>Para incorporarmos &Aacute;udios em um arquivo HTML, vamosfazer uso de uma plataforma web chamada <i>SoundCloud</i>, dispon&iacute;vel nesse <a href="https://soundcloud.com/" target="_Blank">link</a></p>
+            <p>Para incorporarmos &aacute;udios em um arquivo HTML, vamos fazer uso de uma plataforma web chamada <i>SoundCloud</i>, dispon&iacute;vel nesse <a href="https://soundcloud.com/" target="_Blank">link</a></p>
             <p>Para realizarmos a inserção de uma música a partir deste site, vamos seguir o seguinte passo-a-passo</p>
             <ol>
                 <li class="passSC">Vamos acessar a aba de pesquisa:</li>
@@ -187,10 +187,14 @@
                 <li class="passSC">Agora retornamos ao nosso <i>Visual Code</i> e vamos colar <i>(Ctrl + V)</i> esse código. No meu caso, ficou assim:</li>
                 <figure style="text-align: center;">
                     <img src="img/CtrlV_inVisualCodeDoCodIncorpSoundCloud-pass6.jpg" style="max-width: 100%;" alt="Passo 6">
-                    <details>
-                        <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
-                        <a style="margin-left: 95%;" href="img/CtrlV_inVisualCodeDoCodIncorpSoundCloud-pass6.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
-                    </details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/CtrlV_inVisualCodeDoCodIncorpSoundCloud-pass6.jpg" frameborder="0" style=" width: 100%;
+                height: 732px;
+                max-width: 907px;
+                max-height: 231px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
                 </figure><br>
                 
                 <li class="passSC">Na pr&aacute;tica, o nosso &aacute;udio ficou assim:</li>
@@ -203,29 +207,128 @@
                     <img src="img/repMuscSoundCloud-pass8.jpg" style="max-width: 100%;" alt="Passo 8">
                 </figure><br>
 
-                <li class="passSC">Ainda &eacute; poss&iacute;vel notar a exist&ecirc;ncia de alguns links linc&aacute;veis:</li><br>
-                <figure style="text-align: center;">
-                    <ul style="margin-left:9%; text-align: left;">
-                        <li><img src="img/hiplinkClicSoundClound-pass9.jpg" style="max-width: 100%;" alt="Passo 9"></li><br>
-                        <li><img src="img/hiplinkClicSoundClound_[2]-pass9.jpg" style="max-width: 100%;" alt="Passo 9">
-                        </li><br>
-                        <li><img src="img/hiplinkClicSoundClound_[3]-pass9.jpg" style="max-width: 100%;" alt="Passo 9">
-                        </li><br>
-                        <li><img src="img/hiplinkClicSoundClound_[4]-pass9.jpg" style="max-width: 100%;" alt="Passo 9">
-                        </li><a style="margin-left: 95%;" href="img/hiplinkClicSoundClound_[4]-pass9.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a><br>
-                    </ul>
-                </figure>
+                <li class="passSC">Ainda &eacute; poss&iacute;vel notar a exist&ecirc;ncia de alguns links linc&aacute;veis!</li><br>
             </ol>
             
+            <p>Se analisarmos este código, vemos que as dimens&otilde;es que ele ocupa est&atilde;o dados em porcentagem, no caso da largura, e em pixels, no caso da altura.</p>
+            <figure style="text-align: center;">
+                <img src="img/WidPorcHeigPx-MscSC.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/WidPorcHeigPx-MscSC.jpg" frameborder="0" style=" width: 100%;
+                height: 100%;
+                max-width: 912px;
+                max-height: 224px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure>
+            <br>
+            <p>Podemos alterar esses dois valores para 30&percnt;. Isso significa, na pr&aacute;tica, que a largura e a altura ir&atilde;o ocupar 30&percnt; do espaço que estiver dispon&iacute;vel!</p>
+            <p>Dessa forma, passar&iacute;amos a ter o seguinte c&oacute;digo:</p>
+            <figure style="text-align: center;">
+                <img src="img/WidPorcHeigPorc-MscSC.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/WidPorcHeigPorc-MscSC.jpg" frameborder="0" style=" width: 100%;
+                height: 100%;
+                max-width: 913px;
+                max-height: 224px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure><br>
             
+            <p>E ele, nos retorna o seguinte resultado:</p>
+            <figure style="text-align: center;">
+                <img src="img/tel30%H30%W.jpg" style="max-width: 100%;" alt="Tela"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/tel30%H30%W.jpg" frameborder="0" style=" width: 100%;
+                height: 732px;
+                max-width: 1360px;
+                max-height: 732px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure>
+            <br><br>
+
+            <h2>Incorporando V&iacute;deos</h2>
+
+            <p>Para incorporarmos um v&iacute;deo, vamos fazer uso da plataforma YouTube. Para o nosso exemplo, vamos utilizar o seguinte v&iacute;deo <span style="font-size: 17px;">(No caso, a visualiza&ccedil;&atilde;o ficar&aacute; dessa forma tamb&eacute;m)</span>:</p>
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/fYJl-7jRzuw?start=21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <br><p>Mas, como podemos fazer isso?</p><br>
+            <ol>
+                <li class="passSC">O primeiro passo &eacute; acessar a plataforma do <a href="https:www.youtube.com" target="_Blank">YouTube</a> e escolher o v&iacute;deo que se deseja-se ser incorporado.</li>
+                <figure style="text-align: center;">                
+                    <img src="img/EscolVidYt-pass1.jpeg" style="max-width: 100%;" alt="Passo 1">
+                </figure>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <a style="margin-left: 95%;" href="img/EscolVidYt-pass1.jpeg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+                </details><br>
+
+                <li class="passSC">Ap&oacute;s abrir o v&iacute;deo, clique sobre o bot&atilde;o &ldquo;compartilhar&rdquo;</li>
+                <figure style="text-align: center;">                
+                    <img src="img/BtnCompartVidYt-pass2.jpg" style="max-width: 100%;" alt="Passo 2">
+                </figure><br>
+
+                <li class="passSC">Clique no campo &ldquo;Incorporar&rdquo;:</li>
+                <figure style="text-align: center;">                
+                    <img src="img/BtnIncorpVidYt-pass3.jpg" style="max-width: 100%;" alt="Passo 3">
+                </figure><br>
+
+                <li class="passSC">Copie o código que ser&aacute; exibido na tela, clicando em &ldquo;COPIAR&rdquo;</li>
+                <figure style="text-align: center;">                
+                    <img src="img/btnCopyVidYt-pass4.jpg" style="max-width: 100%;" alt="Passo 4">
+                </figure>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/btnCopyVidYt-pass4.jpg" frameborder="0" style=" width: 100%;
+                                                                                     height: 732px;
+                                                                                     max-width: 1073px;
+                                                                                     max-height: 374px;
+                                                                                     object-fit: cover;
+                                                                                     object-position: center;"></iframe>
+                </details><br>
+
+                <li class="passSC">Feito isso, &eacute;&nbsp; s&oacute; inserir esse c&oacute;digo dentro do arquivo HTML que estamos desenvolvendo!</li>
+                <figure style="text-align: center;">                
+                    <img src="img/CtrlVinVisualCodeVidYt-pass5.jpg" style="max-width: 100%;" alt="Passo 5">
+                </figure>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <center>
+                        <iframe src="img/CtrlVinVisualCodeVidYt-pass5.jpg" frameborder="0" style=" width: 100%;
+                                        height: 732px;
+                                        max-width: 880px;
+                                        max-height: 87px;
+                                        object-fit: cover;
+                                        object-position: center;
+                                                                                    "></iframe>
+                    </center>
+                </details><br>
+
+                <li class="passSC">Mais uma vez, o resultado final ficou assim:</li>
+                <figure style="text-align: center;">                
+                    <img src="img/exibVidYtIncorp-pass6.jpg" style="max-width: 100%;" alt="Passo 6">
+                </figure>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <a style="margin-left: 95%;" href="img/exibVidYtIncorp-pass6.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+                </details><br>
+
+
+            </ol>
 
 
 
-
-
-
-            <br><br><br><br><br><bR><br><p>--> 10:00</p><br><br>
-            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;23&#47;09&#47;2021&nbsp;&agrave;s&nbsp;02&#58;43,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
+            <br><br><br><br><br><bR><br><p>--> 15:30</p><br><br>
+            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;23&#47;09&#47;2021&nbsp;&agrave;s&nbsp;11&#58;11,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
 
         </div>
     </body>
