@@ -15,14 +15,131 @@
             
             <h2>O que &eacute;&nbsp;Mutim&iacute;dia&#63;</h2><br>
             <p>&Eacute; uma forma de comunica&ccedil;&atilde;o que combina diferentes formas de conte&uacute;do, como <stron>texto, &aacute;udio, imagens, anima&ccedil;&otilde;es ou v&iacute;deo</stron>&nbsp;em uma &uacute;nica apresenta&ccedil;&atilde;o.</p>
-            <p>Para isso, usaremos a tag <b style="color: #F00;">&lt;IFRAME&gt;</b>, que ser&aacute;&nbsp;utilizada para incorporar outro documento HTML.</p>
-            <p>Sua sintaxe padrão é:</p><br>
-            <figure style="text-align: center;">
+            <p>Para isso, usaremos a tag <b style="color: #F00;">&lt;IFRAME&gt;</b>, que ser&aacute;&nbsp;utilizada para incorporar outro documento ou m&iacute;dia no nosso arquivo HTML. Com esse recurso, por exemplo, podemos incorporar at&eacute; um outro site dentro do nosso site.</p>
+            <p>Sua sintaxe padr&atilde;o é:</p><br>
+            <!--<figure class=" width: 100%;
+                            height: 100%;
+                            max-width: 810px;
+                            max-height: 48px;
+                            object-fit: cover;
+                            object-position: center;"
+                                                         style="width: 100%; text-align: center;">
                 <img src="img/SintaxeIframe.jpg" alt="SintaxeIframe">
+            </figure>-->
+            <!--<center>
+                <iframe src="img/SintaxeIframe.jpg" frameborder="0" style=" width: 100%;
+                height: 100%;
+                max-width: 810px;
+                max-height: 48px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
+            </center>-->
+            <figure style="text-align: center;">
+                <img src="img/SintaxeIframe.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/SintaxeIframe.jpg" frameborder="0" style=" width: 100%;
+                height: 100%;
+                max-width: 810px;
+                max-height: 48px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
+                </details>
             </figure>
+            <br><p>Sabendo isso, vamos trabalhar com essa tag na prática&#33;</p>
+            <p>Antes de tudo, vamos instalar uma exten&ccedil;&atilde;o no Visual Code que permitir&aacute; que, todas altera&ccedil;&oacute;es que sejam feitas no documento HTML, sejam feitas instantaneamente no navegador.</p>
+            <p>Para isso, clicamos no bot&atilde;o de extens&otilde;es, localizado na barra lateral esquerda do software</p>
+            <figure style="text-align: center;">
+                <img src="img/MenuExtenções.jpg" style="max-width: 100%;" alt="Menu de extenções"><br>
+            </figure>
+            <br><p>Após isso, na caixinha de texto, vamos pesquisar por LIVE SERVER e clicamos na primeira opção que aparecer</p>
+            <figure style="text-align: center;">
+                <img src="img/LiveServer.jpg" style="max-width: 100%;" alt="Live Server"><br>
+            </figure>
+            <br><p>Depois, é só realizar a instalação&#33;</p>
+            <figure style="text-align: center;">
+                <img src="img/LiveServerInstalado.jpg" style="max-width: 100%;" alt="Live Server"><br>
+            </figure>
+            <br><p>Feito isso, vamos por a mão na massa ^^&#33;</p>
+            <p>Inicialmente, vamos criar uma estrutura padrão e configurar/alterar algumas coisinhas.</p>
+            <figure style="text-align: center;">
+                <img src="img/EstruturaPadrão.jpg" style="max-width: 100%;" alt="Estrutura Padrão"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/EstruturaPadrão.jpg" frameborder="0" style=" width: 100%;
+                height: 100%;
+                max-width: 613px;
+                max-height: 241px;
+                height: 241px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure><br>
+            <p>A partir dessa estrutura, vamos definir um &ldquo;h2&rdquo; destacando que trataremos sobre a tag &lt;iframe&gt;, seguido de uma descri&ccedil;&atilde;o da mesma.</p>
+            <p>Feito isso, vamos inserir um novo &ldquo;h2&rdquo; destacando que trataremos sobre como <span style="background-color: #00acee;padding: 1%"><a href="">Incorporar Outro Site dentro do Site</a></span> <span style="font-style: italic; font-size: 19px;">&#40;essa p&aacute;gina serivir&aacute; de testes para os nossos c&oacute;digos&#33;&#41;</span>.</p>
+            <p>Para exemplificar, vamos utilizar o site do <a href="http://irati.ifpr.edu.br" class="if" target="_blank">Instituto Federal do Paran&aacute; do Campus de Irati</a> e que deseja-se exib&iacute;-lo dentro de um outro site, no caso, na nossa p&aacute;gina de testes. Como podemos fazer isso&#63;</p>
+            <figure style="text-align: center;">
+                <img src="img/IframeCExIf.jpg" style="max-width: 100%;" alt="Iframe Exemplificado"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/IframeCExIf.jpg" style=" width: 100%;
+                height: 100%;
+                max-width: 622px;
+                max-height: 307px;
+                height: 307px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure><br>
+            <p>Observe como ficou isso na pr&aacute;tica:</p>
+            <figure style="text-align: center;">
+                <img src="img/IframeIfPrat.jpg" style="max-width: 100%;" alt="Iframe Exemplificado na Prática - Resultado"><br>
+            </figure>
+            <br><p>Note que o nosso <i>iframe</i> ficou com dimens&otilde;es muito pequenas e isso gerou, inclusive, uma m&aacute; exibi&ccedil;&atilde;o do site. Mas, a boa not&iacute;cia &eacute; que podemos alterar esses par&acirc;metros manualmente, atrav&eacute;s dos atributos <span class="atr">height</span> e <span class="atr">width</span>. Vamos fazer isso agora, determinando uma largura e uma altura de 300 pixels&#33;</p>
+            <figure style="text-align: center;">
+                <img src="img/IframeCExHWFx.jpg" style="max-width: 100%;" alt="Iframe Exemplificado"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/IframeCExHWFx.jpg" style=" width: 100%;
+                height: 100%;
+                max-width: 586px;
+                max-height: 48px;
+                height: 48px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure><br>
+            <p>Observe que a nossa altera&ccedil;&atilde;o deu surtiu efeito, mas ainda podemos melhor&aacute;-la.</p>
+            <figure style="text-align: center;">
+                <img src="img/IframeIfPratHWFx.jpg" style="max-width: 100%;" alt="Iframe Exemplificado"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <a style="margin-left: 95%;" href="img/IframeIfPratHWFx.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+                </details>
+            </figure><br>
+            <p>Um detalhe importante que podemos perceber sobre o site que estamos utilizando como exemplo. Podemos afirmar com toda a certeza de que ele &eacute; um <span class="import">SITE REPONSIVO</span></p>
+            <p>Mas, o que &eacute; um site responsivo?</p>
+            <p>Bom, basicamente, um site responsivo &eacute; um site que pode se adaptar a todo e qualquer tamanho (dimens&atilde;o) de tela. Por exemplo, um mesmo site que se adapte tanto a tela de um computador quando de um celular.</p>
+            <p>Repare isso no fragmento abaixo e conclua que, mesmo a tela, que está com dimens&otilde;es reduzidas, a sua exibi&ccedil;&atilde;o está confortavelmente e automaticamente adaptada a essa circunst&acirc;ncia, n&atilde;o havendo, por exemplo, nehum texto que ultrapasse os limites, criando uma borda inferior.</p>
+            <figure style="text-align: center;">
+                <img src="img/SinSiteReponsIF.jpg" style="max-width: 100%;" alt="Iframe Exemplificado"><br>
+            
+            
+            
 
-            <br><br><br><br><br><bR><br><br><br>
-            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;22&#47;09&#47;2021&nbsp;&agrave;s&nbsp;11&#58;32,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
+
+
+
+
+
+            <br><br><br><br><br><bR><br><p>--> 10:00</p><br><br>
+            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;22&#47;09&#47;2021&nbsp;&agrave;s&nbsp;21&#58;12,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
+
         </div>
     </body>
 </html>
@@ -32,5 +149,24 @@
     &iacute; (í)
     &Uacute; (Ú)
     &eacute; (é)
+    &atilde; (ã)
 
+-->
+
+
+<!--
+    <figure style="text-align: center;">
+                <img src="img/SintaxeIframe.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/SintaxeIframe.jpg" frameborder="0" style=" width: 100%;
+                height: 100%;
+                max-width: 810px;
+                max-height: 48px;
+                object-fit: cover;
+                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure>
+            
 -->
