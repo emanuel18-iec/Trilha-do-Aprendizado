@@ -12,7 +12,18 @@
     <body>
         <div id="conteudoPrincipal">
             <h1>S&iacute;ntese sobre Multim&iacute;dias <span id="modH1">&#40;Aula 13&#41;<br>Por&#58; <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" id="aH1" target="_blank">Gabriel Emanuel</a></span></h1><br><br>
-            
+            <details>
+                <summary id="cab"><STRONG><BIG>ATALHOS</BIG></STRONG></summary>
+                <ul>
+                    <li class="at"><a class="atL" href="#Mult">O que &eacute;&nbsp;Mutim&iacute;dia&#63;</a></li>
+                    <li class="at"><a class="atL" href="#eLS">Exten&ccedil;&atilde;o <i>Live Server</i></a></li>
+                    <li class="at"><a class="atL" href="#SiteDentroDeUmArquivoHTML">Incorporando Sites dentro de um Arquivo HTML</a></li>
+                    <li class="at"><a class="atL" href="#IncorpAudio">Incorporando &Aacute;udio</a></li>
+
+
+                </ul>
+            </details>
+            <a name="Mult"></a>
             <h2>O que &eacute;&nbsp;Mutim&iacute;dia&#63;</h2><br>
             <p>&Eacute; uma forma de comunica&ccedil;&atilde;o que combina diferentes formas de conte&uacute;do, como <stron>texto, &aacute;udio, imagens, anima&ccedil;&otilde;es ou v&iacute;deo</stron>&nbsp;em uma &uacute;nica apresenta&ccedil;&atilde;o.</p>
             <p>Para isso, usaremos a tag <b style="color: #F00;">&lt;IFRAME&gt;</b>, que ser&aacute;&nbsp;utilizada para incorporar outro documento ou m&iacute;dia no nosso arquivo HTML. Com esse recurso, por exemplo, podemos incorporar at&eacute; um outro site dentro do nosso site.</p>
@@ -48,7 +59,10 @@
                                                                                 "></iframe>
                 </details>
             </figure>
-            <br><p>Sabendo isso, vamos trabalhar com essa tag na prática&#33;</p>
+            <br><p>Sabendo isso, vamos trabalhar com essa tag na prática&#33;</p><br><br>
+            
+            <a name="eLS"></a>
+            <h2>Exten&ccedil;&atilde;o <i>Live Server</i>.</h2><br>
             <p>Antes de tudo, vamos instalar uma exten&ccedil;&atilde;o no Visual Code que permitir&aacute; que, todas altera&ccedil;&oacute;es que sejam feitas no documento HTML, sejam feitas instantaneamente no navegador.</p>
             <p>Para isso, clicamos no bot&atilde;o de extens&otilde;es, localizado na barra lateral esquerda do software</p>
             <figure style="text-align: center;">
@@ -77,9 +91,11 @@
                 object-position: center;
                                                                                 "></iframe>
                 </details>
-            </figure><br>
+            </figure><br><br>
+            <a name="SiteDentroDeUmArquivoHTML"></a>
+            <h2>Incorporando Sites dentro de um Arquivo HTML.</h2><br>
             <p>A partir dessa estrutura, vamos definir um &ldquo;h2&rdquo; destacando que trataremos sobre a tag &lt;iframe&gt;, seguido de uma descri&ccedil;&atilde;o da mesma.</p>
-            <p>Feito isso, vamos inserir um novo &ldquo;h2&rdquo; destacando que trataremos sobre como <span style="background-color: #00acee;padding: 1%"><a href="">Incorporar Outro Site dentro do Site</a></span> <span style="font-style: italic; font-size: 19px;">&#40;essa p&aacute;gina serivir&aacute; de testes para os nossos c&oacute;digos&#33;&#41;</span>.</p>
+            <p>Feito isso, vamos inserir um &ldquo;h3&rdquo; destacando que trataremos sobre como <span style="background-color: #00acee;padding: 1%"><a href="">Incorporar Outro Site dentro do Site</a></span> <span style="font-style: italic; font-size: 19px;">&#40;essa p&aacute;gina serivir&aacute; de testes para os nossos c&oacute;digos&#33;&#41;</span>.</p>
             <p>Para exemplificar, vamos utilizar o site do <a href="http://irati.ifpr.edu.br" class="if" target="_blank">Instituto Federal do Paran&aacute; do Campus de Irati</a> e que deseja-se exib&iacute;-lo dentro de um outro site, no caso, na nossa p&aacute;gina de testes. Como podemos fazer isso&#63;</p>
             <figure style="text-align: center;">
                 <img src="img/IframeCExIf.jpg" style="max-width: 100%;" alt="Iframe Exemplificado"><br>
@@ -124,11 +140,82 @@
             </figure><br>
             <p>Um detalhe importante que podemos perceber sobre o site que estamos utilizando como exemplo. Podemos afirmar com toda a certeza de que ele &eacute; um <span class="import">SITE REPONSIVO</span></p>
             <p>Mas, o que &eacute; um site responsivo?</p>
-            <p>Bom, basicamente, um site responsivo &eacute; um site que pode se adaptar a todo e qualquer tamanho (dimens&atilde;o) de tela. Por exemplo, um mesmo site que se adapte tanto a tela de um computador quando de um celular.</p>
+            <p>Bom, basicamente, um <a name="SiteRepons">site responsivo</a> &eacute; um site que pode se adaptar a todo e qualquer tamanho (dimens&atilde;o) de tela. Por exemplo, um mesmo site que se adapte tanto a tela de um computador quando de um celular.</p>
             <p>Repare isso no fragmento abaixo e conclua que, mesmo a tela, que está com dimens&otilde;es reduzidas, a sua exibi&ccedil;&atilde;o está confortavelmente e automaticamente adaptada a essa circunst&acirc;ncia, n&atilde;o havendo, por exemplo, nehum texto que ultrapasse os limites, criando uma borda inferior.</p>
             <figure style="text-align: center;">
                 <img src="img/SinSiteReponsIF.jpg" style="max-width: 100%;" alt="Iframe Exemplificado"><br>
-            
+            </figure><br><br>
+
+            <a name="IncorpAudio"></a>
+            <H2>Incorporando &Aacute;udios.</H2>
+            <p>Para incorporarmos &Aacute;udios em um arquivo HTML, vamosfazer uso de uma plataforma web chamada <i>SoundCloud</i>, dispon&iacute;vel nesse <a href="https://soundcloud.com/" target="_Blank">link</a></p>
+            <p>Para realizarmos a inserção de uma música a partir deste site, vamos seguir o seguinte passo-a-passo</p>
+            <ol>
+                <li class="passSC">Vamos acessar a aba de pesquisa:</li>
+                <figure style="text-align: center;">
+                    <img src="img/AbBuscSoundCloud-pass1.jpg" style="max-width: 100%;" alt="Passo 1">
+                </figure><br>
+                
+                <li class="passSC">Realizamos uma busca por uma música, por um artista, por uma banda....:</li>
+                <figure style="text-align: center;">                
+                    <img src="img/AbSelecMusSoundCloud-pass2.jpg" style="max-width: 100%;" alt="Passo 2">
+                </figure>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <a style="margin-left: 95%;" href="img/AbSelecMusSoundCloud-pass2.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+                </details><br>
+
+                <li class="passSC">Ap&oacute;s encontrar e selecionar a faixa desejada, clicamos na opção <i>&ldquo;compartilhar&rdquo;</i> que estará localizada logo abaixo da mesmo:</li>
+                <figure style="text-align: center;">
+                    <img src="img/AbComparMusSoundCloud-pass3.jpg" style="max-width: 100%;" alt="Passo 3">
+                </figure>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <a style="margin-left: 95%;" href="img/AbComparMusSoundCloud-pass3.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+                </details><br>
+
+                <li class="passSC">Agora acessamos a aba <i>&ldquo;Incorporado&rdquo;</i>:</li>
+                <figure style="text-align: center;">
+                    <img src="img/AbIncorpMusSoundCloud-pass4.jpg" style="max-width: 100%;" alt="Passo 4">
+                </figure><br>
+
+                <li class="passSC">Na tela carregada, temos um campo enunciado como <i>&ldquo;Código&rdquo;</i>. Vamos selecionar e copiar <i>(Ctrl + C)</i>:</li>
+                <figure style="text-align: center;">
+                    <img src="img/AbCodToCtrlC+CtrlV-IncorpMusSoundClound-pass5.jpg" style="max-width: 100%;" alt="Passo 5">
+                </figure><br>
+
+                <li class="passSC">Agora retornamos ao nosso <i>Visual Code</i> e vamos colar <i>(Ctrl + V)</i> esse código. No meu caso, ficou assim:</li>
+                <figure style="text-align: center;">
+                    <img src="img/CtrlV_inVisualCodeDoCodIncorpSoundCloud-pass6.jpg" style="max-width: 100%;" alt="Passo 6">
+                    <details>
+                        <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                        <a style="margin-left: 95%;" href="img/CtrlV_inVisualCodeDoCodIncorpSoundCloud-pass6.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+                    </details>
+                </figure><br>
+                
+                <li class="passSC">Na pr&aacute;tica, o nosso &aacute;udio ficou assim:</li>
+                <figure style="text-align: center;">
+                    <img src="img/viewIncorpSoundClound-pass7.jpg" style="max-width: 100%;" alt="Passo 8">
+                </figure><br>
+
+                <li class="passSC">Para dar o &ldquo;play&rdquo;, basta clicar no c&iacute;rculo laranja:</li>
+                <figure style="text-align: center;">
+                    <img src="img/repMuscSoundCloud-pass8.jpg" style="max-width: 100%;" alt="Passo 8">
+                </figure><br>
+
+                <li class="passSC">Ainda &eacute; poss&iacute;vel notar a exist&ecirc;ncia de alguns links linc&aacute;veis:</li><br>
+                <figure style="text-align: center;">
+                    <ul style="margin-left:9%; text-align: left;">
+                        <li><img src="img/hiplinkClicSoundClound-pass9.jpg" style="max-width: 100%;" alt="Passo 9"></li><br>
+                        <li><img src="img/hiplinkClicSoundClound_[2]-pass9.jpg" style="max-width: 100%;" alt="Passo 9">
+                        </li><br>
+                        <li><img src="img/hiplinkClicSoundClound_[3]-pass9.jpg" style="max-width: 100%;" alt="Passo 9">
+                        </li><br>
+                        <li><img src="img/hiplinkClicSoundClound_[4]-pass9.jpg" style="max-width: 100%;" alt="Passo 9">
+                        </li><a style="margin-left: 95%;" href="img/hiplinkClicSoundClound_[4]-pass9.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a><br>
+                    </ul>
+                </figure>
+            </ol>
             
             
 
@@ -138,7 +225,7 @@
 
 
             <br><br><br><br><br><bR><br><p>--> 10:00</p><br><br>
-            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;22&#47;09&#47;2021&nbsp;&agrave;s&nbsp;21&#58;12,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
+            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;23&#47;09&#47;2021&nbsp;&agrave;s&nbsp;02&#58;43,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
 
         </div>
     </body>

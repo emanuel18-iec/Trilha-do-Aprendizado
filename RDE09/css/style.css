@@ -22,7 +22,7 @@ h1{
     color: #fff;
 }
 
-p, label, summary{
+p, label, summary, #cab,.at, .passSC{
     font-family: 'Gemunu Libre', sans-serif;
     color: #FFF;
     font-size: 20px;
@@ -31,10 +31,23 @@ p, label, summary{
     text-align: justify;
 }
 
+.passSC{
+    margin-left: 9%;
+    text-indent: 0;
+}
+#cab,.at{
+    text-align: right;
+}
+.at{
+    list-style-type: none;
+}
 label{
     font-size: 17px;;
 }
-
+.atL,.atL:visited,#cab{
+    color:aqua;
+    font-style: normal
+;}
 .if:visited{
     color:#FFF;
 }
