@@ -18,7 +18,8 @@
                     <li class="at"><a class="atL" href="#Mult">O que &eacute;&nbsp;Mutim&iacute;dia&#63;</a></li>
                     <li class="at"><a class="atL" href="#eLS">Exten&ccedil;&atilde;o <i>Live Server</i></a></li>
                     <li class="at"><a class="atL" href="#SiteDentroDeUmArquivoHTML">Incorporando Sites dentro de um Arquivo HTML</a></li>
-                    <li class="at"><a class="atL" href="#IncorpAudio">Incorporando &Aacute;udio</a></li>
+                    <li class="at"><a class="atL" href="#IncorpAudioSCIframe">Incorporando &Aacute;udio</a></li>
+                    <li class="at"><a class="atL" href="#IncorpVideoYTIframe">Incorporando V&iacute;deo</a></li>
 
 
                 </ul>
@@ -146,7 +147,7 @@
                 <img src="img/SinSiteReponsIF.jpg" style="max-width: 100%;" alt="Iframe Exemplificado"><br>
             </figure><br><br>
 
-            <a name="IncorpAudio"></a>
+            <a name="IncorpAudioSCIframe"></a>
             <H2>Incorporando &Aacute;udios.</H2>
             <p>Para incorporarmos &aacute;udios em um arquivo HTML, vamos fazer uso de uma plataforma web chamada <i>SoundCloud</i>, dispon&iacute;vel nesse <a href="https://soundcloud.com/" target="_Blank">link</a></p>
             <p>Para realizarmos a inserção de uma música a partir deste site, vamos seguir o seguinte passo-a-passo</p>
@@ -251,6 +252,7 @@
             </figure>
             <br><br>
 
+            <a name="IncorpVideoYTIframe"></a>
             <h2>Incorporando V&iacute;deos</h2>
 
             <p>Para incorporarmos um v&iacute;deo, vamos fazer uso da plataforma YouTube. Para o nosso exemplo, vamos utilizar o seguinte v&iacute;deo <span style="font-size: 17px;">(No caso, a visualiza&ccedil;&atilde;o ficar&aacute; dessa forma tamb&eacute;m)</span>:</p>
@@ -315,14 +317,45 @@
                     <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
                     <a style="margin-left: 95%;" href="img/exibVidYtIncorp-pass6.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
                 </details><br>
-
-
             </ol>
 
+            <h2>Tag &lt;video&gt;</h2><br>
+            <p>Anteriormente, visto que era poss&iacute;vel incorporar um v&iacute;deo através da tag &lt;iframe&gt; a partir de v&iacute;deos que est&atilde;o dispon&iacute;veis no YouTube.</p>
+            <p>Por&eacute;m, e quando queremos incorporar um v&iacute;deo que est&aacute; que n&atilde;o est&aacute; no Youtube?</p>
+            <p>Quando temos o v&iacute;deo em um arquivo na nossa m&aacute;quina ou no nosso servidor, podemos fazer uso da tag &lt;video&gt;</p><br><br>
+            
+            <p>De forma bem pr&aacute;tica, vamos come&ccedil;ar definindo o atributo <span class="atr">poster</span>, que, vai definir o caminho de uma <u>imagem</u> que ser&aacute; exibida até que o usu&aacute;rio d&ecirc; o <i>play</i> no v&iacute;deo</p>
+            <figure style="text-align: center;">
+                <img src="img/SintImgEstatic.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/SintImgEstatic.jpg" frameborder="0" style="width: 100%;
+                                                                                height: 100%;
+                                                                                max-width: 453px;
+                                                                                max-height: 48px;
+                                                                                object-fit: cover;
+                                                                                object-position: center;"
+                                                                                                          ></iframe>
+                </details>
+            </figure><br>
+            <p>Na prática, podemos ter o seguinte código:</p>            
+            <figure style="text-align: center;">
+                <img src="img/PratImgEstatic.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/PratImgEstatic.jpg" frameborder="0" style="width: 100%;
+                                                                                height: 100%;
+                                                                                max-width: 370px;
+                                                                                max-height: 48px;
+                                                                                object-fit: cover;
+                                                                                object-position: center;"
+                                                                                                          ></iframe>
+                </details>
+            </figure><br>
 
 
-            <br><br><br><br><br><bR><br><p>--> 15:30</p><br><br>
-            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;23&#47;09&#47;2021&nbsp;&agrave;s&nbsp;11&#58;17,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
+            <br><br><br><br><br><bR><br><p>--> 21:09</p><br><br>
+            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;26&#47;09&#47;2021&nbsp;&agrave;s&nbsp;01&#58;27,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
 
         </div>
     </body>
