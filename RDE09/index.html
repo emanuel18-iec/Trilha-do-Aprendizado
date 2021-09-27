@@ -20,6 +20,9 @@
                     <li class="at"><a class="atL" href="#SiteDentroDeUmArquivoHTML">Incorporando Sites dentro de um Arquivo HTML</a></li>
                     <li class="at"><a class="atL" href="#IncorpAudioSCIframe">Incorporando &Aacute;udio</a></li>
                     <li class="at"><a class="atL" href="#IncorpVideoYTIframe">Incorporando V&iacute;deo</a></li>
+                    <li class="at"><a class="atL" href="#TAGvideo">Tag &lt;video&gt;</a></li>
+                    <li class="at"><a class="atL" href="#TAGaudio">Tag &lt;audio&gt;</a></li>
+
 
 
                 </ul>
@@ -149,7 +152,10 @@
 
             <a name="IncorpAudioSCIframe"></a>
             <H2>Incorporando &Aacute;udios.</H2>
-            <p>Para incorporarmos &aacute;udios em um arquivo HTML, vamos fazer uso de uma plataforma web chamada <i>SoundCloud</i>, dispon&iacute;vel nesse <a href="https://soundcloud.com/" target="_Blank">link</a></p>
+            <p>Para incorporarmos &aacute;udios em um arquivo HTML, vamos fazer uso de uma plataforma web chamada <i>SoundCloud</i>, dispon&iacute;vel nesse <a href="https://soundcloud.com/" target="_Blank">link</a>.</p><br>
+            <center>
+                <iframe width="30%" height="30%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/163463620&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">Gabriel Prestes 2· <a href="https://soundcloud.com/gabriel-prestes-2/os-serranos-de-ch-o-batido" title="Os serranos - de chão batido, rancho de beira de estrada" target="_blank" style="color: #cccccc; text-decoration: none;">Os Serranos - De Chão Batido, Rancho De Beira De Estrada</a></div>
+            </center><br>
             <p>Para realizarmos a inserção de uma música a partir deste site, vamos seguir o seguinte passo-a-passo</p>
             <ol>
                 <li class="passSC">Vamos acessar a aba de pesquisa:</li>
@@ -319,6 +325,7 @@
                 </details><br>
             </ol>
 
+            <a name="TAGvideo"></a>
             <h2>Tag &lt;video&gt;</h2><br>
             <p>Anteriormente, visto que era poss&iacute;vel incorporar um v&iacute;deo através da tag &lt;iframe&gt; a partir de v&iacute;deos que est&atilde;o dispon&iacute;veis no YouTube.</p>
             <p>Por&eacute;m, e quando queremos incorporar um v&iacute;deo que est&aacute; que n&atilde;o est&aacute; no Youtube?</p>
@@ -382,6 +389,7 @@
                 </details>
             </figure><br><br>
 
+            <a name="recurso"></a>
             <p>O HTML possui um recurso bem interessante no qual é possível utilizar, dentro da tag &lt;video&gt;, vários &lt;source&gt; diferentes. Na prática, quer dizer que, caso haja algum problema e não seja exibido o primeiro vídeo, é exibido o segundo... se não der para exibir o segundo, ele tenta exibir o terceiro... e assim por diante!</p>
             <figure style="text-align: center;">
                 <img src="img/SintVid-_sourc-v1v2v3v(n)-SrcType.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
@@ -398,6 +406,7 @@
             </figure><br>
             <p>Por exemplo:</p>
             <figure style="text-align: center;">
+                <a name="_bike-mp4"></a><br>
                 <img src="img/PratVid-_sourc-v1v2v3v(n)-SrcType.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
                 <details>
                     <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
@@ -434,6 +443,7 @@
                                                                                                         ></iframe>
                 </details>
             </figure><br>
+            <p>Observe que o vídeo já pode ser exibido:</p>
             <figure style="text-align: center;">                
                 <img src="img/ContFunc.jpg" style="max-width: 100%;" alt="Passo 1">
             </figure>
@@ -441,14 +451,50 @@
                 <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
                 <a style="margin-left: 95%;" href="img/ContFunc.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
             </details><br>
+            <p>Observe que o primeiro chama-se <i>&lt;<a href="#_bike-mp4">_Bike.mp4</a>&gt;</i>. Vamos alterar o nome deste arquivo para apenas <i>Bike.mp4</i>, da seguinte forma:</p>
+            <figure style="text-align: center;">                
+                <img src="img/(_)bike.mp4.jpg" style="max-width: 100%;" alt="Passo 1">
+            </figure><br>
+            <p>Pela propriedade <a href="#recurso">anteriormente citada</a>, a visualização NÃO pode ser afetada!</p>
+            <p>Agora, observe:</p>
+            <figure style="text-align: center;">                
+                <img src="img/posTirUnderlToVid.jpg" style="max-width: 100%;" alt="Passo 1">
+            </figure>
+            <details>
+                <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                <a style="margin-left: 95%;" href="img/ContFunc.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+            </details><br><br>
+            
+            <center>
+                <video poster="midias/video/Bike_.jpg" controls>
+                    <source src="midias/video/_Bike.mp4" type="video/mp4">
+                    <source src="midias/video/Bike.ogv" type="video/ogg">
+                    <source src="midias/video/Bike.webm" type="video/webm">
+                </video>
+            </center>
+            <p>Observe que o vídeo inserido funcionou normalmente!</p><br><br><br>
 
-
-
-
+            <a name="TAGaudio"></a>
+            <h2>Tag &lt;audio&GT;</h2><br>
+            <p><big><b>DICA:</b></big> Para baixar música sem Direitos Autorais, utilizar a Biblioteca de Áudios do YouTube, disponível acessando o menu <i>studio</i></p>
+            <p>A sua sintaxe e estrutura se dará de uma forma bem similar à da tag anterior. Começamos definindo a tag &lt;audio&gt;, seguido do atributo <span class="atr">preload</span> com o valor <span class="atr" style="text-decoration: none;"><i>metadata</i></span>, ou seja, para realizar o carregamento de todas as informações internas do nosso áudio, seguido do atributo <span class="atr">controls</span>, com a mesma utilidade do caso anterior: habilitar os controles para a manipulação, neste caso, do áudio.</p>
+            <figure style="text-align: center;">
+                <img src="img/SintTagAud(PratTb).jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/SintTagAud(PratTb).jpg" frameborder="0" style=" width: 100%;
+                                                                                height: 100%;
+                                                                                max-width: 286px;
+                                                                                max-height: 73px;
+                                                                                object-fit: cover;
+                                                                                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure>
 
 
             <br><br><br><br><br><bR><br><p>--> 22:09</p><br><br>
-            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;27&#47;09&#47;2021&nbsp;&agrave;s&nbsp;15&#58;33,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
+            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;27&#47;09&#47;2021&nbsp;&agrave;s&nbsp;17&#58;55,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
 
         </div>
     </body>
@@ -492,3 +538,5 @@ Img Exp
                 </details><br>
 
 -->
+
+.
