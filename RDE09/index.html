@@ -343,19 +343,112 @@
                 <img src="img/PratImgEstatic.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
                 <details>
                     <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
-                    <iframe src="img/PratImgEstatic.jpg" frameborder="0" style="width: 100%;
-                                                                                height: 100%;
-                                                                                max-width: 370px;
-                                                                                max-height: 48px;
-                                                                                object-fit: cover;
-                                                                                object-position: center;"
-                                                                                                          ></iframe>
+                    <iframe src="img/PratImgEstatic.jpg" frameborder="0" style=" width: 100%;
+                                                                                        height: 100%;
+                                                                                        max-width: 560px;
+                                                                                        max-height: 79px;
+                                                                                        object-fit: cover;
+                                                                                        object-position: center;"
+                                                                                                                  ></iframe>
+                </details>
+            </figure><br><br>
+            <p>Dentro dessa tag &lt;video&gt;, usaremos a tag &lt;source&gt; acompanhada do atributo <span class="atr">src</span> que vai receber o caminho no qual se encontra o v&iacute;deo e do atributo <span class="atr">type</span>, que vai indicar qual &eacute; o tipo/formato do v&iacute;deo, como ilustra a imagem a seguir:</p>
+            <figure style="text-align: center;">
+                <img src="img/SintVid-_sourcSrcType.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/SintVid-_sourcSrcType.jpg" frameborder="0" style=" width: 100%;
+                                                                                        height: 100%;
+                                                                                        max-width: 560px;
+                                                                                        max-height: 79px;
+                                                                                        object-fit: cover;
+                                                                                        object-position: center;"
+                                                                                                                  ></iframe>
                 </details>
             </figure><br>
+            
+            <p>Na pr&aacute;tica, temos o seguinte:</p>
+            <figure style="text-align: center;">
+                <img src="img/CodPratVid-_sourcSrcType.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/CodPratVid-_sourcSrcType.jpg" frameborder="0" style="  width: 100%;
+                                                                                            height: 100%;
+                                                                                            max-width: 466px;
+                                                                                            max-height: 73px;
+                                                                                            object-fit: cover;
+                                                                                            object-position: center;"
+                                                                                                                      ></iframe>
+                </details>
+            </figure><br><br>
+
+            <p>O HTML possui um recurso bem interessante no qual é possível utilizar, dentro da tag &lt;video&gt;, vários &lt;source&gt; diferentes. Na prática, quer dizer que, caso haja algum problema e não seja exibido o primeiro vídeo, é exibido o segundo... se não der para exibir o segundo, ele tenta exibir o terceiro... e assim por diante!</p>
+            <figure style="text-align: center;">
+                <img src="img/SintVid-_sourc-v1v2v3v(n)-SrcType.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/SintVid-_sourc-v1v2v3v(n)-SrcType.jpg" frameborder="0" style=" width: 100%;
+                                                                                                    height: 100%;
+                                                                                                    max-width: 613px;
+                                                                                                    max-height: 167px;
+                                                                                                    object-fit: cover;
+                                                                                                    object-position: center;"
+                                                                                                                      ></iframe>
+                </details>
+            </figure><br>
+            <p>Por exemplo:</p>
+            <figure style="text-align: center;">
+                <img src="img/PratVid-_sourc-v1v2v3v(n)-SrcType.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/PratVid-_sourc-v1v2v3v(n)-SrcType.jpg" frameborder="0" style="  width: 100%;
+                                                                                            height: 100%;
+                                                                                            max-width: 473px;
+                                                                                            max-height: 112px;
+                                                                                            object-fit: cover;
+                                                                                            object-position: center;"
+                                                                                                                      ></iframe>
+                </details>
+            </figure><br><br>
+
+            <p>No entanto, se visualizarmos esse código no navegador, observamos:</p>
+            <figure style="text-align: center;">                
+                <img src="img/tagVid-ExSemControl.jpg" style="max-width: 100%;" alt="Passo 1">
+            </figure>
+            <details>
+                <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                <a style="margin-left: 95%;" href="img/tagVid-ExSemControl.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+            </details><br>
+            <p>A mensagem que passa é a de que é apenas uma imagem.</p>
+            <p>Para solucionarmos esse problema, vamos ativar os controles por meio da inclusão do atributo <span class="atr">controls</span> na tag &lt;video&gt;, da seguinte forma:</p>
+            <figure style="text-align: center;">
+                <img src="img/addAtrContr.jpg" style="max-width: 100%;" alt="Sintaxe Vídeo - Imagem Estática"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/addAtrContr.jpg" frameborder="0" style=" width: 100%;
+                                                                              height: 100%;
+                                                                              max-width: 472px;
+                                                                              max-height: 116px;
+                                                                              object-fit: cover;
+                                                                              object-position: center;"
+                                                                                                        ></iframe>
+                </details>
+            </figure><br>
+            <figure style="text-align: center;">                
+                <img src="img/ContFunc.jpg" style="max-width: 100%;" alt="Passo 1">
+            </figure>
+            <details>
+                <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                <a style="margin-left: 95%;" href="img/ContFunc.jpg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+            </details><br>
 
 
-            <br><br><br><br><br><bR><br><p>--> 21:09</p><br><br>
-            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;26&#47;09&#47;2021&nbsp;&agrave;s&nbsp;01&#58;27,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
+
+
+
+
+            <br><br><br><br><br><bR><br><p>--> 22:09</p><br><br>
+            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;27&#47;09&#47;2021&nbsp;&agrave;s&nbsp;15&#58;33,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
 
         </div>
     </body>
@@ -370,7 +463,7 @@
 
 -->
 
-
+Iframe
 <!--
     <figure style="text-align: center;">
                 <img src="img/SintaxeIframe.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
@@ -386,4 +479,16 @@
                 </details>
             </figure>
             
+-->
+
+Img Exp
+<!--
+    <figure style="text-align: center;">                
+                    <img src="img/EscolVidYt-pass1.jpeg" style="max-width: 100%;" alt="Passo 1">
+                </figure>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <a style="margin-left: 95%;" href="img/EscolVidYt-pass1.jpeg" target="_blank"><img src="img/Exp.png" width=5% alt="Expandir"></img></a>
+                </details><br>
+
 -->
