@@ -22,9 +22,7 @@
                     <li class="at"><a class="atL" href="#IncorpVideoYTIframe">Incorporando V&iacute;deo</a></li>
                     <li class="at"><a class="atL" href="#TAGvideo">Tag &lt;video&gt;</a></li>
                     <li class="at"><a class="atL" href="#TAGaudio">Tag &lt;audio&gt;</a></li>
-
-
-
+                    <li class="at"><a class="atL" href="#TAGpicture">Tag &lt;picture&gt;</a></li>
                 </ul>
             </details>
             <a name="Mult"></a>
@@ -476,7 +474,14 @@
 
             <a name="TAGaudio"></a>
             <h2>Tag &lt;audio&GT;</h2><br>
-            <p><big><b>DICA:</b></big> Para baixar música sem Direitos Autorais, utilizar a Biblioteca de Áudios do YouTube, disponível acessando o menu <i>studio</i></p>
+            <p><big><b>DICA:</b></big> Para baixar música sem Direitos Autorais, utilizar a Biblioteca de Áudios do YouTube, disponível acessando o menu <i>studio</i></p><br>
+            <center>
+                <audio preload="metadata" controls>
+                    <source src="midias/audio/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+                    <source src="midias/audio/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+                    <source src="midias/audio/Hey-Sailor-Letter-Box.wav" type="audio/wav">
+                </audio><br>
+            </center>
             <p>A sua sintaxe e estrutura se dará de uma forma bem similar à da tag anterior. Começamos definindo a tag &lt;audio&gt;, seguido do atributo <span class="atr">preload</span> com o valor <span class="atr" style="text-decoration: none;"><i>metadata</i></span>, ou seja, para realizar o carregamento de todas as informações internas do nosso áudio, seguido do atributo <span class="atr">controls</span>, com a mesma utilidade do caso anterior: habilitar os controles para a manipulação, neste caso, do áudio.</p>
             <figure style="text-align: center;">
                 <img src="img/SintTagAud(PratTb).jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
@@ -490,12 +495,113 @@
                                                                                 object-position: center;
                                                                                 "></iframe>
                 </details>
+            </figure><br>
+            <p>Dentro do seu escopo, utilizaremos novamente a tag &lt;soure&gt; para definir o caminho do áudio.</p>
+            <p>Para isso, usaremos os mesmos atributos que vimos anteriormente.</p>
+            <p>Nesse caso, podemos ter:</p>
+            <figure style="text-align: center;">
+                <img src="img/PratTagAudAndSourc.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/SintTagAud(PratTb).jpg" frameborder="0" style=" width: 100%;
+                                                                                height: 100%;
+                                                                                max-width: 601px;
+                                                                                max-height: 104px;
+                                                                                object-fit: cover;
+                                                                                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure><br>
+            <p>Ao visualizarmos a página, temos:</p>
+            <figure style="text-align: center;">
+                <img src="img/AudPrat.jpeg" style="max-width: 100%;" alt="SintaxeIframe"><br>
             </figure>
+            <br><br><br>
 
-
-            <br><br><br><br><br><bR><br><p>--> 22:09</p><br><br>
-            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;27&#47;09&#47;2021&nbsp;&agrave;s&nbsp;17&#58;55,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
-
+            <a name="TAGpicture"></a>
+            <h2>Tag &ltpicture&gt</h2>
+            <p>É utilizada para agrupar várias imagens que serão renderizadas conforme as dimensões da tela no qual o site estará sendo exibido.</p>
+            <p>Para utilizarmos-a, vamos definí-la através da seguinte sintaxe:</p>
+            <figure style="text-align: center;">
+                <img src="img/sintTagPicture.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/sintTagPicture.jpg" frameborder="0" style=" width: 100%;
+                                                                                height: 100%;
+                                                                                max-width: 182px;
+                                                                                max-height: 67px;
+                                                                                object-fit: cover;
+                                                                                object-position: center;
+                                                                                "></iframe>
+                </details>
+            </figure><br>        
+            <p>Dentro dela, vamos inserir uma imagem que possui uma resolução muito grande (1080x720) dentro de uma tag <i>&ltimg&gt</i>, que ficou assim:</p>
+            <figure style="text-align: center;">
+                <img src="img/imgPrincPict1-img.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                
+            </figure><br>
+            <p>Observe que se diminuirmos a tela, a imagem não se reajusta às novas margens:</p>
+            <video src="vid/picture1.mp4" controls style="width: 100%;"></video><br>
+            <p>Porém, vamos aprimorar essa estrutura utilizando a tag <i>&ltsource&gt</i>, porém, dessa vez, de uma forma diferente.</p>
+            <p>Inicialmente, vamos definir o atributo <span class="atr">media</span> que vai receber um valor máximo de largura, como se fosse uma espécie de condicional.</p>
+            <p>Sua sintaxe vai ficar um pouquinho diferente do que estamos habituados a trabalhar:</p>
+            <figure style="text-align: center;">
+                <img src="img/SINT-AtrbSourcMediMaxWidth.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/SINT-AtrbSourcMediMaxWidth.jpg" frameborder="0" style="width: 100%;
+                                                                                            height: 100%;
+                                                                                            max-width: 398px;
+                                                                                            max-height: 51px;
+                                                                                            object-fit: cover;
+                                                                                            object-position: center;
+                                                                                                                    "></iframe>
+                </details>
+            </figure>
+            <br>
+            <p>Também vamos definir o atributo <i><span class="atr">srcset</span></i>, que vai receber o caminho de onde está localizada a imagem.</p>
+            <p>Unindo os dois atributos, a sintaxe fica da seguinte forma:</p>
+            <figure style="text-align: center;">
+                <img src="img/SINT-AtrbSourcMediMaxWidth&SrcsetImg.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/SINT-AtrbSourcMediMaxWidth&SrcsetImg.jpg" frameborder="0" style="width: 100%;
+                                                                                            height: 100%;
+                                                                                            max-width: 398px;
+                                                                                            max-height: 51px;
+                                                                                            object-fit: cover;
+                                                                                            object-position: center;
+                                                                                                                    "></iframe>
+                </details>
+            </figure><br>
+            <p>Para ficar mais claro, vamos considerar o seguinte código:</p>
+            <figure style="text-align: center;">
+                <img src="img/TagPictFinImgAgrup.jpg" style="max-width: 100%;" alt="SintaxeIframe"><br>
+                <details>
+                    <summary>Caso a imagem esteja pequena, clique aqui para aument&aacute;-la <span style="font-style: normal;">^^</span></summary>
+                    <iframe src="img/TagPictFinImgAgrup" frameborder="0" style="width: 100%;
+                                                                                            height: 100%;
+                                                                                            max-width: 576px;
+                                                                                            max-height: 131px;
+                                                                                            object-fit: cover;
+                                                                                            object-position: center;
+                                                                                                                    "></iframe>
+                </details>
+            </figure><br><br>
+            <p>Vamos ler esse código!</p>
+            <p>A primeira &ltsource&gt demarca que, se a largura máxima da tela for de até 500 pixels, renderize a imagem <i>bike_110.jpg</i>. Porém, se não for, passa para os demais &ltsource&gt: se a condicional do segundo <i>&ltsource&gt</i> não for atendida, passa para o terceiro</i>. Caso hipoteticamente, tivessem mais <i>&ltsource&gt's</i> e nenhum dos testados até agora atendessem a condicional, a testagem continuaria até o último (que seria o pior caso possível)</i></p>
+            <p>Observe como fica a visualização neste caso:</p>
+            <video src="vid/picture2.mp4" controls style="width: 100%;"></video><br>
+            <br><br>
+            <p>Para explorar:</p>
+            <picture>
+                <source media="(max-width: 500px)" srcset="midias/img/bike_110.jpg">
+                <source media="(max-width: 700px)" srcset="midias/img/bike_320.jpg">
+                <source media="(max-width: 1000px)" srcset="midias/img/bike_640.jpg">
+                <img src="midias/img/bike_full.jpg" alt="Mtb Por-do-sol">
+            </picture>
+            <br><br><br>
+            <p><big><b>&Uacute;ltima modifica&ccedil;&atilde;o em:</b></big>&nbsp;27&#47;09&#47;2021&nbsp;&agrave;s&nbsp;23&#58;54,&nbsp;hor&aacute;rio&nbsp;oficial&nbsp;de&nbsp;Bras&iacute;lia&nbsp;&#45;&nbsp;Brasil</b></p><br>
         </div>
     </body>
 </html>
