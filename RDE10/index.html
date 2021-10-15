@@ -10,7 +10,7 @@
                 background: #000;
                 padding: 2%;
             }
-            p, h1, h2, h3, label{
+            p, h1, h2, h3, label, td, th, tr{
                 color: #0F0;
                 font-family: monospace;
             }
@@ -18,12 +18,24 @@
                 font-size: 19px;
                 text-align: justify;
             }
+            table, td, th, tr{
+                border: 1.5px solid #0f0;
+                font-size: 16px;
+                padding: 1%;
+            }
+            table{
+                border-collapse: collapse;
+                width: 100%;
+            }
         </style>
     </head>
     <body>
-        <h1><center>Introdução ao CSS<br><i>(Cascading Style Sheets)</i></center></h1>
+        <h1 style="padding-top: -2%;"><center>Introdução ao CSS<br><i>(Cascading Style Sheets)</i></center></h1>
         <p>Até o momento, utilizamos o HTML 5 para a demarcação do conteúdo, como textos, tabelas, imagens, videos e assim por diante. No entanto, o site geralmente não fica nada atrativo.</p>
         <p>Assim, vamos fazer uso do CSS (Cascading Style Sheets - Folha de Estilo em Cascatas) em sua versão 3 que será utilizado para a <u>estilização de conteúdo</u>. Essa ferramenta permite alterar cores, fontes, tamanhos, sombras, posicionamento e mais inúmeras funcionalidade.</p>
+        <center>
+            <h2><big>A estilização com CSS</big></h2>
+        </center>
         <p>Para trabalharmos com o CSS e realizar a estilização de um determinado elemento, precisamos compreender a sua sintaxe que se dará de uma forma diferente ao que era feito em HTML. Passaremos a utilizar um <b><BIG>SELETOR</BIG></b>, que basicamente vai definir o elemento que será estilizado. Após ele, vamos abrir e fechar um escopo atráves das <b><big>{chaves}</big></b> para começar, na prática, a estilização.</p>
         <p>Agora, já trabalhando dentro do escopo, para alterar alguma caracteristica de algum elemento, vamos utilizar uma <b><BIG>PROPRIEDADE</BIG></b>, seguido de dois pontos (<u>:</u>) e do respectivo valor que esta vai receber.</p>
         <p>Para ficar mais claro, a sintaxe de geral ficaria da seguinte forma:</p>
@@ -40,9 +52,44 @@
         </i><br>
         <p><b>DETALHE:</b> É <u>obrigatório</u> o uso de um ponto e vírgula no final de cada linha de comando!! (Exceto na última linha do escopo, onde o seu uso é opcional!)</p>
         <p>Ainda é possível realizar <b><big>COMENTÁRIOS</big></b> dentro do código através da seguinte sintaxe:</p>
-        <p style="color:silver">/* comentario */</p>
-
-
+        <p style="color:silver">/* comentario */</p><br>
+        <p>Vamos a mais um exemplo de código CSS:</p>
+        <img src="img/Ex2SintSelProp-ColBlTxtAlgnCtr.jpg" alt="">
+        <p>Neste caso, temos que os parágrafos estão recebendo a cor azul e o texto está sendo centralmente alinhado. Note, que a segunda propriedade é uma especifica. </p><br>
+        <center>
+            <h2><big>Como incorporar o CSS?</big></h2>
+        </center>
+        <p>Existem três maneiras de fazermos isso:</p>
+        <table>
+            <tr>
+                <th>Inline</th>
+                <td>
+                    <ul>
+                        <li>Os códigos CSS são definidos dentro da tag HTML a ser formatada.</li>
+                        <li>Afetam somente a tag na qual foi definida.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Incorporado</th>
+                <td>
+                    <ul>
+                        <li>Os códigos CSS são definidos no cabeçalho, dentro da tag &lt;header&gt;.</li>
+                        <li>Afetam somente o documento no qual foi definido.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Externo</th>
+                <td>
+                    <ul>
+                        <li>Os códigos CSS são definidos em um arquivo externo.</li>
+                        <li>Afetam todos os documentos que estiverem linkados a esse arquivo externo.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p>A ordem em que os mesmo foram apresentados, também representa a ordem de prioridades entre eles. Ou seja, se uma formatação for aplicada através do CSS Externo, e outra for formatação diferente for aplicada ao mesmo elemento através do CSS Incorporado, esta segunda será de fato aplicada e renderizada. A mesma lógica se aplica com o CSS Inline. Caso haja um CSS Inline, essa será a formatação aplicada e renderizada, independentemente do que já havia sido pré-determinado.</p>
 
 
 
@@ -56,6 +103,6 @@
 
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 15 de outubro de 2021, às 10:33</p>
+        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 15 de outubro de 2021, às 11:25</p>
     </body>
 </html>
