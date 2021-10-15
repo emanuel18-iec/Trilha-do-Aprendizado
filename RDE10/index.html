@@ -8,6 +8,7 @@
         <style>
             body{
                 background: #000;
+                padding: 2%;
             }
             p, h1, h2, h3, label{
                 color: #0F0;
@@ -23,8 +24,38 @@
         <h1><center>Introdução ao CSS<br><i>(Cascading Style Sheets)</i></center></h1>
         <p>Até o momento, utilizamos o HTML 5 para a demarcação do conteúdo, como textos, tabelas, imagens, videos e assim por diante. No entanto, o site geralmente não fica nada atrativo.</p>
         <p>Assim, vamos fazer uso do CSS (Cascading Style Sheets - Folha de Estilo em Cascatas) em sua versão 3 que será utilizado para a <u>estilização de conteúdo</u>. Essa ferramenta permite alterar cores, fontes, tamanhos, sombras, posicionamento e mais inúmeras funcionalidade.</p>
+        <p>Para trabalharmos com o CSS e realizar a estilização de um determinado elemento, precisamos compreender a sua sintaxe que se dará de uma forma diferente ao que era feito em HTML. Passaremos a utilizar um <b><BIG>SELETOR</BIG></b>, que basicamente vai definir o elemento que será estilizado. Após ele, vamos abrir e fechar um escopo atráves das <b><big>{chaves}</big></b> para começar, na prática, a estilização.</p>
+        <p>Agora, já trabalhando dentro do escopo, para alterar alguma caracteristica de algum elemento, vamos utilizar uma <b><BIG>PROPRIEDADE</BIG></b>, seguido de dois pontos (<u>:</u>) e do respectivo valor que esta vai receber.</p>
+        <p>Para ficar mais claro, a sintaxe de geral ficaria da seguinte forma:</p>
+        <img src="img/sintaxeSelProp.jpg" alt="Sintaxe Seletor e Propriedade">
+        <p>Por exemplo, vamos definir que um determinado parágrafo &lt;p&gt; vai ter o tamanho da sua fonte alterado para 20px. Como fazer isso?</p>
+        <p>Observe:</p>
+        <img src="img/ExSintSelProp-FontSize20px.jpg" alt="Exemplo de Sintaxe CSS">
+        <p>Observe um detalhe importante sobre esse exemplo: a propriedade <i>font-size</i> é um exemplo de <b>Propriedade Específica</b>. A propriedade em si, é a <i>font</i>, que é responsável por alterar as características das fontes. Quando definimos um <i>font-size</i>, defenimos especificadamente que estamos alterando o <i>tamanho da fonte</i>.</p>
+        <p>A sintaxe de uma Propriedade Específica ficaria a seguinte:</p>
+        <img src="img/SintProEspecf.jpg" alt="">
+        <p>Exemplo:</p>
+        <i>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Característica: font-size<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Propriedade: font<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Especifidade: size</p>
+        </i><br>
+        <p><b>DETALHE:</b> É <u>obrigatório</u> o uso de um ponto e vírgula no final de cada linha de comando!! (Exceto na última linha do escopo, onde o seu uso é opcional!)</p>
+        <p>Ainda é possível realizar <b><big>COMENTÁRIOS</big></b> dentro do código através da seguinte sintaxe:</p>
+        <p style="color:silver">/* comentario */</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 14 de outubro de 2021, às 05:40</p>
+        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 15 de outubro de 2021, às 10:33</p>
     </body>
 </html>
