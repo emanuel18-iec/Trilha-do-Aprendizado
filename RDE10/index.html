@@ -10,7 +10,7 @@
                 background: #000;
                 padding: 2%;
             }
-            p, h1, h2, h3, label, td, th, tr{
+            p, h1, h2, h3, label, td, th, tr, li{
                 color: #0F0;
                 font-family: monospace;
             }
@@ -23,9 +23,18 @@
                 font-size: 16px;
                 padding: 1%;
             }
+            li{
+                font-size: 16px;
+            }
             table{
                 border-collapse: collapse;
                 width: 100%;
+            }
+            a{
+                color: #0f0;
+            }
+            a:visited{
+                color: rgb(3, 133, 3);
             }
         </style>
     </head>
@@ -71,7 +80,7 @@
                 </td>
             </tr>
             <tr>
-                <th>Incorporado</th>
+                <th><big>Incorporado</big></th>
                 <td>
                     <ul>
                         <li>Os códigos CSS são definidos no cabeçalho, dentro da tag &lt;header&gt;.</li>
@@ -80,7 +89,7 @@
                 </td>
             </tr>
             <tr>
-                <th>Externo</th>
+                <th><big>Externo</big></th>
                 <td>
                     <ul>
                         <li>Os códigos CSS são definidos em um arquivo externo.</li>
@@ -90,8 +99,34 @@
             </tr>
         </table>
         <p>A ordem em que os mesmos foram apresentados, também representa a ordem de prioridade entre eles. Ou seja, se uma formatação for aplicada através do CSS Externo, e outra for formatação diferente for aplicada ao mesmo elemento através do CSS Incorporado, esta segunda será de fato aplicada e renderizada. A mesma lógica se aplica com o CSS Inline. Caso haja um CSS Inline, essa será a formatação aplicada e renderizada, independentemente do que já havia sido pré-determinado, seja por CSS Externo ou Incorporado.</p>
-
-
+        <br><br>
+        <p>Para entendermos e enfatizarmos a importância do CSS, vamos explorar um exemplo que se encontra no site na w3schools disponivel no seguinte endereço: <a target="_blank" href="https://www.w3schools.com/css/css_intro.asp">https://www.w3schools.com/css/css_intro.asp</a></p>
+        <p>Observe que no início da página tem um código de exemplo. Já no lado esquerdo, note que possui um menu com algumas opções: "Stylesheet 1", "Stylesheet 2", "Stylesheet 3", "Stylesheet 4" e "No Stylesheet".</p>
+        <p>Alterne entre eles e veja o que acontece:</p>
+        <ul>
+            <li>Stylesheet 1</li><br>
+                <img src="img/stiliz1-ExW3sc.jpg" alt=""><br><br><br>
+            <li>Stylesheet 2</li><br>
+                <img src="img/stiliz2-ExW3sc.jpg" alt=""><br><br><br>
+            <li>Stylesheet 3</li><br>
+                <img src="img/stiliz3-ExW3sc.jpg" alt=""><br><br><br>
+            <li>Stylesheet 4</li><br>
+                <img style="border:1px solid #0F0;" src="img/stiliz4-ExW3sc.jpg" alt=""><br><br><br>
+            <li>No Stylesheet</li><br>
+                <img src="img/stilizNo-ExW3sc.jpg" alt=""><br>
+        </ul>
+        <p>Notou que em todos os casos o conteúdo é o mesmo? O único fator que varia é o CSS e que, através do mesmo, é possivel transformar um site da forma que desejarmos. O CSS é um grande aliado e insdispensável na construção de um site bonito e facilmente usual.</p>
+        <br><br>
+        <p>Antes de irmos para a parte prática, é sugerida a instalação da extenção <b>Browser Preview</b> no seu Visual Code, que auxilia no desenvolvimento do site.</p>
+        <img src="img/extBrowPrvw.jpg" alt="">
+        <p>A extenção permitirá desenvolver o código com o site sendo exibido imediatamente ao lado, dentro do próprio Visual Code, da seguinte forma:</p>
+        <img style="width: 1300px;" src="img/BrowPrvwPratc.jpg" alt="">
+        <p>Para utilizá-lo, primeiramente iremos no caminho em que se encontra o arquivo que se desejas abrir, clica com o botão direito e escolhe a opção <i>"Abrir com Live Server"</i>.</p>
+        <img src="img/browPrevw-pass1-opTLivServ.jpg" alt="">
+        <p>Após abrir o arquivo no navegador, copie o endereçamento dado na barra de URL!</p>
+        <img src="img/browPrevw-pass2-ctrlCBarrDEnd.jpg" alt="">
+        <p>Retorne ao Visual Studio Code e cole este endereço no Browser Preview!</p>
+        <img style="width: 1300px;" src="img/brow-Prevw-pass3-passFinInVSC.jpg" alt="">
 
 
 
@@ -103,6 +138,6 @@
 
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 15 de outubro de 2021, às 11:29</p>
+        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 17 de outubro de 2021, às 15:43</p>
     </body>
 </html>
