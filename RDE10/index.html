@@ -40,7 +40,7 @@
         <p>Existem três maneiras de fazermos isso:</p>
         <table>
             <tr>
-                <th><a name="CSSinline"></a>Inline</th>
+                <th><a name="CSSinline"></a><big>Inline</big></th>
                 <td>
                     <ul>
                         <li>Os códigos CSS são definidos dentro da tag HTML a ser formatada.</li>
@@ -49,18 +49,20 @@
                 </td>
             </tr>
             <tr>
-                <th><big>Incorporado</big></th>
+                <th><big>Incorporado</big></th></th>
                 <td>
                     <ul>
+                        <a name="CSS_incorp"></a>
                         <li>Os códigos CSS são definidos no cabeçalho, dentro da tag &lt;header&gt;.</li>
                         <li>Afetam somente o documento no qual foi definido.</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th><big>Externo</big></th>
+                <th><big>Externo</big></th></th>
                 <td>
                     <ul>
+                        <a name="CSS_ext"></a>
                         <li>Os códigos CSS são definidos em um arquivo externo.</li>
                         <li>Afetam todos os documentos que estiverem linkados a esse arquivo externo.</li>
                     </ul>
@@ -148,9 +150,60 @@
         <p>Para finalizarmos, aplique uma cor a seu gosto, através da tag &lt;body&gt; e utilizando-se da propriedade <i><span class="prop">background-color</span></i></p>
         <p>Para isso, podes utilizar-se da ferramenta que o próprio Visual Code disponibiliza quando o cursor é posicionado acima do quadradrinho com a foto e permite ajustá-la mais facilmente a seu gosto, permitindo, inclusive, a alteração da sua opacidade (transparência).</p>
         <img src="img/CursFerrAjustDClr (2).jpg" alt="">
+        <P>No meu caso, utilizei a cor <span style="color:rgb(193,236,193)">(193,236,193)</sPan> e o código ficou assim:</P>
+        <img src="img/Ex6Codg-CssInline.jpg" alt="">
+        <p>Na prática:</p>
+        <img src="img/Ex6Pratic-CSSinline.jpg" style="width: 1300px;" alt="">
+        <p>Além disso, vamos alterar, por meio do &lt;body&gt;, a fonte de todo texto que será exibido na tela. Para isso, usaremos a propriedade <i><span class="prop">font-family</span></i>, que vai definir uma cadeia de caracteres. Observe que ao digitar esse comando, ele vai listar uma série opções:</p>
+        <img src="img/CursPropFamyFnt.jpg" alt="">
+        <p>No meu caso, usarei o seguinte conjunto de fontes: "<i style="color: rgb(179, 122, 122);">'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;</i>", da seguinte forma:</p>
+        <img src="img/Ex7Codg-CssInline.jpg" alt="">
+        <p>E na prática ficou da seguinte forma:</p>
+        <img src="img/Ex7Pratic-CSSinline.jpg" width="1300px" alt="">
 
+        <p>Conseguimos personalizar e formatar o nosso site. Mas, e se quisermos por exemplo, mudar todos os &lt;h2&gt; para uma outra cor? Suponhamos que seja uma página longa, é viável fazer essa manutenção da página? Bom, na realidade, sim, é possível. Porém, demanda muito tempo e dá muito trabalho procurar tag por tag e alterar cada uma individualmente. Assim, vamos aprender a otimizar e deixar o nosso CSS ainda mais viável que facilite a manutenção do mesmo.</p><br><br>
+
+        <center>
+            <h2><big>CSS Incorporado</big></h2>
+        </center>
+        <p><a href="#CSS_incorp">Caso não se lembres, clique aqui para retomar o assunto!</a></p>
+        <p>Para início de conversa, vamos definir uma tag &lt;style&gt; dentro do escopo da tag &lt;head&gt;. No meu caso, ficará abaixo da tag &lt;title&gt;, da seguinte forma:</p>
+        <img src="img/tagStyle.jpg" alt="">
+        <p>Agora, para começarmos a formatação, vamos indicar primeiramente o seletor, ou seja, o que vai ser formatado. Neste caso, vamos iniciar formatando o &lt;body&gt; e em seguida, abrimos o escopo de formatação com as chaves, da seguinte forma:</p>
+        <img src="img/constrc-p1-inBdy.jpg" alt="">
+        <p>Dentro desse escopo, indicamos a formatação que o seletor irá receber, no caso, à tag &lt;body&gt;. Neste caso, vamos definir um família de fontes que será aplicado em todo o documento HTML. Para exemplificar, usarei este seguinte comando: "<i style="color: rgb(179, 122, 122);">'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i>"</p>
+        <img src="img/Ex1Codg-CssIncorp.jpg" alt="">
+        <p>Observe o resultado na prática:</p>
+        <img src="img/Ex1Pratic-CSSincorp.jpg" width="1300px" alt="">
+        <p>Mas, porque 'família' de fontes?</p>
+        <p>A razão para definir tantas fontes, é como uma forma de segurança para, caso a primeira fonte definida não esteja disponível ou funcionando, o navegador usará a segunda. Se não funcionar, usará a terceira e assim por diante. De forma mais clara, o navegador, nesse exemplo, vai tentar usar a fonte <i>'Segoe Ui'</i>. Se ela não funcionar, ele vai tentar usar a <i>Tahoma</i>, que é a segunda fonte. Se ela não funcionar, vai tentar a <i>Geneva</i>. Caso ainda não funcione, usará a <i>Verdana</i>. E se não funcionar, usará uma fonte genérica <i>sans-serif</i> que esteja disponível.</p>
+        <p>Dito isso, vamos continuar a formatar o nosso &lt;body&gt;, alterando a cor de fundo para o mesmo. Usaremos a cor <span style="color:darksalmon">darksalmon</span>, obtendo o seguinte código:</p>
+        <img src="img/Ex2Codgc-CssIncorp.jpg" alt="">
+        <p>Na pratica:</p>
+        <img src="img/Ex2Pratic-CssIncorp.jpg" width="1300px" alt="">
+        <p>Feito isso, vamos formatar o &lt;h1&gt;, definindo, como cor de fundo, <span style="color:darkred">darkred</span>, como cor de texto, <span style="color:darksalmon">darksalmon</span> e alinhar centralmente o texto.</p>
+        <p>Para isso, podemos utilizar o seguinte código:</p>
+        <img src="img/Ex3Codg-CssIncorp.jpg" alt="">
+        <p>Causando esse efeito:</p>
+        <img src="img/Ex3Prat-CssIncorp.jpg" width="1300px" alt="">
+        <p>Agora vamos a um detalhe importante importantíssimo: vamos formatar o &lt;h2&gt; </p>
+
+
+
+
+
+
+
+
+
+
+        <br><br><br><br><br>
+        <center>
+            <h2><big>CSS Externo</big></h2>
+        </center>
+        <p><a href="#CSS_ext">Caso não se lembres, clique aqui para retomar o assunto!</a></p>
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 18 de outubro de 2021, às 12:53</p>
+        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 18 de outubro de 2021 às 12:53, Horário de Brasília - Brasil</p>
     </body>
 </html>
