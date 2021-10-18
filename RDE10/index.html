@@ -5,38 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gabriel Emanuel [RDE-10]</title>
-        <style>
-            body{
-                background: #000;
-                padding: 2%;
-            }
-            p, h1, h2, h3, label, td, th, tr, li{
-                color: #0F0;
-                font-family: monospace;
-            }
-            p{
-                font-size: 19px;
-                text-align: justify;
-            }
-            table, td, th, tr{
-                border: 1.5px solid #0f0;
-                font-size: 16px;
-                padding: 1%;
-            }
-            li{
-                font-size: 16px;
-            }
-            table{
-                border-collapse: collapse;
-                width: 100%;
-            }
-            a{
-                color: #0f0;
-            }
-            a:visited{
-                color: rgb(3, 133, 3);
-            }
-        </style>
+        <link rel="stylesheet" href="css/stylesDefault.css">
     </head>
     <body>
         <h1 style="padding-top: -2%;"><center>Introdução ao CSS<br><i>(Cascading Style Sheets)</i></center></h1>
@@ -71,7 +40,7 @@
         <p>Existem três maneiras de fazermos isso:</p>
         <table>
             <tr>
-                <th>Inline</th>
+                <th><a name="CSSinline"></a>Inline</th>
                 <td>
                     <ul>
                         <li>Os códigos CSS são definidos dentro da tag HTML a ser formatada.</li>
@@ -132,18 +101,56 @@
         <p>Para isso de conversa, vamos utilizar a seguinte estrutura base:</p>
         <img src="img/estrBasExaCSS.jpg" alt="">
         <p>Ela vai nos resultar na seguinte página:</p>
-        <img src="img/examCodBasInPrac.jpg" style="width: 1300px;" alt="">
+        <img src="img/examCodBasInPrac.jpg" style="width: 1300px;" alt=""><br><br><br>
 
+        <center>
+            <h2><big>CSS Inline</big></h2>
+        </center>
+        <p><a href="#CSSInline">Caso não se lembres, clique aqui para retomar o assunto!</a></p>
+        <p>Para começarmos, vamos definir uma cor verde para o título do nosso código exemplo através do CSS inline. Para isso, vamos fazer uso do atributo <i>style</i>, que vai receber a <b>formatação para APENAS ESSA tag</b>.</p>
+        <p>Como mencionado, vamos fazer isso a mudança do &lt;h1&gt; para verde através da propriedade <i><span class="prop">color</span> </i>e seguido da sua respectiva cor.</p>
+        <p>Dessa forma, o nosso código ficará da seguinte forma:</p>
+        <img src="img/ex1-CssInline.jpg" alt="">
+        <p>Visualmente, temos:</p>
+        <img src="img/Ex1Pratic-CSSinline.jpg" alt="">
+        <p>Além disso, vamos definir a cor de fundo do &lt;h1&gt; através da propriedade <i><span class="prop">background-color</span></i>, que funcionará da mesma forma.</p>
+        <p>Neste caso, vamos definir a cor "<span style="color:darkseagreen">darkseagreen</span>"</p>
+        <img src="img/Ex2Codg-CssInline.jpg" alt="">
+        <p>O resultado ficou assim:</p>
+        <img src="img/Ex2Pratic-CSSinline.jpg" alt="">
+        <p>Note um detalhe importante: ao digitar dark, observe que o próprio Visual Code lista muitas opções de cores que podem ser utilizadas:</p>
+        <img src="img/CursDigDakr (2).jpg" alt="">
+        <p>Além disso, é possível usar em torno de 140 tipos de formas de definir cores, como a <span style="color:#FF0;">Escrita em Hexadecimal [#FF0 - <i>amarelo</i>]</span> ou a <span style="color: rgb(0,0,255);">Escrita em RGB [(0,0,255) - <i>blue</i>]</span>, por exemplo.</p>
+        <p>Para finalizar, vamos alinhar esse título no centro através da propriedade <i><span class="prop">text-align</span></i> seguido da respectiva orientação. Seus valores possíveis são:</p>
+        <ul>
+            <li><i>center:</i> centro</li>
+            <li><i>left:</i> esquerda</li>
+            <li><i>right:</i> direita</li>
+            <li><i>justify:</i> justificado</li>
+        </ul>
+        <p>Neste caso, a nossa formatação ficará assim:</p>
+        <img src="img/Ex3Codg-CssInline.jpg" alt="">
+        <p>Na prática:</p>
+        <img src="img/Ex3Pratic-CSSinline.jpg" style="width: 1300px;" alt="">
+        <p>Agora, vamos definir que o nosso &lt;h2&gt; "Componentes" receberá a cor verde. Podemos fazer da seguinte forma:</p>
+        <img src="img/Ex4Codg-CssInline.jpg" alt="">
+        <p>Na prática, ficaria assim:</p>
+        <img src="img/Ex4Pratic-CSSinline.jpg" alt="">
+        <p>Agora, vamos alterar o tamanho do parágrafo imediatamente abaixo a esse &lt;h2&gt;, para 20 pixels. Para isso, utilizaremos a propriedade <i><span class="prop">font-size</span>. Ela pode ser definida em várias unidades, mas nesse caso, usaremos os pixels (px).</i></p>
+        <p>Portanto, vamos ter:</p>
+        <img src="img/Ex5Codg-CssInline.jpg" alt="">
+        <p>Antes:</p>
+        <img src="img/Ex5Pratic[b]-CSSinline.jpg" alt="">
+        <p>Depois:</p>
+        <img src="img/Ex5Pratic[a]-CSSinline.jpg" alt="">
+        <p>Aplique essa mesma formatação nas demais tags. Aplique a cor <span style="color:seagreen">seagreen</span>!</p>
 
-
-
-
-
-
-
+        <p>Para finalizarmos, aplique uma cor a seu gosto, através da tag &lt;body&gt; e utilizando-se da propriedade <i><span class="prop">background-color</span></i></p>
+        <p>Para isso, podes utilizar-se da ferramenta que o próprio Visual Code disponibiliza quando o cursor é posicionado acima do quadradrinho com a foto e permite ajustá-la mais facilmente a seu gosto, permitindo, inclusive, a alteração da sua opacidade (transparência).</p>
+        <img src="img/CursFerrAjustDClr (2).jpg" alt="">
 
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 18 de outubro de 2021, às 06:54</p>
+        <p><big>ÚLTIMA MODIFICAÇÃO: </big> 18 de outubro de 2021, às 12:53</p>
     </body>
 </html>
