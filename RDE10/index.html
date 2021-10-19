@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/stylesDefault.css">
     </head>
     <body>
-        <h1 style="padding-top: -2%;"><center>Introdução ao CSS<br><i>(Cascading Style Sheets)</i></center></h1>
+        <h1 style="padding-top: -2%;"><center>Introdução ao CSS <span style="font-size: 20px; font-style: italic;">{RDE 10}</span><br><i>(Cascading Style Sheets)</i><br><span style="font-size: 20px;font-style: italic;">Gabriel Emanuel</span></center></h1><br>
         <p>Até o momento, utilizamos o HTML 5 para a demarcação do conteúdo, como textos, tabelas, imagens, videos e assim por diante. No entanto, o site geralmente não fica nada atrativo.</p>
         <p>Assim, vamos fazer uso do CSS (Cascading Style Sheets - Folha de Estilo em Cascatas) em sua versão 3 que será utilizado para a <u>estilização de conteúdo</u>. Essa ferramenta permite alterar cores, fontes, tamanhos, sombras, posicionamento e mais inúmeras funcionalidade.</p>
         <center>
@@ -209,15 +209,99 @@
         <img src="img/cdgEnd-CSS_inline.jpg" alt="">
         <h4><BIG>CÓDIGO</BIG> - css incorporado</h4>
         <img src="img/cdgEnd-CSS_incorp.jpg" alt="">
-        <p>Qual ficou melhor? <i>rs</i></p><br><br><br><br><br>
+        <p>Qual ficou melhor? <i>rs</i></p><br><br>
         <center>
             <h2><big>CSS Externo</big></h2>
         </center>
         <p><a href="#CSS_ext">Caso não se lembres, clique aqui para retomar o assunto!</a></p>
+        <p>A grande diferença do CSS Externo para os outros dois, O <i>inline</i> e o <i>incorporado</i>, é que a formatação e a estilização pelo CSS se dará em um arquivo a parte. Ou seja, teremos um documento para o HTML, e outro documento diferente para o CSS.</p>
+        <p>Uma das suas grandes vantagens, é a possibilidade de reutilizar a mesma formatação para inúmeros arquivos HTML diferentes. Ou seja, um arquivo CSS pode ser linkado e utilizado como formatação para muitos arquivos HTML. É muito útil quando deseja-se desenvolver várias páginas que sigam uma mesma formatação.</p>
+        <p>Para incorporar e linkar o arquivo CSS no HTML, utilizaremos a tag &lt;link&gt;. Nela vamos inserir o atributo <big><b>rel</b></big>, que receberá como valor <i><b>stylesheet</b></i>, seguido do atributo <big><b>href</b></big>, que receberá o endereço do arquivo CSS, conforme o exemplo de sintaxe abaixo:</p>
+        <img src="img/tagLink-toLinkArchCss.jpg" alt="">
+        <p><b><big>Notas:</big></b><br>
+        <ul>
+            <li>Essa tag deve ser obrigatoriamente utilizada como escopo na tag <b>&lt;head&gt;</b>
+            </li><br>
+            <li>A extesão do arquivo CSS é <i><u>.css</u></i>. (por exemplo: <span style="font-family: cursive;"><i><u>estilos.css</u></i></span>)</li><br>
+            <li>Normalmente, no mesmo arquivo do <i>index.html</i>, cria-se um pasta chamada <b><u>css</u></b> que vai conter todos os arquivos, geralmente num arquivo chamado <i>style.css</i> </li><br>
+            <img src="img/orgPast.jpg" alt="">
+        </ul>
+        <p>Agora, para realizar a formatação, vamos proceder da mesma que forma que vimos no CSS Incorporado!</p>
+        <p>Então, vamos aplicar a seguinte formatação:</p>
+        <table>
+            <tr>
+                <th style="width: 100px;">Elemento</th>
+                <th>Formatação</th>
+            </tr>
+            <tr>
+                <th>&lt;body&gt;</th>
+                <td>
+                    <ul>
+                        <li>Cor de Fundo: <span style="color:lightgray">lightgray</span></li>
+                        <li>Família de Fontes: <i>'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif</i></li>
+                    </ul> 
+                </td>
+            </tr>
+            <tr>
+                <th>&lt;h1&gt;</th>
+                <td>
+                    <ul>
+                        <li>Cor de Fundo: <span style="color:lightslategray">lightslategray</span></li>
+                        <li>Cor do Texto: <span style="color:lightgray;">lightgray</span></li>
+                        <li>Alinhamento: centro</li>
+                        <li>Tamanho da fonte: 28 pixels</li>
+                    </ul>
+                </td>
+                <tr>
+                    <th>&lt;h2&gt;</th>
+                    <td>
+                        <ul>
+                            <li>Cor do Texto: <span style="color:darkslategray">darkslategray</span></li>
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>&lt;h3&gt;</th>
+                    <td>
+                        <ul>
+                            <li>Cor do Texto: <span style="color:slategray">slategray</span></li>
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>&lt;ul&gt;</th>
+                    <td>
+                        <ul>
+                            <li>Cor do Texto: <span style="color:dimgray">dimgray</span></li>
+                        </ul> 
+                    </td>
+                </tr>
+            </tr>
+        </table>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>Na prática, o código CSS ficaria da seguinte forma:</p>
+        <img src="img/ExUnicCdg-CssExterno.jpg" alt="">
+        <p>E na prática, essa formatação ficou assim:</p>
+        <img src="img/ExUnicPratic-CssExterno.jpg" width="1300px" alt="">
+
+        <center>
+            <h2><big>SEÇÃO DE LINKS!</big></h2>
+        </center>
+        
+        <table>
+            <td>
+                <p style="text-align: center;"><a target="_blank" href="html/ExAula-CSS_inline.html">CSS_inline.html</a></p>
+            </td>
+            <td>
+                <p style="text-align: center;"><a target="_blank" href="html/ExAula-CSS_Incorporado.html">CSS_incorporado.html</a></p>
+            </td>
+            <td>
+                <p style="text-align: center;"><a target="_blank" href="html/ExAula-CSS_Externo.html">CSS_externo.html</a></p>
+            </td>
+        </table>
+        <br><br><br><br><br>
         <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-            <p style="text-align: center;"><big>ÚLTIMA MODIFICAÇÃO: </big> 18 de outubro de 2021 às 21:54, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+            <p style="text-align: center;"><big>ÚLTIMA MODIFICAÇÃO: </big> 18 de outubro de 2021 às 22:52, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
             <p style="text-align: center;"><a href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
             <p style="text-align: center;"><a target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador |</a></p>
             </div>
