@@ -48,7 +48,7 @@ th:hover{
     box-shadow: 2% 2% 5% #000;
 }
 .aDate:visited{
-  color:#00F;
+  color:#000;
   font-weight: bold;
 }
 .aDate, .aDate:hover, .aDate:visited{
