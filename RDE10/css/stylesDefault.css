@@ -2,7 +2,7 @@ body{
     background: #000;
     padding: 2%;
 }
-p, h1, h2, h3, label, td, th, tr, li{
+p, h1, h2, h3, label, td, th, tr, li, h4{
     color: #0F0;
     font-family: monospace;
 }
