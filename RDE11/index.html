@@ -15,6 +15,16 @@
                 margin-right: 3%;
 
             }
+            .seletores{
+                color:darkcyan;
+                font-size: 25px;
+            }
+            .seletores span{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body>
@@ -107,7 +117,7 @@
         <p>Quando criamos e estilizamos a nossa tag &ltdiv&gt, definimos que todas as &ltdiv&gt seriam roxas e com margem de 10 pixels, sem exceções. Mas, existe a possibilidade de formatarmos cada &ltdiv&gt com uma estilização diferente, seja ela para alterar a fonte, a cor da fonte, o tamanho ou demais propriedades. Para isso, usaremos os seletores personalizados.</p>
         <p>Assim, os seletores personalizados possibilitam personalizar tags do documento HTML para estilização. Temos os seletores do tipo <strong>classe</strong> e o seletor do tipo <strong>id</strong></p>
         <big>
-            <h3>Seletor <b>id</b></h3>
+            <h3 class="seletores">Seletor <span>id</span></h3>
         </big>
         <ul>
             <li>Adiciona-se o atributo <big>id</big> na tag em questão</li>
@@ -140,9 +150,240 @@
         <p style="font-size: 100px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; margin-top: 0px; background-color: rgba(68, 67, 4, 0.589) /*rgba(4, 60, 68, 0.589)*/; border: #FFF 3px solid;">
             <span style="color: red">R<span style="font-size: 60px;">ed</span></span>
             <span style="color: green">G<span style="font-size: 60px;">reen</span></span>
-            <span style="color: blue">B<span style="font-size: 60px;">lue</span></span>
-            
+            <span style="color: blue">B<span style="font-size: 60px;">lue</span></span>     
         </p>
+        <p>Por fim, para encerrarmos a nossa estilização ao id #principal, vamos definir uma borda de 10 pixels, sólida (linha contínua) com a cor <span style="color:rgb(138,46,224)">rgb(138,46,224)</span></p>
+        <p>Para isso, utilizaremos a propriedade <span class="prop">border</span>, que receberá como valores, a largura da cor, seguida do tipo da borda e da cor da borda, sem espaços, da seguinte forma:</p>
+        <img src="img/tagBorder.jpg" alt="">
+        <p>Para que fique mais claro, vamos solucionar a proposta do exemplo:</p>
+        <img src="img/idEx07-cdg.jpg" alt="">
+        <p>Observe como ficou na prática:</p>
+        <img src="img/idEx07[a]-pratc.jpg" width="1300px;" alt="">
+        <p>Caso não tenha ficado muito visível, observe este zoom (recorte com ampliação da imagem ou de parte dela):</p>
+        <img src="img/IdEx07[b]-pratc.jpg" width="600px" alt=""><br>
+        <big><h3 class="seletores">Seletor <span>class</span></h3></big>
+        <ul>
+            <li>Recebem uma identificação através do atributo <i>class</i></li>
+            <li>Em CSS, utiliza-se um <i>.</i> (ponto) para referenciar uma classe</li>
+            <li>Podem ser utilizados em quantos elementos for necessário</li>
+        </ul>
+        <p>Agora, vamos definir classes para os nossos elementos CSS. </p>
+        <p>Para isso, vamos definir uma classe "agrupamento" que contemplará as três primeiras <i>div</i>'s e para a última, vamos definir a classe "personalizado". Além do mais, vamos definir a classe "exemplo1" para a &ltdiv&gt do bloco 1 e a classe "exemplo2" para a &ltdiv&gt do bloco 2, da seguinte forma:</p>
+        <img src="img/classEx03-cdg.jpg" alt="">
+        <p>Para iniciarmos, vamos formatar a classe "agrupamento", para as seguintes propriedades:</p>
+        <table style="padding: 2px;">
+            <tr>
+                <th style="width: 200px;">Propriedade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <th>font-family</th>
+                <td>
+                    <span class="ffont">'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;</span>
+                </td>
+            </tr>
+            <tr>
+                <th>color</th>
+                <td>
+                    <span style="color:rgb(39,7,70)">rgba(39,7,70)</span>
+                </td>
+                <tr>
+                    <th>background-color</th>
+                    <td>
+                        <span style="color:rgba(29,9,45,0.7)">rgba(29,9,45,0.7)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>border</th>
+                    <td>
+                        <ul>
+                            <li>Espessura: 2 pixels</li>
+                            <li>Cor: <span style="color:gray">Cinza</span></li>
+                            <li>Tipo: Sólida</li>
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>margin</th>
+                    <td>20 pixels </td>
+                </tr>
+                <tr>
+                    <th>padding <sup>(*)</sup></th>
+                    <td>10 pixels </td>
+                </tr>
+            </tr>
+        </table>
+
+        <ul>
+            <li><big>PADDING:</big> É o espaçamento entre uma &ltdiv&gt e o seu conteúdo</li>
+        </ul>
+        <p>Todas essas formatações aplicadas ficará assim:</p>
+        <img src="img/classEx04-cdg.jpg" alt="">
+        <p>Na prática o nosso arquivo HTML ficará assim:</p>
+        <img src="img/classEx04-pratc.jpg" width="1300px" alt="">
+        <p>Note que: tanto os dois blocos (<i>Bloco 1</i> e <i>Bloco 2</i>) e o bloco entitulado <i>Seletores Peronalizados</i>, NÃO foram estilizados. Isso se deve ao fato das classes, não serem a mesma na qual a formatação foi aplicada (<i>exemplo1</i>; <i>exemplo2</i>; <i>personalizado</i>). Dessa forma, elas se mantiveram com a sua formatação padrão!</p>
+        <p>Portanto, vamos formatar a classe <i>.exemplo1</i>:</p>
+        <table style="padding: 2px;">
+            <tr>
+                <th style="width: 200px;">Propriedade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <th>font-family</th>
+                <td>
+                    <span class="ffont">Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;</span>
+                </td>
+            </tr>
+            <tr>
+                <th>color</th>
+                <td>
+                    <span style="color:rgba(157, 92, 194, 0.75);">rgba(157, 92, 194, 0.75)</span><br>Opacidade: 75%
+                </td>
+                <tr>
+                    <th>background-color</th>
+                    <td>
+                        <span style="color:darkblue;">darkblue</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>border</th>
+                    <td>
+                        <ul>
+                            <li>Espessura: 1 pixels</li>
+                            <li>Cor: <span style="color:cadetblue">Cadetblue</span></li>
+                            <li>Tipo: Sólida</li>
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>margin</th>
+                    <td>10 pixels </td>
+                </tr>
+                <tr>
+                    <th>padding <sup>(*)</sup></th>
+                    <td>10 pixels </td>
+                </tr>
+                <tr>
+                    <th>width</th>
+                    <td>80 pixels </td>
+                </tr>
+                <tr>
+                    <th>height</th>
+                    <td>30 pixels </td>
+                </tr>
+            </tr>
+        </table>
+        <p>O nosso código, ficou assim:</p>
+        <img src="img/classEx06-cdg.jpg" alt="">
+        <p>Na prática, o nosso site está assim:</p>
+        <img src="img/classEx06-pratc.jpg" width="1300px" alt="">
+        <p>Para continuar a nossa formatação, vamos utilizar as seguintes propriedades para formatarmos a classe <i>.exemplo2</i></p>
+        <table style="padding: 2px;">
+            <tr>
+                <th style="width: 200px;">Propriedade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <th>font-family</th>
+                <td>
+                    <span class="ffont">'Courier New', Courier, monospace;</span>
+                </td>
+            </tr>
+            <tr>
+                <th>background-color</th>
+                <td>
+                    <span style="color:rgb(208,211,8);">rgb(208,211,8)</span>
+                </td>
+                <tr>
+                    <th>border</th>
+                    <td>
+                        <ul>
+                            <li>Espessura: 3 pixels</li>
+                            <li>Cor: <span style="color:orange">orange</span></li>
+                            <li>Tipo: Sólida</li>
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>margin</th>
+                    <td>10 pixels </td>
+                </tr>
+                <tr>
+                    <th>padding</th>
+                    <td>10 pixels </td>
+                </tr>
+                <tr>
+                    <th>width</th>
+                    <td>100 pixels </td>
+                </tr>
+                <tr>
+                    <th>height</th>
+                    <td>50 pixels </td>
+                </tr>
+            </tr>
+        </table>
+        <p>o nosso código ficará da seguinte forma:</p>
+        <img src="img/classEx07-cdg.jpg" alt="">
+        <p>E observe que o segundo bloco agora está com uma formatação só para ele:</p>
+        <img src="img/classEx07-pratc.jpg" width="1300px" alt="">
+        <p>Por fim, vamos realizar a seguinte formatação para a classe "personalizado":</p>
+        <table style="padding: 2px;">
+            <tr>
+                <th style="width: 200px;">Propriedade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <th>font-family</th>
+                <td>
+                    <span class="ffont">'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</span>
+                </td>
+            </tr>
+            <tr>
+                <th>background-color</th>
+                <td>
+                    <span style="color:rgba(216,197,233,0.616);">rgba(216,197,233,0.616);</span><br>Opacidade: 75%
+                </td>
+                <tr>
+                    <th>border</th>
+                    <td>
+                        <ul>
+                            <li>Espessura: 2 pixels</li>
+                            <li>Cor: <span style="color:gray">gray</span></li>
+                            <li>Tipo: Sólida</li>
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>margin</th>
+                    <td>10 pixels </td>
+                </tr>
+                <tr>
+                    <th>padding</th>
+                    <td>10 pixels </td>
+                </tr>
+        </table>
+        <p>Transformando em código, temos:</p>
+        <img src="img/classEx08-cdg.jpg" alt="">
+        <p>E na prática, a nossa &ltdiv&gt ficou assim:</p>
+        <img src="img/classEx08-pratc.jpg" width="1300px" alt=""><br>
+        <center>
+            <big>
+                <h2>Pseudo-Classes</h2>
+            </big>
+        </center>
+        <ul>
+            <li>Define um estado especial para um elemento (tag, classe, id, ... etc)</li>
+            <li>No CSS, utiliza-se ":" (dois pontos) para defini-la</li>
+        </ul>
+        <p>Usada para definir um estado especial de um elemento. O seletor de classe é representado por dois pontos, “:”. Estão relacionados a um elemento ou uma classe.</p>
+        <img src="img/psClEx01-sint.jpg" alt="">
+
+
+
+
+
+
+
 
 
 
@@ -152,9 +393,9 @@
 
         <br><br><br><br><br>
         <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de outubro de 2021 às 14:46, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de outubro de 2021 às 19:32, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
             <p style="text-align: center;"><a href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
-            <p style="text-align: center;"><a target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador |</a></p>
+            <p style="text-align: center;"><a target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>
             </div>
     </body>
     </body>
