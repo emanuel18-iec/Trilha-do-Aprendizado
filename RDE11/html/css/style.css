@@ -11,4 +11,7 @@ span{
 
 #principal{
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(83,58,109);
+    text-align: center;
+    background-color: rgb(29,9,48);
 }
