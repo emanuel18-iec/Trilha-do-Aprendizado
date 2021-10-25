@@ -75,10 +75,50 @@
         <p>Na prática:</p>
         <img src="img/divEx02-pratc.jpg" width="1300px" alt="">
         <p>Qual o efeito gerado? Parece que as <i>div</i>'s foram unidas e viraram uma só (na prática, isso não é verdade). </p>
-        <p>Os dois são elementos diferentes, mas que soam como se fosse um mesmo. Isso se deve, poruê eles ainda</p>
-
-
-
+        <p>Os dois são elementos diferentes, mas que parecem como se fosse um mesmo. Isso se deve, porquê eles ainda não receberam diferenciações.</p>
+        <p>Mas, uma possibilidade para separá-los, é utilizar-se da propriedade <span class="prop">margin</span>, que, para fins de exemplificação, defeniremos como 10 pixels. Essa propriedade vai definir a distância entre as margens do elemento, no caso, do nosso bloco, até as margens do elemento pai, no caso, da tag &ltbody&gt, da seguinte forma:</p>
+        <img src="img/divEx03-cdg.jpg" alt="">
+        <p>E observe como ficou agora:</p>
+        <img src="img/div03-pratc.jpg" width="1300px" alt="">
+        <p>Agora, vamos envelopar cada parte desse nosso código de exemplo:</p>
+        <img src="img/divEx04-cdg.jpg" alt="">
+        <p>Observe como ficou o nosso arquivo HTML:</p>
+        <img src="img/divEx04-pratc.jpg" width="1300px" alt="">
+        <center>
+            <big>
+                <h2>Elementos Inline</h2>
+            </big>
+        </center>
+        <p>O elemento &ltspan&gt é um elemento inline. É um elemento neutro embutidos que marcam um bloco dentro de uma mesma linha ou parágrafo. Pode ser usado pelo CSS para estilização de partes específicas do conteúdo do documento HTML</p>
+        <p>No nosso código, encontre o subtítulo <i>"Elementos Inline"</i>, selecione o trecho <i>"elemento neutro"</i> e envelope com a tag &ltspan&gt:</p>
+        <img src="img/spanEx01-cdg.jpg" alt="">
+        <p>Observe que na prática não acontece absolutamente nada:</p>+
+        <img src="img/spanEx01-pratc.jpg" alt="">
+        <p>Essa tag é muito útil quando se deseja realizar a formatação ou a estilização de uma palavra ou de trechos mais específicos.</p>
+        <p>Agora vamos ao CSS, e vamos definir que esse trecho de &ltspan&gt será negritado. Para isso, utilizaremos a propriedade <span class="prop">font-weight</span> <i>(peso da fonte)</i> com o valor <b>bold</b>:</p>
+        <img src="img/spanEx02-cdg.jpg" alt="">
+        <p>Agora perceba:</p>
+        <img src="img/spanEx02-pratc.jpg" alt="">
+        <br>
+        <center>
+            <big>
+                <h2>Seletores Personalizados</h2>
+            </big>
+        </center>
+        <p>Quando criamos e estilizamos a nossa tag &ltdiv&gt, definimos que todas as &ltdiv&gt seriam roxas e com margem de 10 pixels, sem exceções. Mas, existe a possibilidade de formatarmos cada &ltdiv&gt com uma estilização diferente, seja ela para alterar a fonte, a cor da fonte, o tamanho ou demais propriedades. Para isso, usaremos os seletores personalizados.</p>
+        <p>Assim, os seletores personalizados possibilitam personalizar tags do documento HTML para estilização. Temos os seletores do tipo <strong>classe</strong> e o seletor do tipo <strong>id</strong></p>
+        <big>
+            <h3>Seletor <b>id</b></h3>
+            <ul>
+                <li>Adiciona-se o atributo <big>id</big> na tag em questão</li>
+                <li>Cada <i>id</i> é único, ou seja, aplica-se a apenas um elemento</li>
+                <li>
+                    No CSS, para indicar-se um <i>id</i>, utiliza-se <b>#</b> seguido do nome que foi definido na tag. Ex.:<br>
+                    <img src="img/idEx01-cdg.jpg" alt=""><br>
+                    <img src="img/idEx02-cdg.jpg" alt="">
+                </li>
+            </ul>
+        </big>
 
 
 
@@ -87,7 +127,7 @@
 
         <br><br><br><br><br>
         <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de outubro de 2021 às 06:20, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de outubro de 2021 às 10:58, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
             <p style="text-align: center;"><a href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
             <p style="text-align: center;"><a target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador |</a></p>
             </div>

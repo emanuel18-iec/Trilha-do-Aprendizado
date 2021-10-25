@@ -1,5 +1,10 @@
 
 div{
     background-color: blueviolet;
+    margin: 10px;
+}
+
+span{
+    font-weight: bold;
 }
 
