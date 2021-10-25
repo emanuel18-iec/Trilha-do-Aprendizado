@@ -7,10 +7,13 @@
         <title>RDE 11 - Gabriel Emanuel</title>
         <link rel="stylesheet" type="text/css" href="../RDE10/css/stylesDefault.css">
         <style>
-            .defgrth p{
+            .citted p{
                 color:red;
-                font-style: italic;
+                font-style: oblique;
                 font-size: 14px;
+                margin-left: 3%;
+                margin-right: 3%;
+
             }
         </style>
     </head>
@@ -21,17 +24,17 @@
             <iframe width="1000px" height="300px" src="pdf/ACFrOgACZTdDOPJC976O5V1Pj6XC-6-VIJzZOOY8-ZNprXR7usysvyDXPnjcRFT9kyDPYJB1BFCLf20hfPLQpgxuiQX-R28s_G7TYXbdIiLraYzQLf5wUSiPNXLN6anGQm2S0NrT4fZSjsn_GrkE.pdf" frameborder="0"></iframe>
         </center>
         <p>Para as experiências práticas, usaremos o seguinte código:</p>
-                    <span class="defgrth">
+                    <span class="citted">
                         <p>Elementos block-level, inline e Seletores Personalizados</p>
                         <p>Agrupamento de elementos</p>
-                        <p>Os elementos <div> e <span> são usados para agrupar e estruturar um documento e são frequentemente usados em conjunto com os atributos class e id.</p>
+                        <p>Os elementos &ltdiv&gt e &ltspan&gt; são usados para agrupar e estruturar um documento e são frequentemente usados em conjunto com os atributos class e id.</p>
                         <p>Elementos Block-level</p>
-                        <p>O elemento <div> é um elemento block-level. Tem a função de agrupar elementos html, definindo blocos de contéudo sempre iniciando uma nova linha e ocupando toda a linha. </p>
+                        <p>O elemento &ltdiv&gt é um elemento block-level. Tem a função de agrupar elementos html, definindo blocos de contéudo sempre iniciando uma nova linha e ocupando toda a linha. </p>
                         <p>Exemplo:</p>
                         <p>Bloco 1</p>
                         <p>Bloco 2</p>
                         <p>Elementos Inline</p>
-                        <p>O elemento <span> é um elemento inline. É um elemento neutro embutidos que marcam um bloco dentro de uma mesma linha ou parágrafo. Pode ser usado pelo CSS para estilização de partes específicas do conteúdo do documento HTM</p>
+                        <p>O elemento &ltspan&gt é um elemento inline. É um elemento neutro embutidos que marcam um bloco dentro de uma mesma linha ou parágrafo. Pode ser usado pelo CSS para estilização de partes específicas do conteúdo do documento HTM</p>
                         <p>Seletores Personalizados</p>
                         <p>Possibilita personalizar tags do documento HTML para estilização. Temos os seletores do tipo classe e o seletor do tipo id</p>
                         <p>Seletor do tipo id</p>
@@ -42,10 +45,37 @@
                         <p>Usada para definir um estado especial de um elemento. O seletor de classe é representado por dois pontos, “:”. Estão relacionados a um elemento ou uma classe.</p>
                         <p>Pseudo-Elementos</p>
                         <p>Usado para estilizar partes específicas de um elemento.O seletor de classe é representado por dois pontos seguido de dois pontos, “::”</p>
-                    </span>
-
-
-
+                    </span><br>
+        <center>
+            <big>
+                <h2>Agrupamento de Elementos</h2>
+            </big>
+        </center>
+        <p>Os elementos &ltdiv&gt e &ltspan&gt; são usados para agrupar e estruturar um documento e são frequentemente usados em conjunto com os atributos class e id, que veremos adiante.</p><br>
+        <center>
+            <big>
+                <h2>Elementos Block-level</h2>
+            </big>
+        </center>
+        <p>O elemento &ltdiv&gt é um elemento block-level. Tem a função de agrupar elementos html, definindo blocos de contéudo sempre iniciando uma nova linha e ocupando toda a linha.</p>
+        <p>Agora, vamos envelopar, no nosso Visual Studio Code, os dois blocos citados através do seguinte comando:</p>
+        <ul>
+            <li>Seleciona o conteúdo</li>
+            <li>Pressiona <i>Ctrl</i> + <i>Shift</i> + <i>P</i></li>
+            <li>Pressiona Enter</li>
+            <li>Digita a tag a ser utilizada, no caso, <i>div</i></li>
+        </ul>
+        <p>O nosso código ficará assim:</p>
+        <img src="img/divEx01.jpg" alt="">
+        <p>Mas, observe o resulto na prática, e perceba que a divisão em blocos foi realizada:</p>
+        <img src="img/divEx01-pratc.jpg" alt="">
+        <p>A mudança é perceptível, mas não tão clara assim. Por que não há nenhuma diferenciação, cores ou estilo de formatação, de onde será o bloco. Então, para demonstrar e diferenciá-los, vamos utilizar o CSS</p>
+        <p>Iniclamente, vamos definir uma cor roxa para essas <i>div</i>'s. Ficara da seguinte forma:</p>
+        <img src="img/divEx02-cdg.jpg" alt="">
+        <p>Na prática:</p>
+        <img src="img/divEx02-pratc.jpg" width="1300px" alt="">
+        <p>Qual o efeito gerado? Parece que as <i>div</i>'s foram unidas e viraram uma só (na prática, isso não é verdade). </p>
+        <p>Os dois são elementos diferentes, mas que soam como se fosse um mesmo. Isso se deve, poruê eles ainda</p>
 
 
 
@@ -57,7 +87,7 @@
 
         <br><br><br><br><br>
         <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de outubro de 2021 às 00:36, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de outubro de 2021 às 06:20, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
             <p style="text-align: center;"><a href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
             <p style="text-align: center;"><a target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador |</a></p>
             </div>
