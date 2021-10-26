@@ -25,6 +25,24 @@
                 font-size: 30px;
                 text-decoration: underline;
             }
+            .LinkAtividade{
+                font-size: 20px;
+                font-weight: bold;
+                color: #0F0;
+                padding: 2%;
+                text-align: center;
+            }
+            .LinkAtividade:hover{
+                background-color: rgb(102, 184, 102);
+                color:darkgreen;
+            }
+            .LinkAtividade:active{
+                color:red;
+            }
+            .LinkAtividade:visited
+            {
+                color: darkgreen;
+            }
         </style>
     </head>
     <body>
@@ -381,28 +399,66 @@
         <p>Para exemplificarmos, vamos utilizar a pseudoclasse <big><big>HOVER</big></big>, alterando a cor de fundo da classe <i>.personalizado</i> para a cor <span style="color:rgb(29,7,70)">rgb(29,7,70)</span>:</p>
         <img src="img/psClEx02-cdg.jpg" alt="">
         <p>Observe o resultado:</p>
+
+
+
+
+
+
+
+
+
+
+
+
         <img src="img/psClEx02{b}-pratc.jpg" width="1300px" alt=""><br><br>
         <img src="img/psClEx02{a}-pratc.jpg" width="1300px" alt="">
         <p>Notou a diferença?</p>
         <p>Quando o mouse passa sobre a área determinada, no caso a classe <i>.personalizado</i>, a cor de fundo muda, conforme definimos no CSS.</p>
-        <p>Detalhe:</p>
+        <p>Detalhe: ao digitar os dois pontos (:), observe que o próprio Visual Studio Code disponibiliza uma lista com inúmeras pseudo-classes e pseudo-elementos acompanhadas com uma descrição sobre a mesma, observe:</p>
+        <img src="img/psClEx03-cdg.jpg" alt="">
+        <p>A classe <i>.personalizado</i>, vamos atribuir a cor <span style="color:rgb(29,7,70);">rgb(29,7,70)</span> como cor de fonte; a cor <span style="color:rgba(29,9,48,0.616);">rgba(29,9,48,0.616);</span> como cor de fundo; 30 pixels como margem e espaçamento interno.</p>
+        <p>Como isso ficaria?</p>
+        <img src="img/psClEx04-cdg.jpg" alt="">
+        <p>Observe na prática:</p>
+        <img src="img/psClEx04{a}-pratc.jpg" width="1300px" alt=""><br><br>
+        <img src="img/psClEx04{b}-pratc.jpg" width="1300px" alt="">
+        <br><br><br>
+        <center><a class="LinkAtividade" href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Hover... Actived... Visited...</a></center>
+        <br><br>
+        <p>Para prosseguirmos, vamos realizar a seguinte alteração na estrutura:</p>
+        <img src="img/psElEx01-cdg.jpg" alt="">
+        <p>Deixando o nosso arquivo HTML assim:</p>
+        <img src="img/psElEx01-pratc.jpg" width="1300px" alt="">
+        <p>Agora, vamos fazer com que esse &ltspan&gt simplesmente despareça. Para isso, utilizaremos o seguinte código:</p>
+        <img src="img/psElEx02-cdg.jpg" alt="">
+        <p>Observe que os &ltspan&gt's não aparecem mais:</p>
+        <img src="img/psElEx02-pratc.jpg" width="1300px" alt="">
+        <p>Agora, vamos fazer com que, quando o mouse passe sobre a &ltdiv&gt, esses elementos apareçam novamente. Para isso, podemos utilizar o seguinte código CSS:</p>
+        <img src="img/psElEx03-cdg.jpg" alt="">
+        <p>Agora, compare os resultados a seguir:</p>
+        <img src="img/psElEx03{a}-pratc.jpg" width="1300px" alt=""><br><br>
+        <img src="img/psElEx03{b}-pratc.jpg" width="1300px" alt=""><br><br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <center>
+            <big>
+                <h2>Pseudo-Elementos</h2>
+            </big>
+        </center>
+        <p>Usado para estilizar partes específicas de um elemento.O seletor de classe é representado por dois pontos seguido de dois pontos, “::”</p>
+        <p>Para exemplificar, vamos tomar como base as tags &lth3&gt, definindo-as o pseudo-elemento <big>selection</big> com a cor vermelha e a cor de fundo amarela:</p>
+        <img src="img/psElEx04-cdg.jpg" alt="">
+        <p>Observe o resultado, após selecionarmos o texto uma tag &lth3&gt</p>
+        <img src="img/psElEx04-pratc.jpg" width="1300px" alt="">
+        <p>Para encerramos: vamos definir um paragráfo, logo após esse título. E, através do CSS, vamos definir que a sua primeira letra terá um tamanho de 20 pixels, será negritada e será da cor vermelha, através do pseudo-elemento <big>first-letter</big>, da seguinte forma:</p>
+        <img src="img/psElEx05-cdg.jpg" alt="">
+        <p>Observe como ficou:</p>
+        <img src="img/psElEx05-pratc.jpg" alt="">
+        <br><br><br><br>
+        <center><a class="LinkAtividade" href="html/RDE11-CSS-SeletoresPersonalizados.html">Continue explorando o assunto neste arquivo!</a></center>
         <br><br><br><br><br>
         <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de outubro de 2021 às 19:32, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de outubro de 2021 às 23:46, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
             <p style="text-align: center;"><a href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
             <p style="text-align: center;"><a target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>
             </div>
