@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>SINTESE SOBRE A AULA 19 - "Box model"<br>RDE 12</h1>
-</body>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../RDE10/css/stylesDefault.css">
+        <style>
+            .imgc{
+                text-align: center;
+            }
+        </style>
+        <title>RDE 12 - "Box Model" {gEmanuel}</title>
+    </head>
+
+    <body>
+        <h1 style="padding-top: -2%;"><center>Síntese sobre "<i>Box Model</i>" <span style="font-size: 20px; font-style: italic;">{RDE 12}</span><br><span style="font-size: 20px;font-style: italic;">Gabriel Emanuel</span></center></h1><br>
+        <p>O modelo das caixas em CSS, são responsáveis por descrever os boxes gerados pelos elementos HTML, detalhando as opções de ajuste de margens, bordas, <i>padding</i> e conteúdo para cada elemento.</p>
+        <p>Entender o box model, cujo é fundamental para construção de layouts em sites, pode ser compreendido através do modelo genérico representado a seguir:</p>
+        <figure class="imgc"><img src="img/BoxModel-ModGeneric_tOwij.png" alt=""></figure>
+        <p>Neste caso, o <strong>Content</strong> representa um elemento HTML qualquer, seja ele um paragráfo, um título, uma imagem ou qualquer outra coisa. Para o HTML, todos os elementos são vistos como uma caixa, por mais que isso não seja definido, ela existe e envolve o conteúdo.</p>
+        <p>Após o Content, o <strong>padding</strong> seria uma espécie de preenchimento, sendo definida a distância entre o conteúdo e uma borda, a qual veremos a seguir.</p>
+        <p>Se divide em:</p>
+        <ul>
+            <li><p><span class="prop">padding-top</span>: Preenchimento superior</p></li>
+            <li><p><span class="prop">padding-right</span>: Preenchimento direito</p></li>
+            <li><p><span class="prop">padding-bottom</span>: Preenchimento inferior</p></li>
+            <li><p><span class="prop">padding-left</span>: Preenchimento esquerdo</p></li>
+        </ul><br>
+        <p>Na sequência, define-se o <strong>border</strong>, inclusive se este aparece ou não. Da mesma forma, tem-se as quatro subdivisões/medidas:</p>
+        <ul>
+            <li><p><span class="prop">border-top</span>: Borda superior</p></li>
+            <li><p><span class="prop">border-right</span>: Borda direito</p></li>
+            <li><p><span class="prop">border-bottom</span>: Borda inferior</p></li>
+            <li><p><span class="prop">border-left</span>: Borda esquerdo</p></li>
+        </ul><Br>
+        <p>Por fim, define-se a margem, que também se subdivide em</p>
+        <ul>
+            <li><p><span class="prop">margin-top</span>: Margem superior</p></li>
+            <li><p><span class="prop">margin-right</span>: Margem direito</p></li>
+            <li><p><span class="prop">margin-bottom</span>: Margem inferior</p></li>
+            <li><p><span class="prop">margin-left</span>: Margem esquerdo</p></li>
+        </ul>
+        <p>Para se definir todas essas propriedades, lista-se os seus valores em HORÁRIA, iniciando-se pelo "top" (superior) indo até o "left" (esquerdo).<br><span style="font-style: italic;margin-left: 2%;font-size: 16px;">Ps.: se aplica à todas propriedades citadas</span></p>
+        <br>
+        <p>Para trabalharmos hoje, usaremos o seguinte código:</p>
+        <center>
+            <iframe width="1000px" height="300px" style="background-color: #FFF;" src="html/CSS_BoxModel.html" frameborder="0"></iframe>
+        </center>
+        <p>Para baixá-lo, <a target="_blank" href="https://drive.google.com/file/d/10nFyfwgFY6bmg5esyo2cVBVWh6Gp0gzM/view">clique aqui</a>.</p>
+        <p>Apenas por questões de facilidade, altere a fonte do documento via <i>font-family</i>. No meu caso, usarei a família de fontes: <span class="ffont">'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif</span></p>
+        <p>Para trabalharmos com essa página, vamos começar alterando as propriedades "de dentro para fora", ou seja, começando pelo <i>margin</i>. Para isso, vamos definir que a margem superior terá uma margem de 60 pixels; a margem direita terá uma margem de 20 pixels; a margem inferior terá uma margem de 20 pixels; a margem esquerda terá uma margem de 70 pixels.</p>
+        <p>Nosso código ficaria assim:</p>
+        <img src="img/BoxModCDG1_Captura de tela 2021-12-22 171928.jpg" alt="">
+        <p>Na prática ficou assim:</p>
+        <img src="img/BoxModPRAT1_Captura de tela 2021-12-22 171833.jpg" style="max-width: 1300px;" alt="">
+        <p style="font-size: 14px; text-align: right;">Zoom: 67%</p>
+        <p>Para facilitar a visualização, através da propriedade <span class="prop">border-style</span>, vamos definir uma borda <i>dashed</i> para esse conteúdo</p>
+        <img src="img/BoxModPRAT2_Captura de tela 2021-12-22 174503.jpg" alt="">
+        <p>Na prática:</p>
+        <img src="img/BoxModCDG2_Captura de tela 2021-12-22 174654.jpg" style="max-width: 1300px;" alt="">
+        <p style="font-size: 14px; text-align: right;">Zoom: 67%</p>
+        <br><br><br><br><br>
+        <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
+            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 22 de dezembro de 2021 às 17:49, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+            <p style="text-align: center;"><a href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
+            <p style="text-align: center;"><a target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>
+            </div>
+    </body>
 </html>
