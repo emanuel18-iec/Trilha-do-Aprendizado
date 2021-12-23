@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../RDE10/css/stylesDefault.css">
+        <link rel="stylesheet" href="css/styleLkAtv.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <style>
             .imgc{
@@ -46,7 +47,7 @@
         <br>
         <p>Para trabalharmos hoje, usaremos o seguinte código:</p>
         <center>
-            <iframe width="1000px" height="300px" style="background-color: #FFF;" src="html/CSS_BoxModel.html" frameborder="0"></iframe>
+            <iframe width="1000px" height="300px" style="background-color: #FFF;" src="html/CSS_BoxModel-FormtNon.html" frameborder="0"></iframe>
         </center>
         <p>Para baixá-lo, <a target="_blank" href="https://drive.google.com/file/d/10nFyfwgFY6bmg5esyo2cVBVWh6Gp0gzM/view">clique aqui</a>.</p>
         <p>Apenas por questões de facilidade, altere a fonte do documento via <i>font-family</i>. No meu caso, usarei a família de fontes: <span class="ffont">'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif</span></p>
@@ -175,11 +176,87 @@
         <img src="img/BoxModCDG21_Captura de tela 2021-12-23 150405.jpg" alt="">
         <p>Observe o que acontece:</p>
         <img src="img/BoxModPRAT21_Captura de tela 2021-12-23 150512.jpg" style="max-width: 1300px;" alt="">
+        <p>O posicionamento relativo jogou esse bloco 50 pixels para cima e acabou ficando em cima do conteúdo anterior.</p>
+        <p>Agora note que se o valor fosse de 150 pixels, o que aconteceria:</p>
+        <p>CÓDIGO:</p>
+        <img src="img/BoxModCDG22_Captura de tela 2021-12-23 165852.jpg" alt="">
+        <p>VISUALIZAÇÃO:</p>
+        <img src="img/BoxModPRAT22_Captura de tela 2021-12-23 165932.jpg" style="max-width: 1300px;" alt="">
+        <p>O mesmo se aplica a qualquer valor. Quanto maior o valor, no caso do <i>bottom</i>, mais para cima ficará.</p>
+        <P>E a mesma lógica será aplicada para os valores de referências. Por exemplo, se ao invés de ser no <i>bottom</i>, fosse 150 pixels no <i>top</i>. Ficaria assim:</P>
+        <img src="img/BoxModCDG23_Captura de tela 2021-12-23 170921.jpg" alt="">
+        <p>Na prática:</p>
+        <img src="img/BoxModPRAT23_Captura de tela 2021-12-23 170835.jpg" style="max-width: 1300px;" alt="">
+        <p>Voltando ao exemplo, vamos definir um afastamento com relação ao <i>bottom</i> de 50 pixels e com a margem da esquerda de 450 pixels.</p>
+        <p>Por que 450 pixels? Definimos o conteúdo anterior com uma largura de 400 pixels. Dessa forma, ao colocarmos 450 pixels, estamos dando uma distância de 50 pixels entre as <i>div</i>'s que agora ficarão na mesma linha.</p>
+        <img src="img/BoxModCDG24_Captura de tela 2021-12-23 171648.jpg" alt="">
+        <p>Na prática, ficou assim:</p>
+        <img src="img/BoxModPRAT24_Captura de tela 2021-12-23 171728.jpg" style="max-width: 1300px;" alt="">
+        <p>O posicionamento relativo é relativo a posição que um elemento ocupava originalmente.</p><br>
+        <p>O <strong>Posicionamento Absoluto</strong>, funciona de forma muito semelhante ao posicionamento relativo. No entanto, a referência tomada são as próprias margens do navegador</p>
+        <p>Vamos utilizá-lo, aplicando ao <i>box3</i>, referente à seu tipo. Vamos determinar, também, que este elemento tenha as mesmas dimensões dos outros dois anteriores e possua um fundo <span style="color: blue;">azul</span>. Além disso, vamos determinar que ele esteja a 500 pixels a partir da esquerda e a 1050 pixels a partir do topo, da seguinte forma:</p>
+        <img src="img/BoxModCDG25_Captura de tela 2021-12-23 172736.jpg" alt="">
+        <p>Na prática, temos o seguinte:</p>
+        <img src="img/BoxModPRAT25_Captura de tela 2021-12-23 172810.jpg" style="max-width: 1300px;" alt="">
+        <br>
+        <p>O <strong>Posicionamento Fixo</strong>, fixa um elemento na tela em determinadas coordenadas. Feito isso, mesmo que o site possua barra de rolagem, o conteúdo ficará fixo nessa coordenada.</p>
+        <p>Para trabalharmos com ele, vamos definir que a <i>box4</i> terá cor de fundo <span style="color:orange">laranja</span> e terá dimensões padrão (que já estamos aplicando frequentemente). Além disso, vamos definir que o conteúdo ficará fixo à 50 pixels da margem direita e à 10 pixels da margem inferior. Assim, temos:</p>
+        <img src="img/BoxModCDG26_Captura de tela 2021-12-23 174202.jpg" alt="">
+        <p>Observe como fica na prática:</p>
+        <video src="vid/BoxModPRAT26_BoxModel - Google Chrome 2021-12-23 17-37-26.mp4" style="max-width: 1000px;" controls></video>
+        <br>
+        <p>Por fim, vamos ao <strong>Posicionamento Sticky</strong>. Vamos definir as dimensões padrão ao nosso <i>box5</i> e a cor de fundo <span style="color:brown;">marrom</span>. Para este elemento, vamos definir uma distância inferior de 500 pixels e uma distância esquerda de 250 pixels, da seguinte forma:</p>
+        <img src="img/BoxModCDG27_Captura de tela 2021-12-23 180100.jpg" alt="">
+        <p>Observe como ficou na prática:</p>
+        <video src="vid/BoxModPRAT27_BoxModel - Google Chrome 2021-12-23 17-49-06.mp4" controls style="max-width: 1000px;"></video>
+        <p>Note que ele tem uma funcionalidade muito semelhante ao <i><b>fixed</b></i></p>
+        <br><br>
+        <p>Trabalhar com <strong>CAMADAS</strong> também é um assunto de extrema importância ao desenvolver-se um site.</p>
+        <p>Para iniciarmos os nossos trabalhos com ela, vamos definir à camada 1, que ela possuirá a cor <span style="color:darkcyan">ciano escuro</span> como cor de fundo, 80 pixels de largura, 55 pixels de altura e terá posição relativa no nosso site. Para isso, podemos fazer assim:</p>
+        <img src="img/BoxModCDG28_Captura de tela 2021-12-23 175939.jpg" alt="">
+        <p>E obteremos o seguinte resultado</p>
+        <img src="img/BoxModPRAT28_Captura de tela 2021-12-23 175900.jpg" style="max-width: 1300px;" alt="">
+        <p>Além disso, vamos recuá-la 0 pixels a partir da sua parte inferior e 25 pixels a partir do seu lado esquerdo.</p>
+        <img src="img/BoxModCDG29_Captura de tela 2021-12-23 180443.jpg" alt="">
+        <p>Ficou assim:</p>
+        <img src="img/BoxModPRAT29_Captura de tela 2021-12-23 180519.jpg" style="max-width: 1300px;" alt="">
+        <p>Caso queíramos centralizar o conteúdo que está dentro desse div, desse retângulo, podemos usar a seguinte estrutura:</p>
+        <img src="img/BoxModCDG30_Captura de tela 2021-12-23 180849.jpg" alt="">
+        <p>Observe como ficou:</p>
+        <img src="img/BoxModPRAT30_Captura de tela 2021-12-23 180927.jpg" style="max-width: 1300px;" alt="">
+        <p>Para definir que esta será, por exemplo, a camada 1, utilizamos a propriedade <span class=prop>z-index</span> que recebe o valor do qual a camada é. Ou seja:</p>
+        <img src="img/BoxModCDG31_Captura de tela 2021-12-23 181239.jpg" alt="">
+        <p>Para o conceito ficar mais claro, vamos a estilização da segunda camada, <i>layer2</i></p>
+        <p>Nela, vamos aplicar as mesmas dimensões, a mesma posição mas a cor de fundo "<span style="color: cadetblue;">cadetblue</span>". Além disso, vamos aplicar 20 pixels de posicionamento relativo inferior.</p>
+        <img src="img/BoxModCDG32_Captura de tela 2021-12-23 181916.jpg" alt="">
+        <p>Observe como ficou:</p>
+        <img src="img/BoxModPRAT32_Captura de tela 2021-12-23 181734.jpg" style="max-width: 1300px;" alt="">
+        <p>Agora, vamos definir que esta, é a segunda camada. Podemos fazer isto assim:</p>
+        <img src="img/BoxModCDG33_Captura de tela 2021-12-23 182226.jpg" alt="">
+        <p>Note a diferença:</p>
+        <img src="img/BoxModPRAT33_Captura de tela 2021-12-23 182303.jpg" style="max-width: 1300px;" alt="">
+        <p>Note que a alteração na camada, altera também a exibição:</p>
+        <img src="img/BoxModCDG34_Captura de tela 2021-12-23 182631.jpg" alt="">
+        <p>Ficou assim:</p>
+        <img src="img/BoxModPRAT34_Captura de tela 2021-12-23 182303.jpg" style="max-width: 1300px;" alt="">
+        <br>
+        <br><br>
+        <center><a class="LinkAtividade" target="_blank" href="html/CSS_BoxModel.html">Continue explorando o assunto neste arquivo!</a></center>
+        <br><br>
+        <big>
+            <center>
+                <big>
+                    <h2>FLOAT</h2>
+                </big>
+            </center>
+        </big>
+        <br><br>
+        <center><a class="LinkAtividade" style="width: 300px;" target="_blank" href="float-gEmanuel{RDE12}.html">clique aqui&NonBreakingSpace;&NonBreakingSpace;<span style="font-size: 18px; font-weight: normal;">float-gEmanuel{RDE12}</span></a></center>
         <br><br><br><br><br>
         <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 23 de dezembro de 2021 às 15:11, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
-            <p style="text-align: center;"><a href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
-            <p style="text-align: center;"><a target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>
+            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 23 de dezembro de 2021 às 18:42, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+            <p style="text-align: center;"><a style="text-decoration: none;" href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
+            <p style="text-align: center;"><a  style="text-decoration: none;" target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>
             </div>
     </body>
 </html>
