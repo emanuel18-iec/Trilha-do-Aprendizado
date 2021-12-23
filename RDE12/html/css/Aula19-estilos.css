@@ -32,9 +32,14 @@ h1{
 }
 
 p{
+    display: inline;
     background-color: aliceblue;
 }
 
+span{
+    display: block;
+    background-color: forestgreen;
+}
 
 
 /*alterar body==>border-width para 5px*/ 
