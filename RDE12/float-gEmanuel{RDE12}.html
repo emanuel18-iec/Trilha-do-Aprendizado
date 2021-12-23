@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../RDE10/css/stylesDefault.css">
+        <title>Document</title>
+        <style>
+            h3{
+                font-size: 18px;
+                font-style: italic;
+                margin-bottom: -1%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><center>FLOAT</center></h1>
+        <p>A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr, onde textos  e elementos em linha irão se posicionar ao seu redor.</p>
+        <p>Um elemento flutuante é um tipo de elemento cujo valor de <span class="prop">float</span> é diferente de <i>none</i>.</p>
+        <p>Como "float" implica o uso <i>the block layout</i>, ele modifica o valor computado de display em alguns casos:</p>
+        <table class="standard-table">
+            <thead>
+             <tr>
+              <th scope="col">Valor Especificado</th>
+              <th scope="col">Valor Computado</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+              <td><code>inline</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>inline-block</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>inline-table</code></td>
+              <td><code>table</code></td>
+             </tr>
+             <tr>
+              <td><code>table-row</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>table-row-group</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>table-column</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>table-column-group</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>table-cell</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>table-caption</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>table-header-group</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>table-footer-group</code></td>
+              <td><code>block</code></td>
+             </tr>
+             <tr>
+              <td><code>flex</code></td>
+              <td><code>flex</code>, porém&nbsp;<code>float</code> não produz efeito em tais elementos</td>
+             </tr>
+             <tr>
+              <td><code>inline-flex</code></td>
+              <td><code>inline-flex</code>, porém&nbsp;<code>float</code> não produz efeito em tais elementos</td>
+             </tr>
+             <tr>
+              <td><em>other</em></td>
+              <td><em>unchanged</em></td>
+             </tr>
+            </tbody>
+        </table>     <br><br>
+         <h2>SINTAXE</h2>
+         <img src="img/flt-gEmanuel/Sintaxe_Captura de tela 2021-12-23 190057.jpg" alt="">
+         <br><br>
+         <h2>VALORES</h2>
+         <h3>left</h3>
+         <p>É uma palavra-chave que indica que o elemento deve flutuar à esquerda do bloco.</p>
+         <h3>right</h3>
+         <p>É uma palavra-chave que indica que o elemento deve flutuar à direita do bloco.</p>
+         <h3>none</h3>
+         <p>É uma palavra-chave que indica que o elemtno não deve flutuar.</p>
+         <h3>inline-start</h3>
+         <p>É uma palavra-chave que indica que o elemento deve flutuar no lado inicial do seu bloco, ou seja, o lado esquerdo em scripts <i>ltr</i> e no direito em scripts <i>rtl</i>.</p>
+         <h3>inline-end</h3>
+         <p>É uma palavra-chave que indica que o elemento deve flutuar no lado final do seu bloco, ou seja, o lado direito em scripts <i>ltr</i> e no esquerdo em scripts <i>rtl</i>.</p><br><br>
+         <h2>EXEMPLOS</h2>
+         <img src="img/flt-gEmanuel/ExFlt-1_Captura de tela 2021-12-23 200416.jpg" alt="">
+         <img src="img/flt-gEmanuel/ExFlt-2_Captura de tela 2021-12-23 200502.jpg" alt="">
+         <br><br>
+         <h2>Como <i>floats</i> são posicionados</h2>
+         <p>uando um elemento é flutuado ele é retirado do seu fluxo normal no documento. Ele é reposicionado à esquerda ou à direita até tocar a borda do seu próprio box ou outro elemento flutuante.</p>
+         <p>Na imagem abaixo, existem 3 quadrados vermelho. Dois flutuando à esquerda e um flutuando à direita. Observe que o segundo quadrado vermelho à esquerda é posicionado à direita do primeiro. Quadrados adicionais poderiam continuar sendo empilhados à direita até que eles completassem o box, após isso eles iriam para próxima linha.</p>
+         <img src="img/flt-gEmanuel/ExFlt-3_Captura de tela 2021-12-23 200706.jpg" alt="">
+         <h2>Limpando <i>floats</i>'s</h2>
+         <p>No exemplo abaixo, os elementos flutuantes são menores verticalmente que o bloco de texto com os quais estão flutuando. Apesar disso, se o texto não fosse comprido o bastante para passar abaixo do limite inferior de todos os floats, nos veríamos efeitos não previstos. Se o parágrafo abaixo, por enquanto, somente lê "Lorem ipsum dolor sit amet,",  e fosse seguido por outro cabeçalho do mesmo estilo de cabeçaljo "Floats Example", o segundo cabeçalho iria aparecer entre os dois boxes vermelhos. Muito provavelmente, queremos que o próximo título seja alinhado à esquerda. Para conseguir isso, precisamos limpar os floats.</p>
+         <p>O jeito mais simples de limpar os floats neste exemplo é adicionar a propriedade <span class="prop">clear</span> para o próximo cabeçalho que queremos assegurar que esteja alinhado à esquerda. </p>
+        <img src="img/flt-gEmanuel/ExFlt-4_Captura de tela 2021-12-23 200847.jpg" alt="">
+        <p>Se o nosso H2 possui irmãos os quais são barras laterais flutuadas à esquerda e à direita, usar clear irá forçá-lo a aparecer abaixo das duas barras laterais, o que provavelmente não é o que queríamos.</p>
+        <p>Se limpar floats em um elemento não é uma opção, uma outra abordagem é limitar o contexto de formatação do bloco do containêr flutuante. Referindo-se ao exemplo acima novamente, aparentemente todos os três quadrados vermelhos possuem um elemento paragrafo <i>P</i> . Nós podemos atribuir a propiedade <span class="prop">overflow</span> neste paragrafo para <i>hidden</i> ou <i>auto</i>  para obrigá-lo a expandir para contê-los, porém não permitirá que os mesmos parágrafos pulem fora do limite inferior.</p>
+        <img src="img/flt-gEmanuel/ExFlt-5_Captura de tela 2021-12-23 201113.jpg" alt=""><br><br>
+        <a class="LinkAtividade" style="width: 300px;" target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/float"><span style="font-size: 18px; font-weight: normal;">fonte</span></a>
+        <br><br><br><br><br>
+        <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
+            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 23 de dezembro de 2021 às 20:14, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+            <p style="text-align: center;"><a style="text-decoration: none;" href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
+            <p style="text-align: center;"><a  style="text-decoration: none;" target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>
+            </div>
+    </body>
+</html>
