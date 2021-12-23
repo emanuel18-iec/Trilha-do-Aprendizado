@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../RDE10/css/stylesDefault.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <style>
             .imgc{
                 text-align: center;
@@ -130,9 +131,53 @@
         <img src="img/BoxModCDG14_Captura de tela 2021-12-23 081854.jpg" alt="">
         <p>Observe como ficou agora:</p>
         <img src="img/BoxModPRAT14_Captura de tela 2021-12-23 081807.jpg" style="max-width: 1300px;" alt="">
+        <br><br>
+        <P>Também podemos, via CSS, definir a posição em que os elementos HTML vão aparecer. Eles podem ser:</P>
+        <ul>
+            <li>Estático - permanece na posição em que foi definido</li>
+            <li>Relativo - posicionado em relação onde foi definido</li>
+            <li>Absoluto - pode ser posicionado em qualquer lugar do documento</li>
+            <li>Fixed - permanece fixo durante a rolagem do conteúdo</li>
+            <li>Sticky - permanece fixo durante a rolagem a partir de onde foi definido</li>
+        </ul>
+        <p>Vamos começar trabalhando com o <strong>Posicionamento Estático</strong>. Para isso, vamos até à nossa <i>div</i> e vamos iniciar definindo a cor <span style="background-color: yellow;">amarelo</span> como cor de fundo para essa div.</p>
+        <img src="img/BoxModCDG15_Captura de tela 2021-12-23 130605.jpg" alt="">
+        <p>Na prática:</p>
+        <img src="img/BoxModPRAT15_Captura de tela 2021-12-23 130705.jpg" style="max-width: 1300px;" alt="">
+        <p>Note que ele ocupou toda a linha. Assim sendo, vamos definir um <i>width</i> de 400 pixels e um <i>height</i> de 50 pixels, da seguinte forma:</p>
+        <img src="img/BoxModCDG16_Captura de tela 2021-12-23 140735.jpg" alt="">
+        <p>Observe:</p>
+        <img src="img/BoxModPRAT16_Captura de tela 2021-12-23 140817.jpg" style="max-width: 1300px;" alt="">
+        <p>Até então, fizemos uma estilização padrão para elementos HTML, que já vínhamos fazendo até então. Para definir que este bloco é de fato <b>estático</b>, utiliza-se a propriedade <span class="prop">position</span>, que neste caso, vai receber o valor <i>static</i></p>
+        <img src="img/BoxModCDG17_Captura de tela 2021-12-23 142201.jpg" alt="">
+        <p>Feito isso, o elemento em si está configurado para não sofrer nenhuma ação de flutuamento possível, seja até mesmo por definição em pixels; ele ficará sempre fixado nessa posição.</p>
+        <p>Para definir essa futuação, utiliza-se as seguintes propriedades:</p>
+        <ul>
+            <li><span class="prop">top</span> ==> distância do elemento com o topo</li><br>
+            <li><span class="prop">right</span> ==> distância do elemento com a margem direita</li><br>
+            <li><span class="prop">bottom</span> ==> distância do elemento com o final</li><br>
+            <li><span class="prop">left</span> ==> distância do elemento com a margem esquerda</li><br> 
+        </ul>
+        <p>Por exemplo, se definirmos as seguintes propriedades:</p>
+        <img src="img/BoxModCDG18_Captura de tela 2021-12-23 143459.jpg" alt="">
+        <p>Na teoria, o elemento deveria estar colado na margem superior e na margem esquerda do site.</p>
+        <p>No entanto, por se tratar do posicionamento estático, o uso dessas propriedades não inferem em absolutamente nada, observe:</p>
+        <img src="img/BoxModPRAT18_Captura de tela 2021-12-23 143548.jpg" style="max-width: 1300px;" alt="">
+        
+        <p>Partindo agora para o <strong>Posicionamento Relativo</strong>, vamos iniciar definindo as mesmas dimensões aplicadas ao conteúdo anterior (<i>box1</i>) com a cor <span style="color:green;">verde</span> de fundo.</p>
+        <img src="img/BoxModCDG19_Captura de tela 2021-12-23 144512.jpg" alt="">
+        <p>Proporcionando o seguinte resultado:</p>
+        <img src="img/BoxModPRAT19_Captura de tela 2021-12-23 144550.jpg" style="max-width: 1300px;" alt="">
+        <p>Feito isso, vamos definir o posicionamento fazendo uso da propriedade vista anteriormente, com o valor <i>relative</i>:</p>
+        <img src="img/BoxModCDG20_Captura de tela 2021-12-23 145023.jpg" alt="">
+        <p>Agora, a <i>div</i> será posicionada relativamente ao onde o mesmo foi devido no documento HTML. Assim sendo, basta definirmos quantos pixels.</p>
+        <p>Então, vamos começar definindo que este conteúdo ficará a 50 pixels acima do texto imediatamente abaixo dele. Para isso:</p>
+        <img src="img/BoxModCDG21_Captura de tela 2021-12-23 150405.jpg" alt="">
+        <p>Observe o que acontece:</p>
+        <img src="img/BoxModPRAT21_Captura de tela 2021-12-23 150512.jpg" style="max-width: 1300px;" alt="">
         <br><br><br><br><br>
         <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 23 de dezembro de 2021 às 08:20, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 23 de dezembro de 2021 às 15:11, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
             <p style="text-align: center;"><a href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
             <p style="text-align: center;"><a target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>
             </div>

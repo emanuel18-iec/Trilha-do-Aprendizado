@@ -41,5 +41,25 @@ span{
     background-color: forestgreen;
 }
 
+.box1{ /*Posicionamento - Estático*/
+    position: static;
+
+    top: 0px;
+    left: 0px;
+    
+    background-color: yellow;
+    width: 400px;
+    height: 50px;
+}
+
+.box2{ /*Posicionamento - Relativo*/
+    position: relative;
+    bottom: 50px;
+
+    background-color: green;
+    width: 400px;
+    height: 50px;
+}
+
 
 /*alterar body==>border-width para 5px*/ 
