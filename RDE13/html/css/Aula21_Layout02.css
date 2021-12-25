@@ -38,17 +38,37 @@ header{
 
 .conteudo{
     float:left;
-    margin:15px 2px 25px 2px;
-    background-color: gainsboro;
-    
-    width: 30.5%;
-    text-align: justify;
-    
-    padding:15px;
-    border-radius: 5px;
-
-    box-shadow: 10px 10px 10px #08101a98;
+    padding:14px;
 }
+
+.conteudo.lateral{
+    width: 20%;
+    margin: 10px 2px 25px 2px;
+    background-color: gainsboro;
+}
+
+.conteudo.central{
+    width: 52%;
+    height: 274px;
+    margin: 10px 2px 2px 2px;
+    background-color: gainsboro;
+
+}
+
+.principal h2{
+    color:#2e4159;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 .rodape{
     color:darkgray;
@@ -61,20 +81,9 @@ header{
     
 @media screen and (max-width:800px){
 
-    .principal, .conteudo{
+    .principal, .conteudo.central, .conteudo.lateral{
         width: 100%;
         padding:1px;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
