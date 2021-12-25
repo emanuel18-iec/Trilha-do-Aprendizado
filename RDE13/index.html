@@ -25,11 +25,51 @@
             <li><a href="https://drive.google.com/u/0/uc?id=1Q_OQvxLvZAXP-91ZId_qYyYFg1vqseZ6&export=download">https://drive.google.com/u/0/uc?id=1Q_OQvxLvZAXP-91ZId_qYyYFg1vqseZ6&export=download</a></li>
             <li><a href="https://drive.google.com/file/d/1I91fYoUNR0ESIhHk_j-t7qpaaeBkdnrD/view">https://drive.google.com/file/d/1I91fYoUNR0ESIhHk_j-t7qpaaeBkdnrD/view</a></li>
         </ul>
-        <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-            <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 23 de dezembro de 2021 às 23:21, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
-            <p style="text-align: center;"><a style="text-decoration: none;" href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
-            <p style="text-align: center;"><a  style="text-decoration: none;" target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>
+        <p>Trabalharemos com os seguinte documento HTML que servirá como base para a aula de hoje:</p>
+        <center>
+            <iframe width="1000px" height="300px" style="background-color: #FFF;" src="html/Aula21-Layout - semFormt.html" frameborder="0"></iframe>
+        </center>
+        <p>Agora vamos formatar e criar o layout para o nosso <i>site</i>!</p>
+        <p>Inicialmente, vamos entender o nosso código:</p>
+        <img src="img/CdgExtv-1_Captura de tela 2021-12-25 023148.jpg" alt="">
+        <p>Tag semântica que define o cabeçalho do site</p>
+        <img src="img/CdgExtv-2_Captura de tela 2021-12-25 023331.jpg" alt="">
+        <p>Bloco responsável por amanezar e estilizar a imagem. Possui uma classe identificada como <i>logo</i></p>
+        <img src="img/CdgExtv-3_Captura de tela 2021-12-25 023612.jpg" alt="">
+        <p>Tag semântica que define um menu de navegação</p>
+        <img src="img/CdgExtv-4_Captura de tela 2021-12-25 024008.jpg" alt="">
+        <p><i>Div</i> responsável por agrupar todos os links do menu de navegação</p>
+        <img src="img/CdgExtv-5_Captura de tela 2021-12-25 085302.jpg" alt="">
+        <p>Define o corpo principal do texto/conteúdo</p>
+        <img src="img/CdgExtv-6_Captura de tela 2021-12-25 101543.jpg" alt="">
+        <p>Há uma <i>div</i> que englobará o conteúdo como um todo:</p>
+        <img src="img/CdgExtv-7_Captura de tela 2021-12-25 101731.jpg" alt="">
+        <p>E cada bloquinho de textos, estão separados por <i>div</i>'s específicas para seus blocos:</p>
+        <img src="img/CdgExtv-8_Captura de tela 2021-12-25 101818.jpg" alt="">
+        <p>Tag semântica que determina o rodapé do site:</p>
+        <img src="img/CdgExtv-9_Captura de tela 2021-12-25 102124.jpg" alt="">
+        <p><i>Div</i> que agrupa todo o conteúdo que será estilizado no rodapé</p>
+        <img src="img/CdgExtv-10_Captura de tela 2021-12-25 102215.jpg" alt="">
+        <p>Agora, vamos estilizar esse documento.</p>
+        <p>Inicialmente, vamos começar alterando algumas propriedades no <i>body</i>, para que estas sejam determinadas de forma padrão</p>
+        <p>Vamos começar definindo um <span class="prop">font-family</span>. Escolha uma ao seu gosto. Usarei como exemplificação, a <span class="ffont">'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif</span></p>
+        <p>Além disso, vamos aplicar uma cor de fundo degradê para o nosso site. Para isso, usaremos a propriedade <span class="prop">background-image</span>, seguido do valor "<big><i>linear-gradient</i></big>". Ou seja, será aplicado um gradiente linear ao nosso conteúdo.</p>
+        <p>O primeiro parâmetro que podemos definir, é a <big><u>direção do gradiente</u></big>, utilizando-se do prefixo "<i>to</i>" seguido da direção. Por exemplo, para indicar que o gradiente é para baixo, usamos o comando "<i>to bottom</i>"</p>
+        <p>Em seguida, vamos definir os parâmetros referente as <big><u>cores que serão aplicadas nesse gradiente</u></big>.</p>
+        <p>Uma ferramenta muito util para trabalhar com paletas de cores é a <a href="https://color.adobe.com/pt/create/color-wheel">Adobe Color</a>. A paleta de cor são cores que estão relacionadas de alguma forma. Por exemplo:</p>
+        <img src="img/PalCor-AdCol_1_Captura de tela 2021-12-25 103923.jpg" alt="">
+        <p>Também é possível selecionar de que forma essas cores vão se relacionar:</p>
+        <img src="img/PalCor-AdCol_2_Captura de tela 2021-12-25 104107.jpg" alt="">
+
+
+
+        <footer>
+            <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
+                <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de dezembro de 2021 às 10:52, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+                <p style="text-align: center;"><a style="text-decoration: none;" href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
+                <p style="text-align: center;"><a  style="text-decoration: none;" target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>    
             </div>
+        </footer>
 
 
     </body>
