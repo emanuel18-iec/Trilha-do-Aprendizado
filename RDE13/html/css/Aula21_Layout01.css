@@ -21,4 +21,34 @@ header{
     overflow: hidden;
 }
 
+.navegacao a{
+    float: right;
+    display: block;
+    color: rgb(173,173,173);
+    text-decoration: none;
+    text-align: right;
+    padding: 10px;
+}
+
+.navegacao a:hover{
+    color:#E32936;
+    background-color: #000;
+}
+
+.conteudo{
+    float:left;
+    margin:15px 2px 25px 2px;
+    background-color: gainsboro;
+}
+
+
+
+
+
+
+
+
+
+
+
 
