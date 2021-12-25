@@ -12,6 +12,7 @@
     <body>
 
         <h1 style="padding-top: -2%;"><center>Síntese Sobre "Layouts com CSS"<span style="font-size: 20px; font-style: italic;">{RDE 13}</span><br><span style="font-size: 20px;font-style: italic;">Gabriel Emanuel</span></center></h1><br>
+        <p><a style="color:white" href="#fim">fim</a></p>
         <p>Definem a estrutura de um website, na qual geralmente é separada em cabeçalho, menu, conteúdo e rodapé.</p>
         <img src="img/CSS-layout-4.png" style="max-width: 500px;" alt="">
         <p>Modelos que serão criados durante a aula:</p>
@@ -111,9 +112,50 @@
         <p>A formatação foi aplicada às três <i>div</i>'s. Isso se deve, por que as três tem o "<i>conteudo</i>" como parte de sua classe.</p>
         <img src="img/CdgProgPrat-9_Captura de tela 2021-12-25 133955.jpg" alt="">
         <p>Assim sendo, ele vai aplicar a estilização para todas as classes que tiverem esse termo <i>conteudo</i>.</p>
+        <p>Porém note que as <i>div</i>'s ainda estão dispostas em linha. Mas queremos deixá-las em coluna. Dessa forma, vamos começar definindo uma largura de 30.5% para cada uma dessas <i>div</i>'s. Vamos aproveitar e definir o texto como justificado.</p>
+        <img src="img/CdgProgPrat-10_Captura de tela 2021-12-25 154634.jpg" alt="">
+        <p>Que resulta nos seguinte:</p>
+        <img src="img/ViwProgPrat-10_Captura de tela 2021-12-25 154715.jpg" style="max-width: 1300px;" alt="">
+        <p>Além disso, vamos definir um espaçamento de 15 pixels e um arredondamento de 5 pixels nos cantos das <i>div</i>'s, através da propriedade <span class="prop">border-radius</span></p>
+        <img src="img/CdgProgPrat-11_Captura de tela 2021-12-25 154900.jpg" alt="">
+        <p>Observe como ficou:</p>
+        <img src="img/ViwProgPrat-11_Captura de tela 2021-12-25 154937.jpg" style="max-width: 1300px;" alt="">
+        <p>Ainda, vamos definir um sombreamento para as <i>div</i>'s, através da propriedade <span class="prop">box-shadow</span>, na qual teremos 10 pixels de largura, 10 pixels de projeção, 10 pixels de definição e que seja na cor <span style="color: #08101a98; padding:1px; border: 1px solid #0F0; background-color: #29912f;">#08101a98</span>.</p>
+        <img src="img/CdgProgPrat-12_Captura de tela 2021-12-25 155015.jpg" alt="">
+        <p>Agora temos:</p>
+        <img src="img/ViwProgPrat-12_Captura de tela 2021-12-25 155051.jpg" style="max-width: 1300px;" alt="">
+        <br>
+        <p>Por fim, vamos finalizar estilizando o rodapé.</p>
+        <p>Para ele, vamos definir a cor <span style="color: darkgray;">cinza escuro</span> e vamos diminuir a fonte para 10 pixels.</p>
+        <img src="img/CdgProgPrat-13_Captura de tela 2021-12-25 160218.jpg" alt="">
+        <p>Observe:</p>
+        <img src="img/ViwProgPrat-13_Captura de tela 2021-12-25 160250.jpg" style="max-width: 1300px;" alt="">
+        <p>Ainda, vamos centralizar o texto e definir um espaçamento de 20 pixels.</p>
+        <img src="img/CdgProgPrat-14_Captura de tela 2021-12-25 160601.jpg" alt="">
+        <p>Ficou assim:</p>
+        <img src="img/ViwProgPrat-14_Captura de tela 2021-12-25 160631.jpg" style="max-width: 1300px;" alt="">
+        <br>
+        <p>Para finalizar, vamos trabalhar com a responsividade do site. Para isso, adicione o seguinte código:</p>
+        <img src="img/CdgProgPrat-15_Captura de tela 2021-12-25 161216.jpg" alt="">
+        <p>O que este código quer dizer?</p>
+        <p>Bom, se a tela possuir no máximo 800 pixels, as <i>div</i>'s que tinham 30.5% de largura passam a ter 100% de largura, isto é, passam a ocupar uma linha toda e, consequentemente, os blocos ficarão impilhados.</p>
+        <p>Observe:</p>
+        <video poster="img/vid15-poster_Captura de tela 2021-12-25 165049.jpg" src="vid/ViwProgPrat-15_Timeline 1.mov" controls style="max-width: 1300px;"></video>
+
+
+
+
+
+
+
+
+
+
+
+        <a name="fim"></a>
         <footer>
             <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-                <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de dezembro de 2021 às 13:44, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+                <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de dezembro de 2021 às 16:51, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
                 <p style="text-align: center;"><a style="text-decoration: none;" href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
                 <p style="text-align: center;"><a  style="text-decoration: none;" target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>    
             </div>

@@ -10,6 +10,8 @@ body{
 header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #161616;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .logo img{
@@ -39,8 +41,33 @@ header{
     float:left;
     margin:15px 2px 25px 2px;
     background-color: gainsboro;
+    
+    width: 30.5%;
+    text-align: justify;
+    
+    padding:15px;
+    border-radius: 5px;
+
+    box-shadow: 10px 10px 10px #08101a98;
 }
 
+.rodape{
+    color:darkgray;
+    font-size: 10px;
+
+    text-align: center;
+    padding: 20px;
+}
+    
+    
+@media screen and (max-width:800px){
+
+    .principal, .conteudo{
+        width: 100%;
+        padding:1px;
+    }
+    
+}
 
 
 
