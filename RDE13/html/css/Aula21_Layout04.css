@@ -1,3 +1,5 @@
+/*CSS da atividade 04 - Gabriel Emanuel*/
+
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: linear-gradient(to bottom, #0B1726, #1f3d64);
@@ -44,7 +46,7 @@ header{
 
 
 
-.principal{
+.conteudo{
     margin:15px 2px 25px 2px;
     background-color: gainsboro;
 
@@ -54,12 +56,6 @@ header{
     border-radius: 5px;
     box-shadow: 10px 10px 10px #08101a98;
 }
-
-
-
-
-
-
 
 .rodape{
     color:darkgray;

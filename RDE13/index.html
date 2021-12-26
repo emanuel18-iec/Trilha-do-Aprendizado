@@ -7,12 +7,21 @@
         <title>RDE 13 - G. Emanuel</title>
         <link rel="stylesheet" type="text/css" href="../RDE10/css/stylesDefault.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <!--<script src="js/script.js"></script>-->
+        <script src="js/script.js"></script>
+        <style>
+            .lay{
+                padding: 15px;
+                border:2px solid #0F0;
+                width: 40%;
+                margin-left:29%;
+                text-align: center;
+                background-color: #0f0f0f;
+            }
+        </style>
     </head>
     <body>
 
         <h1 style="padding-top: -2%;"><center>Síntese Sobre "Layouts com CSS"<span style="font-size: 20px; font-style: italic;">{RDE 13}</span><br><span style="font-size: 20px;font-style: italic;">Gabriel Emanuel</span></center></h1><br>
-        <p><a style="color:white" href="#fim">fim</a></p>
         <p>Definem a estrutura de um website, na qual geralmente é separada em cabeçalho, menu, conteúdo e rodapé.</p>
         <img src="img/CSS-layout-4.png" style="max-width: 500px;" alt="">
         <p>Modelos que serão criados durante a aula:</p>
@@ -141,6 +150,7 @@
         <p>Bom, se a tela possuir no máximo 800 pixels, as <i>div</i>'s que tinham 30.5% de largura passam a ter 100% de largura, isto é, passam a ocupar uma linha toda e, consequentemente, os blocos ficarão impilhados.</p>
         <p>Observe:</p>
         <video poster="img/vid15-poster_Captura de tela 2021-12-25 165049.jpg" src="vid/ViwProgPrat-15_Timeline 1.mov" controls style="max-width: 1300px;"></video>
+        <p class="lay"><a href="html/Aula21-Layout(01).html">Clique aqui</a> para acessar o layout 01</p>
         <br><br><br>
         <p>Inicialmente, vamos copiar uma certa parte da formatação que já havíamos feito anteriormente.</p>
         <img src="img/CdgProgPrat-L02-01_Captura de tela 2021-12-25 170343.jpg" alt="">
@@ -189,21 +199,39 @@
         <p>Vejo como ficou na prática:</p>
         <img src="img/ViwProgPrat-L02-10t_Captura de tela 2021-12-25 180757.jpg" style="max-width: 1300px;" alt=""><br>
         <img src="img/ViwProgPrat-L02-10T_Captura de tela 2021-12-25 180902.jpg" style="max-width: 1300px;" alt="">
+        <p class="lay"><a href="html/Aula21-Layout(02).html">Clique aqui</a> para acessar o layout 02</p>
+        <br><br><br>
+        <p>Vamos agora estilizar o layout 03. Para isso, vamos copiar e trabalhar a partir da estilização aplicada no layout 02.</p>
+        <p>No <i>body</i>, vamos alterar a largura da página para 80% e a direção do gradiente, para que agora ele passe a ser para baixo</p>
+        <img src="img/CdgProgPrat-L03-01_Captura de tela 2021-12-25 203109.jpg" alt="">
+        <p>Em seguida, podemos remover todos a estilização que envolve a classe <i>.conteudo</i></p>
+        <img src="img/CdgProgPrat-L03-02_Captura de tela 2021-12-25 203237.jpg" alt="">
+        <p>Assim, obtemos o seguinte resultado:</p>
+        <img src="img/ViwProgPrat-L03-01&02_Captura de tela 2021-12-25 203432.jpg" style="max-width: 1300px;" alt="">
+        <p>Para estilizarmos, trataremos essa estilização a partir da classe <i>principal</i>, que tratará de todos os elementos</p>
+        <p>Inicialmente, vamos definir uma margem de 15 pixels superior, 25 pixels inferior e 2 pixels para esquerda e direita</p>
+        <p>Também, vamos definir a cor <span style="color: gainsboro;"><i>gainsboro</i></span> como plano de fundo</p>
+        <p>Assim, temos:</p>
+        <img src="img/CdgProgPrat-L03-03_Captura de tela 2021-12-25 203907.jpg" alt="">
+        <p>Obtendo o seguinte resultado:</p>
+        <img src="img/ViwProgPrat-L03-03_Captura de tela 2021-12-25 203937.jpg" style="max-width: 1300px;" alt="">
+        <p>Agora, vamos alinhar o texto de forma justificada e também, aplicar um espaçamento interno de 10 pixels.</p>
+        <img src="img/CdgProgPrat-L03-04_Captura de tela 2021-12-25 204232.jpg" alt="">
+        <p>Obtemos o seguinte resultado:</p>
+        <img src="img/ViwProgPrat-L03-04_Captura de tela 2021-12-25 204258.jpg" style="max-width: 1300px;" alt="">
+        <p>Por fim, vamos definir um arredondamento de borda de 5 pixels e uma sobra de 10 pixels de projeção no eixo x, 10 pixels de projeção no eixo y e 10 pixels de definição, na cor <span style="color: #08101a98; padding:1px; border: 1px solid #0F0; background-color: #29912f;">#08101a98</span></p>
+        <img src="img/CdgProgPrat-L03-05_Captura de tela 2021-12-25 204945.jpg" alt="">
+        <p>Assim, portanto, temos o nosso layout 03:</p>
+        <img src="img/ViwProgPrat-L03-05_Captura de tela 2021-12-25 205015.jpg" style="max-width: 1300px;" alt="">
+        <p class="lay"><a href="html/Aula21-Layout(03).html">Clique aqui</a> para acessar o layout 03</p>
 
-
-
-
-
-
-
-
-
-
-
-        <a name="fim"></a>
+        <br>
+        <p style="text-align: center;">ATIVIDADE:</p>
+        <p class="lay"><a href="html/Aula21-Layout(03).html">Clique aqui</a> para acessar o layout 04 (atividade)</p>
+        <br><br><br>
         <footer>
             <div style="border:2px solid #0F0; padding-left:1%; margin: 0% 1% 0% 1%;">
-                <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de dezembro de 2021 às 18:12, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
+                <p style="text-align: center; color: #0F0;"><big>ÚLTIMA MODIFICAÇÃO: </big> 25 de dezembro de 2021 às 21:02, Horário de Brasília - Brasil, por <a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/sobre" target="_blank">Gabriel Emanuel</a>.</p>
                 <p style="text-align: center;"><a style="text-decoration: none;" href="mailto:gabriel.emanuel.michalski@gmail.com">| Envie um email para o programador |</a></p>
                 <p style="text-align: center;"><a  style="text-decoration: none;" target="_blank" href="https://www.instagram.com/emanuel18.iec">| Instagram do programador &lt/&gt |</a></p>    
             </div>
