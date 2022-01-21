@@ -80,6 +80,7 @@ if(verification == true){
                 pontos=0;
             }
             var media = pontos / rodadas
+            acT = ac1 + ac2 + ac3 + ac0
             alert("YOU LOSE!!!\n\nNOME: " + name + "\nRODADAS JOGADAS: " + rodadas + "\n\nPONTUAÇÃO: " + pontos +"\nAcertos Totais: " + acT + "/" + rodadas +"\nMédia de pontos: " + media + " pontos / por rodada" +"\n\nAcertos por dica:\n(0) dicas ==> " + ac0 + "\n(1) dica ==> " + ac1 + "\n(2) dicas ==> " + ac2 + "\n(3) dicas ==> " + ac3)
         } else{
             confir = confirm("Desejas continuar jogando?")
