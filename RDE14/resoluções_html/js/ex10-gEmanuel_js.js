@@ -79,7 +79,8 @@ if(verification == true){
             if(pontos%2!=0 & pontos%2!=1){
                 pontos=0;
             }
-            alert("YOU LOSE!!!\n\nNOME: " + name + "\nRODADAS JOGADAS: " + rodadas + "\n\nPONTUAÇÃO: " + pontos +"\nAcertos Totais: " + acT + "/" + rodadas + "\n\nAcertos por dica:\n(0) dicas ==> " + ac0 + "\n(1) dica ==> " + ac1 + "\n(2) dicas ==> " + ac2 + "\n(3) dicas ==> " + ac3)
+            var media = pontos / rodadas
+            alert("YOU LOSE!!!\n\nNOME: " + name + "\nRODADAS JOGADAS: " + rodadas + "\n\nPONTUAÇÃO: " + pontos +"\nAcertos Totais: " + acT + "/" + rodadas +"\nMédia de pontos: " + media + " pontos / por rodada" +"\n\nAcertos por dica:\n(0) dicas ==> " + ac0 + "\n(1) dica ==> " + ac1 + "\n(2) dicas ==> " + ac2 + "\n(3) dicas ==> " + ac3)
         } else{
             confir = confirm("Desejas continuar jogando?")
             if(confir == true){
@@ -87,7 +88,8 @@ if(verification == true){
             } else if (confir==false){
                 acT = ac1 + ac2 + ac3 + ac0
                 var pontos = ac0* 30 + ac1* 12 + ac2* 6 + ac3* 1
-                alert("NOME: " + name + "\nRODADAS JOGADAS: " + rodadas + "\n\nPONTUAÇÃO: " + pontos +"\nAcertos Totais: " + acT + "/" + rodadas + "\n\nAcertos por dica:\n(0) dicas ==> " + ac0 + "\n(1) dica ==> " + ac1 + "\n(2) dicas ==> " + ac2 + "\n(3) dicas ==> " + ac3)
+                var media = pontos / rodadas
+                alert("NOME: " + name + "\nRODADAS JOGADAS: " + rodadas + "\n\nPONTUAÇÃO: " + pontos +"\nAcertos Totais: " + acT + "/" + rodadas  + "\nMédia de pontos: " + media + " pontos / por rodada" +"\n\nAcertos por dica:\n(0) dicas ==> " + ac0 + "\n(1) dica ==> " + ac1 + "\n(2) dicas ==> " + ac2 + "\n(3) dicas ==> " + ac3)
     
                 verification = false;
                 repDesafio = false;
