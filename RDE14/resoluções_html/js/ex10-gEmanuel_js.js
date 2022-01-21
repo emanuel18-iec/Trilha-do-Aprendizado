@@ -87,7 +87,7 @@ if(verification == true){
             } else if (confir==false){
                 acT = ac1 + ac2 + ac3 + ac0
                 var pontos = ac0* 30 + ac1* 12 + ac2* 6 + ac3* 1
-                alert("NOME: " + name + "\nRODADAS JOGADAS: " + rodadas + "\n\nPONTUAÇÃO: " + pontos +"\n\nAcertos Totais: " + acT + "\n\nAcertos por dica:\n(0) dicas ==> " + ac0 + "\n(1) dica ==> " + ac1 + "\n(2) dicas ==> " + ac2 + "\n(3) dicas ==> " + ac3)
+                alert("NOME: " + name + "\nRODADAS JOGADAS: " + rodadas + "\n\nPONTUAÇÃO: " + pontos +"\nAcertos Totais: " + acT + "/" + rodadas + "\n\nAcertos por dica:\n(0) dicas ==> " + ac0 + "\n(1) dica ==> " + ac1 + "\n(2) dicas ==> " + ac2 + "\n(3) dicas ==> " + ac3)
     
                 verification = false;
                 repDesafio = false;
