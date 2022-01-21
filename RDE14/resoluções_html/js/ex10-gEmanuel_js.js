@@ -15,7 +15,7 @@ if(verification == true){
     while(repDesafio == true)
     {
         rodadas++
-        alert("====== VAMOS PARA A " + rodadas + " RODADA ======")
+        alert("====== VAMOS PARA A " + rodadas + "ª RODADA ======")
         alvo = getRandomInt(0,20);
         tent++;
         chut = parseInt(prompt("Qual será sua primeira tentativa?"))
