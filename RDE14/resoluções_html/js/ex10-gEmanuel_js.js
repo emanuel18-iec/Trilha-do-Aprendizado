@@ -79,7 +79,7 @@ if(verification == true){
             if(pontos%2!=0 & pontos%2!=1){
                 pontos=0;
             }
-            alert("YOU LOSE!!!\n\nNOME: " + name + "\nRODADAS JOGADAS: " + rodadas + "\n\nPONTUAÇÃO: " + pontos +"\n\nAcertos Totais: " + acT + "\n\nAcertos por dica:\n(0) dicas ==> " + ac0 + "\n(1) dica ==> " + ac1 + "\n(2) dicas ==> " + ac2 + "\n(3) dicas ==> " + ac3)
+            alert("YOU LOSE!!!\n\nNOME: " + name + "\nRODADAS JOGADAS: " + rodadas + "\n\nPONTUAÇÃO: " + pontos +"\nAcertos Totais: " + acT + "/" + rodadas + "\n\nAcertos por dica:\n(0) dicas ==> " + ac0 + "\n(1) dica ==> " + ac1 + "\n(2) dicas ==> " + ac2 + "\n(3) dicas ==> " + ac3)
         } else{
             confir = confirm("Desejas continuar jogando?")
             if(confir == true){
