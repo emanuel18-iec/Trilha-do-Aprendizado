@@ -1,3 +1,5 @@
+
+
 var alvo, rodadas = 0, ac0 = 0, ac1 = 0, ac2 = 0, ac3 = 0, acT = 0, erros = 0;
 var relat = ""
 var profx = "JOGUINHO DA ADIVINHAÇÃO\n"
