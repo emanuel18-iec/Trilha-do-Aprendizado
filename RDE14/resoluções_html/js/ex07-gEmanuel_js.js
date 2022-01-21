@@ -7,14 +7,17 @@
 
 
 alert("ANÁLISE DE DADOS\nGabriel Emanuel")
-
+var relatorioFinal = ""
+var name, sex;
+var fem=0, masc=0;
+var idade
+var id18M = 0, id18m=0,id18Ma=0, id18Fa=0;
+var HID = null, Hid = null, FID = null, Fid = null, genM=0, genF=0;
 for(var i = 1; i<=5; i++){
-    var name = prompt("ANÁLISE DE DADOS\nInsira o nome da " + i + "ª pessoa:");
-    var relatorioFinal = ""
+    name = prompt("ANÁLISE DE DADOS\nInsira o nome da " + i + "ª pessoa:");
     var tst = true 
     while(tst==true){
-        var sex = prompt("ANÁLISE DE DADOS\nInsira o sexo da " + i + "ª pessoa, de acordo com a legenda:\n(fem) ==> feminino\n(masc) ==> masculino")
-        var fem=0, masc=0;
+        sex = prompt("ANÁLISE DE DADOS\nInsira o sexo da " + i + "ª pessoa, de acordo com a legenda:\n(fem) ==> feminino\n(masc) ==> masculino")
         tst=false
         if(sex=="fem"){ /* a */
             fem++
@@ -27,17 +30,16 @@ for(var i = 1; i<=5; i++){
     }
     var tst = true 
     while(tst==true){
-        var idade = parseFloat(prompt("ANÁLISE DE DADOS\nInsira a idade de " + name + ": "))
-        var id18M = 0, id18m=0,id18M=0, id18F=0;
+        idade = parseFloat(prompt("ANÁLISE DE DADOS\nInsira a idade de " + name + ": "))
         tst=false
         if(idade<18){ /* b */
             id18m++
         } else if(idade>=18){
             id18M++
             if(sex=="masc"){ /* e */
-                id18M++
+                id18Ma++
             } else if (sex="fem"){
-                id18F++
+                id18Fa++
             } else {
                 alert("Erro desconhecido!!")
             }
@@ -46,7 +48,6 @@ for(var i = 1; i<=5; i++){
             alert("ANÁLISE DE DADOS\nERRO!!")
         }
     }
-    var HID = null, Hid = null, FID = null, Fid = null, genM, genF;
     if(sex == "masc"){ /*c*/
         genM++; //a
         if(HID==null){
@@ -81,18 +82,7 @@ for(var i = 1; i<=5; i++){
     } else{
         alert("ERRO!!")
     }
-    relatorioFinal += "====== PESSOA " + i + " ======\nNome:" + name + "\nIdade:" + idade + "\nSexo: " + sex + "\n\n"
+    relatorioFinal += "------ PESSOA " + i + " ------\nNome: " + name + "\nIdade: " + idade + "\nSexo: " + sex + "\n\n"
 }
-
-relatorioFinal += "\n\n====== RELATÓRIO GERAL ======\n\nHomens: " + genM + "\nMulheres: " + genF + "\n\nMaioridade Penal (18 anos+): " + id18M + "\nMenores de Idade: " + id18m + "\n\nHomem mais velho: " + HID + "\nHomem mais jovem: " + Hid + "\n\nMulher mais velha: " + FID + "\nMulher mais jovem: " + Fid + "\n\nHomens maiores de idade: " + id18M + "\nMulheres maiores de idade: " + id18F
-
-alert(resultadoFinal);
-
-
-
-
-/*    a. Quantas pessoas são do sexo masculino e quantas pessoas são do sexo feminino.
-    b. Quantas pessoas são maiores e menores de idade
-    c. Qual o homem mais velho e mais novo
-    d. Qual a mulher mais velha e mais nova
-    e. Quantos homens e quantas mulheres são maiores de idade*/
+alert("====== RELATÓRIO INDIVIDUAL ======\n" + relatorioFinal)
+alert("====== RELATÓRIO GERAL ======\n\nHomens: " + genM + "\nMulheres: " + genF + "\n\nMaioridade Penal (+18 anos): " + id18M + "\nMenores de Idade: " + id18m + "\n\nHomem mais velho: " + HID + "\nHomem mais jovem: " + Hid + "\n\nMulher mais velha: " + FID + "\nMulher mais jovem: " + Fid + "\n\nHomens maiores de idade: " + id18Ma + "\nMulheres maiores de idade: " + id18Fa);
