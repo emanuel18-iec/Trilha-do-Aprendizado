@@ -10,7 +10,7 @@ if(verification == true){
     alert(profx + "QUE ÓTIMO!! Vamos começar!!")
     var name = prompt(profx + "Vamos começar inserindo o seu nome:")
     alert("Okay " + name + " vamos lá! Você terá direito a 3 dicas até acertar o número!")
-    alert("Lembre-se de que você só deve inserir números!!")
+    alert("Lembre-se de que você só deve inserir números e eles vão de 0 a 20!!")
     var tent = 0, chut, vmin, vmax
     while(repDesafio == true)
     {
