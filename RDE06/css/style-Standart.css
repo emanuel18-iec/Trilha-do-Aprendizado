@@ -143,3 +143,15 @@ h3{
     border: 5px #000 solid;
     text-align: justify;
 }
+
+figure{
+    text-align: center;
+}
+
+.table-15{
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: gainsboro;
+    font-size: 18px;;
+}
