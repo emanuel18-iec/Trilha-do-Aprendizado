@@ -153,5 +153,16 @@ figure{
     width: 100%;
     background-color: black;
     color: gainsboro;
-    font-size: 18px;;
+    font-size: 16px;;
+}
+
+.atr{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    background-color: black;
+    color: lime;
+}
+
+.redImg--1300fix{
+    min-width: 1300px;
 }
