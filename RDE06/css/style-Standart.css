@@ -156,13 +156,17 @@ figure{
     font-size: 16px;;
 }
 
-.atr{
+.atr, .atrSCR{
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     background-color: black;
     color: lime;
 }
 
-.redImg--1300fix{
-    min-width: 1300px;
+.atrSCR{
+    font-style: italic;
+}
+
+.redImg--MaxWidfix{
+    max-width: 1000px;
 }

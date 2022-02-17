@@ -59,11 +59,45 @@
             <p>Vamos começar com o seguinte codigo:</p><br>
             <img src="img/CDG_códg1--Captura de tela 2022-02-16 213711.jpg" alt="">
             <p>A partir desse esboço, vamos criar um parágrafo solicitando a entrada do primeiro valor, seguido do campo para o usuário inserir esse valor.</p><br>
-            <p>Lembrando que para criar esse campo, é necessário utilizar a tag &lt;input&gt;, com <span class="atr">&nbsp;type = "text"&nbsp;</span> e uma identificação a este campo, que será identificado como <i>n1</i>, da seguinte forma:&nbsp;<span class="atr">&nbsp;id = "<i>n1</i>"&nbsp;</span></p>
-            <figure class="redImg--1300fix">
-                <img src="img/CDG_códg2--Captura de tela 2022-02-16 225808.jpg" alt="">
-                <img src="img/CDG_pratc2--Captura de tela 2022-02-16 225954.jpg" alt="">
+            <p>Lembrando que para criar esse campo, é necessário utilizar a tag &lt;input&gt;, com <span class="atr">&nbsp;type = "text"&nbsp;</span> e uma identificação a este campo, que será identificado como <i>n1</i>, da seguinte forma:&nbsp;<span class="atr">&nbsp;id = "<i>n1</i>"&nbsp;</span></p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códg2--Captura de tela 2022-02-16 225808.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_pratc2--Captura de tela 2022-02-16 225954.jpg" alt="">
             </figure>
+            <br><br>
+            <p>Agora, inserimos o campo para a inserção do segundo número, utilizando um <span class="atr">&nbsp;id = "<i>n2</i>"&nbsp;</span>&nbsp;:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códg3--Captura de tela 2022-02-17 120200.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_pratc3--Captura de tela 2022-02-17 120242.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Por fim, vamos adicionar um botão, que ao ser acionado, vai realizar um evento específico (ação), que neste caso, será a soma dos valores.</p><br><br>
+            <p>Para isso, usaremos a tag &lt;input&gt; com <span class="atr">&nbsp;type = "button"&nbsp;</span>, no qual estará escrito "Realizar Soma", através do atributo <span class="atr">&nbsp;value = "Realizar Soma"&nbsp;</span></p>
+            <br><br>
+            <p>No etantno, apenas com esses comandos, ao clicar no botão, ele não vai realizar nenhuma ação. Para isso, precisamos associar o botão a algum evento, que pode ser feito por meio do atributo <span class="atr">&nbsp;onclick&nbsp;</span>, ou seja, quando o botão for clicado, uma ação será executada. Essa ação, será chamada com referencial a uma função definida no JavaScript, como por exemplo, se a função se chamasse <i>somar()</i>, o atributo seria dado por: <span class="atrSCR">&nbsp;onclick = "somar()"&nbsp;</span></p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códg4--Captura de tela 2022-02-17 121649.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_pratc4--Captura de tela 2022-02-17 121724.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Feito tudo isso, vamos configurar o script.</p><br><br>
+            <p>O primeiro passo será criar a função somar(), com o comando <span class="atrSCR">&nbsp;function soma()"&nbsp;</span>, seguido das variáveis, que serão <i>n1</i>, <i>n2</i> e uma terceira para o resultado <i>res</i>, da seguinte forma:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códg5--Captura de tela 2022-02-17 122136.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Para coletarmos o valor inserido nos campos, utilizaremos o primeiro comando DOM que vimos na tabela anterior, através do método <span class="atr">&nbsp;document.getElementById("Id")&nbsp;</span> , da seguinte forma:</p><br>
+            <p>Lembrando que o id colocando neste comando, é o mesmo que foi definido no HTML:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códg7_n1-HTML--Captura de tela 2022-02-17 123042.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códg7_n1-JS--Captura de tela 2022-02-17 123318.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Para retirar o valor desse campo, é necessário incluir o complemento <span class="atr">&nbsp;.value&nbsp;</span> , assim:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códg8--Captura de tela 2022-02-17 124814.jpg" alt="">
+            </figure>
+            <br><br>
 
 
 
@@ -93,7 +127,7 @@
             <p><a href="https://www.google.com/maps/search/R.+Pedro+Koppe,+100+-+Vila+Sao+Joao/@-25.4920265,-50.6382501,17z/data=!3m1!4b1" target="_blank">R. Pedro Koppe, 100</a> - Vila Sao Joao, Irati - PR, 84507-302</p>
             <p style="text-align: right;"><a href="#topo">TOPO</a></p>
 
-            <h2>ULTIMA MODIFICAÇÃO EM</h2><p>16/02/2022 às 23:03, horário oficial de Brasilia - Brasil</b></p><br>
+            <h2>ULTIMA MODIFICAÇÃO EM</h2><p>16/02/2022 às 12:49, horário oficial de Brasilia - Brasil</b></p><br>
             <footer>
                 <object width="100%" data="rodapéFinal.html"></object>
             </footer>   
