@@ -29,7 +29,7 @@ big{
     font-family: 'Georama', sans-serif;
 
 }
-p{
+p, b, u, i{
     font-family: 'Georama', sans-serif;
     text-indent: 2%;
     font-size: 20px;
@@ -169,4 +169,9 @@ figure{
 
 .redImg--MaxWidfix{
     max-width: 1000px;
+}
+
+.negrito{
+    font-family: 'Georama', sans-serif;
+    font-weight: bold;
 }
