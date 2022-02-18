@@ -29,7 +29,7 @@ big{
     font-family: 'Georama', sans-serif;
 
 }
-p, b, u, i{
+p, b, u, i, span, .DESTQ_html, .DESTQ_css, .DESTQ_js{
     font-family: 'Georama', sans-serif;
     text-indent: 2%;
     font-size: 20px;
@@ -156,7 +156,8 @@ figure{
     font-size: 16px;;
 }
 
-.atr, .atrSCR{
+.atr, .atrSCR, .tagDest{
+
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     background-color: black;
@@ -174,4 +175,24 @@ figure{
 .negrito{
     font-family: 'Georama', sans-serif;
     font-weight: bold;
+}
+
+.tagDest {
+    color: #000;
+    background-color: yellow;
+}
+
+.DESTQ_html, .DESTQ_css, .DESTQ_js{
+    background-color: #000;
+    font-family: 'Georama', sans-serif;
+
+}
+.DESTQ_html{
+    color:lime;
+}
+.DESTQ_css{
+    color:turquoise
+}
+.DESTQ_js{
+    color:rgb(253, 216, 5)
 }

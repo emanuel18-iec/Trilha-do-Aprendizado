@@ -26,10 +26,10 @@
             <p>Pode ser utilizado em qualquer linguagem que se deseje.</p><br><br>
 
             <h2>DOM - Object Document</h2>
-            <p>A partir de agora, o documento HTML passará a ser visto com um objeto chamado <i><span class="dest">document</span></i>.</p>
+            <p>A partir de agora, o documento HTML passará a ser visto com um objeto chamado <i><span class="dest">document</span></i>.</p><br>
             <figure>
-                <img src="img/CDG1_vid--Captura de tela 2022-02-16 151434.jpg" alt="">
-            </figure>
+                <img src="img/CDG1_vid--Captura de tela 2022-02-16 151434 (2).jpg" alt="">
+            </figure><br><br>
             <p>Dentro desse código, tem-se uma hierarquia, se iniciando pelo <i>document</i>, seguido do <i>&lt;html&gt;</i>, se subdivindo em <i>&lt;head&gt;</i> e <i>&lt;body&gt;</i> - que estão na mesma hierarquia, e assim sucessivamente.</p><br>
             <figure>
                 <img src="img/CDG2_vid--Captura de tela 2022-02-16 151908.jpg" alt="">
@@ -54,10 +54,10 @@
             </table>
 <br><br><br>
             
-            <h2>Formulários HTML</h2>
+            <h2>Formulários HTML</h2><br>
             <p>Os formulários são elementos HTML, compostos por campos de textos, <i>radios books</i>, <i>checkbooks</i>, dentre outros, que possibilitam a interação com o usuário, no qual o usuário pode inserir dados, para serem tratados por alguma linguagem de programação.</p><br>
             <p>Vamos começar com o seguinte codigo:</p><br>
-            <img src="img/CDG_códg1--Captura de tela 2022-02-16 213711.jpg" alt="">
+            <img src="img/CDG_códg1--Captura de tela 2022-02-16 213711.jpg" alt=""><br><br>
             <p>A partir desse esboço, vamos criar um parágrafo solicitando a entrada do primeiro valor, seguido do campo para o usuário inserir esse valor.</p><br>
             <p>Lembrando que para criar esse campo, é necessário utilizar a tag &lt;input&gt;, com <span class="atr">&nbsp;type = "text"&nbsp;</span> e uma identificação a este campo, que será identificado como <i>n1</i>, da seguinte forma:&nbsp;<span class="atr">&nbsp;id = "<i>n1</i>"&nbsp;</span></p><br>
             <figure>
@@ -136,6 +136,100 @@
                 <img class="redImg--MaxWidfix" src="img/CDG_pratc13--Captura de tela 2022-02-17 161746.jpg" alt="">
             </figure>
             <br><br>
+
+            <p style="text-align: center;"><a href="https://emanuel18-iec.github.io/Trilha-do-Aprendizado/RDE15/arquivosExtra/C%C3%B3digo1Aula_rde15.html" target="_blank">Clique aqui para acessar e testar esse código!</a></p>
+            <br><br>
+
+            <p>Neste exercício, vamos desenvolver um formulário na qual o usuário do site pode enviar um comentário para os Desenvolvedores da página, utilizando o seu nome, email, data de nascimento e o seu comentário.</p>
+            <br><p>Para começar, vamos utilizar o seguinte código inicial:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft1_Captura de tela 2022-02-17 180709.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Para iniciarmos a criação desse formulário, vamos usar a tag <span class="tagDest">&nbsp;&lt;form&gt;&nbsp;</span> , da seguinte forma:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft2_Captura de tela 2022-02-17 181842.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>A primeira tag que usaremos para o nosso formulário, será a tag  <span class="tagDest">&nbsp;&lt;label&gt;&nbsp;</span> , que serve como uma espécie de rótulo/título aos elementos, com o atributo <span class="atr">&nbsp;for&nbsp;</span> , que funciona como uma identificação da label. Neste caso, usaremos <span class="atr">&nbsp;for = "nome"&nbsp;</span> , pois este será o nosso primeiro campo.</p><br>
+            <p>Entre as chaves, colocamos o texto que será exibido, observe:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft3_Captura de tela 2022-02-17 182915.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft3_Captura de tela 2022-02-17 184857.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Feito isso, vamos utilizar a tag &lt;input&gt; e com um <span class="atr">&nbsp;id = "nome"&nbsp;</span> , que vimos anteriormente, para criarmos o campo para o usuário digitar o nome. Além disso, vamos fazer o uso do atributo <span class="atr">&nbsp;placeholder&nbsp;</span> , que vai inserir um texto em cor mais clara no campo, para auxiliar na orientação do usuário. Por exemplo, podemos usar esse atributo para escrever <i>Insira o seu nome aqui</i>, da seguinte forma: <span class="atr">&nbsp;placeholder = "Insira o seu nome aqui"&nbsp;</span> </p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft4_Captura de tela 2022-02-17 191715.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft4_Captura de tela 2022-02-17 191607.jpg" alt="">
+            </figure>
+            <br><br>
+            <p><big>DETALHE IMPORTANTE:</big> a identificação do label, <span class="atr">&nbsp;for&nbsp;</span> , deve ser a mesma do input, <span class="atr">&nbsp;id&nbsp;</span> , observe:</p>
+            <br><figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft5_Captura de tela 2022-02-17 191715.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Após isso, vamos continuar inserindo mais campos, neste caso, um campo para email, seguindo a mesma estrutura para o campo anterior. Dessa forma, vamos ter:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft6_Captura de tela 2022-02-17 201637.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft6_Captura de tela 8458745658645.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Além disso, vamos colocar um campo diferente, solicitando a data de nascimento do usuário. Para isso, vamos colocar um <i>label</i> e um campo para o usuário selecionar essa data, utilizando a seguinte estrutura:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft7_Captura de tela 2022-02-17 224326.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft7_Captura de tela 2022-02-17 224659.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>E por fim, para realizar o comentário em si, vamos utilizar, além da tradicional <i>label</i>, uma <span class="tagDest">&nbsp;&lt;textarea&gt;&nbsp;</span> , com um <span class="atr">&nbsp;id = "coment"&nbsp;</span> e <span class="atr">&nbsp;placeholder = "Digite seu comentário"&nbsp;</span> </p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft8_Captura de tela 2022-02-17 233202.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft8_Captura de tela 2022-02-17 233238.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Um formulário sem botão, é um formulário sem ação. Para dar utilidade a ele, vamos criar um botão para atribuir um evento. Para ser um botão, vamos definir como sendo <span class="atr">&nbsp;type = "submit"&nbsp;</span>, e algumas informações adicionais como <span class="atr">&nbsp;class = "enviar"&nbsp;</span> e <span class="atr">&nbsp;value = "Enviar"&nbsp;</span></p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft9_Captura de tela 2022-02-17 234531.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft9_Captura de tela 2022-02-17 234557.jpg
+                " alt="">
+            </figure>
+            <br><br><br>
+            <p>Após todas essas marcações, vamos estilizar o nosso formulário!</p>
+            <p><br>Vamos começar definindo uma família de fontes a gosto, um fundo com grandiente linear para a direita, com as cores <span style="color: #0B1726;">#0B1726</span> e <span style="color: #1f3d64;">##1f3d64</span> e um <span class="DESTQ_css">&nbsp;margin = 0 auto&nbsp;</span> , além da cor <span style="color:#EEE8AA">#EEE8AA</span> ao texto, da seguinte forma:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft10_Captura de tela 2022-02-18 041713.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft10_Captura de tela 2022-02-18 041614.jpg"
+                " alt="">
+            </figure>
+            <br><br>
+            <p>Para o &lt;h1&gt;, vamos definir que as fontes terão um tamanho <i>large</i>, alinhando o texto centralmente e margens de 30 pixels:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft11_Captura de tela 2022-02-18 050507.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft11_Captura de tela 2022-02-18 050634.jpg">
+            </figure>
+            <br><br>
+            <p>Vamos ainda, definir, para o nosso form, um tamanho de fonte de 12 pixels, cor de fundo <span style="color: #1f3d64;">#1f3d64</span>, uma largura máxima de 500 pixels, um arredondamento de bordas de 5 pixels, um sombreando com 10 pixels na projeção do eixo x, 10 pixels na projeção do eixo y, 10 pixels de espessura e na cor <span style="color: #08101a98;">#08101a98</span>, um espaçamento interno de 10 pixels e por fim, um alinhamento central desse formulário via <i>margin</i>, ficando da seguinte forma:</p>
+            <br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_CSS_ft12_Captura de tela 2022-02-18 052059.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft12_Captura de tela 2022-02-18 052001.jpg"
+                " alt="">
+            </figure>
+            <br><br>
+            <p>Feito isso, vamos atribuir à tag <i>&lt;input&gt;</i> e <i>&lt;textarea&gt;</i>, as seguintes características:</p>
+            <p>► Largura: 400 pixels</p>
+            <p>► Espaçamento Interno: 10 pixels</p>
+            <p>► Cor do texto: Preto</p>
+            <p>► Margem Esquerda: 20 pixels</p>
+            <p>► Margem Superior: 10 pixels</p>
+            <p>► Borda: 1 pixel do tipo sólida</p>
+            <p>► Cor de fundo: <span style="color: gainsboro;">gainsboro</span></p>
+            <p>► </p>
+            <p>► </p>
+
+            
+            
+
             
 
 
@@ -168,7 +262,7 @@
             <p><a href="https://www.google.com/maps/search/R.+Pedro+Koppe,+100+-+Vila+Sao+Joao/@-25.4920265,-50.6382501,17z/data=!3m1!4b1" target="_blank">R. Pedro Koppe, 100</a> - Vila Sao Joao, Irati - PR, 84507-302</p>
             <p style="text-align: right;"><a href="#topo">TOPO</a></p>
 
-            <h2>ULTIMA MODIFICAÇÃO EM</h2><p>17/02/2022 às 16:29, horário oficial de Brasilia - Brasil</b></p><br>
+            <h2>ULTIMA MODIFICAÇÃO EM</h2><p>18/02/2022 às 09:12, horário oficial de Brasilia - Brasil</b></p><br>
             <footer>
                 <object width="100%" data="rodapéFinal.html"></object>
             </footer>   
