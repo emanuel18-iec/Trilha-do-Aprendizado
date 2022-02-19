@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+*, *:visited{
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Exo 2', sans-serif;
+  color: #FFF;
+}
+
+
+h2{
+  font-family: 'Balsamiq Sans', cursive;   
+  margin-left: 5%;
+}
+
+h2 span{
+  font-family: 'Balsamiq Sans', cursive;   
+  color: red;
+}
+
+h3{
+   font-family: 'Balsamiq Sans', cursive;   
+  margin-left: 3.4%;
+}
+p, img{
+  text-indent: 4%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+table{
+    width: 90%;
+    margin-left: 5%;
+}
+th{
+    width: 30%;
+}
+
+table, td, th{
+  border: 2px solid #FFF;
+} 
+th:hover{
+    background-color: #8f9dff;
+    cursor: pointer;
+    box-shadow: 2% 2% 5% #000;
+}

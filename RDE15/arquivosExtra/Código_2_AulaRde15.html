@@ -12,12 +12,12 @@
     <body>
         <h1>Interessado no Projeto na "<i>Trilha do Aprendizado</i>"?</h1>
 
-        <form>
+        <form name="formulario" action="cadastro.php" method="post" onsubmit="return Enviar()">
             <label for="nome">Nome Completo:</label><br>
             <input type="text" id="nome" placeholder="Insira o seu nome aqui">
             <br><br>
             <label for="email">Email:</label><br>
-            <input type="email" id="nome" placeholder="Insira o seu email aqui">
+            <input type="email" id="email" placeholder="Insira o seu email aqui">
             <br><br>
             <label for="dataNasc">Data de Nascimento:</label>
             <input type="date" id="dataNasc">
@@ -25,7 +25,7 @@
             <label for="coment">Comentários</label><br>
             <textarea id="coment" placeholder="Digite seu comentário"></textarea>
             <br><br>
-            <input type="submit" class="enviar" value="Enviar">
+            <input type="submit" class="enviar" value="Enviar"">
         </form>
 
     </body>

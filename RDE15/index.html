@@ -216,45 +216,133 @@
                 " alt="">
             </figure>
             <br><br>
-            <p>Feito isso, vamos atribuir à tag <i>&lt;input&gt;</i> e <i>&lt;textarea&gt;</i>, as seguintes características:</p>
-            <p>► Largura: 400 pixels</p>
+            <p>Feito isso, vamos atribuir à tag <i>&lt;input&gt;</i> e <i>&lt;textarea&gt;</i>, as seguintes características:</p><br>
+            <div style="margin-left: 2%;">
+                <p>► Largura: 400 pixels</p>
             <p>► Espaçamento Interno: 10 pixels</p>
             <p>► Cor do texto: Preto</p>
             <p>► Margem Esquerda: 20 pixels</p>
             <p>► Margem Superior: 10 pixels</p>
             <p>► Borda: 1 pixel do tipo sólida</p>
             <p>► Cor de fundo: <span style="color: gainsboro;">gainsboro</span></p>
-            <p>► </p>
-            <p>► </p>
+            </div>
+            <br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_CSS_ft13_Captura de tela 2022-02-18 155015.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft13_Captura de tela 2022-02-18 150813.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Além disso, vamos definir estados de ação para os nossos elmentos (input e textarea), através do <i><big><u>hover</u></big></i> -- quando o mouse está sobre o elemento, e <i><big><u>focus</u></big></i> -- para quando um elemento estiver em foco, isto é, selecionado para a inserção de dados.</p><br>
+            <p>Para esses estados, vamos definir um sombreamento de 5 pixels no sentido eixo x com espessura de 9 pixels, na cor <span style="color:#110f38">#110f38</span>. Além disso, vamos destacar esses campos com uma cor de fundo branca e com um texto preto e negrito.</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_CSS_ft14_Captura de tela 2022-02-18 191956.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft14_Captura de tela 2022-02-18 191851.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Por fim, vamos aplicar, para o botão, uma largura de 100 pixels, uma altura de 40 pixels, uma margem à esquerda de 20 pixels, borda com 2 pixels do tipo sólido e arredondamento de 5 pixels, além do texto do botão estar em preto negritado com fundo <span style="color:#779fac98">#779fac98</span>: </p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_CSS_ft15_Captura de tela 2022-02-18 193511.jpg" alt=""><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft15_Captura de tela 2022-02-18 193548.jpg" alt="">
+            </figure>
+            <br><br>
+            <p>Vamos ainda, definir algumas propriedades para redimensionarmos o nosso &lt;texarea&gt; de uma forma mais agradável, da seguinte forma:</p>
+            <br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_CSS_ft16_Captura de tela 2022-02-18 194531.jpg"><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft16_Captura de tela 2022-02-18 194622.jpg">
+            </figure>
+            <br><br>
+            <p>Para finalizar, vamos definir que as &lt;label&gt;'s desse formulário possuam 15 pixels, negritadas e a 20 pixels da margem esquerda:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_CSS_ft17_Captura de tela 2022-02-18 195246.jpg"><br><br>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft17_Captura de tela 2022-02-18 195318.jpg">
+            </figure>
+            <br><br><br>
+            <p>Com o CSS pronto, vaos partir o Java Script.</p>
+            <br><p>Para começar a brincadeira, precisamos definir o evento que será disparado após o botão ser clicado, sendo indicado por meio do atributo <span class="DESTQ_html">&nbsp;onclick&nbsp;</span> , que nesta caso acionará a função <big><u>Enviar()</u></big>, que iremos implementar na sequência, da seguinte forma: <span class="DESTQ_html">&nbsp;onclick = "Enviar()"&nbsp;</span>.</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft18_Captura de tela 2022-02-18 195246.jpg">
+            </figure>
+            <br><br>
+            <p>Agora, já no arquivo JS, vamos criar a nossa função, cujo nome deve ser escrito igual a forma definida como evento, ou seja, <span class="DESTQ_js">&nbsp;function Enviar() { ..... }&nbsp;</span></p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_JS_ft19_Captura de tela 2022-02-18 203303.jpg">
+            </figure>
+            <br><br>
+            <p>Feito isso, vamos definir as variáveis correspondente aos campos de nome e email, recebendo seus respectivos valores:</p>
+            <br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_JS_ft20_Captura de tela 2022-02-18 212733.jpg">
+            </figure>
+            <br><br>
+            <p>A primeira ação que vamos fazer, é para verificar se o campo "nome" não está vazio. Para isso, usamos uma condicional <span class="DESTQ_js">&nbsp;if&nbsp;</span> . Caso o campo não esteja vazio, deve-se exibir uma mensagem agradecendo o envio do comentário pelo usuário. Para isso, podemos fazer da seguinte forma:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_JS_ft21_Captura de tela 2022-02-18 214029.jpg">
+            </figure>
+            <br><br>
+            <p>Mas, se não o usuário não tiver preenchido o seu nome:</p>
+            <br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_JS_ft22_Captura de tela 2022-02-18 214322.jpg">
+            </figure>
+            <br><br>
+            <p>Mas, como saber se o usuário preencheu o seu nome completo?</p>
+            <p><br>Para isso, usaremos uma função chamada <span class="DESTQ_js">&nbsp;.indexOf()&nbsp;</span> , que vai buscar por um caractere específico dentro de um String, neste caso nome. Assim, se esta função encontrar um "espaço", indica que o usuário colocou o seu nome completo.Para isso, usariamos o seguinte código: <span class="DESTQ_js">&nbsp;.indexOf(" ")&nbsp;</span></p>
+            <p>Na prática, usamos a seguinte síntaxe:</p><br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_JS_ft23_Captura de tela 2022-02-18 215414.jpg">
+            </figure>
+            <br><br>
+            <p>Porque "-1"? Esse é o valor que a verificação retorna, caso não sejam encontrados o caractere especificado, no caso, o "espaço".</p>
+            <br><br>
+            <p>Feito isso, vamos repetir o procedimento para o email, utilizando novamente <span class="DESTQ_js">&nbsp;.indexOf()&nbsp;</span> para buscar elementos especificos dentro de uma string, da seguinte forma:</p>
+            <br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_JS_ft24_Captura de tela 2022-02-18 221242.jpg">
+            </figure>
+            <br><br>
+            <p>No entanto, essas informações não estão sendo enviadas em si, mesmo com o botão sendo para isso. Para isso, usaremos, na tag &lt;form&gt; do próprio HTML, o atributo <span class="DESTQ_html">&nbsp;action&nbsp;</span> , que vai receber as intruções do que faz quando o botão de envio for acionado. Geralmente, utiliza-se uma referencia para um outro arquivo com extensão php, como por exemplo: <span class="DESTQ_html">&nbsp;action = "cadastro.php"&nbsp;</span> .<br></p>
+            <p>Além disso, determina-se um <span class="DESTQ_html">&nbsp;name&nbsp;</span> , que é uma espécie de identificação muito importante para a linguagem PHP.</P><br>
+            <p>Outro atributo importante, é o <span class="DESTQ_html">&nbsp;method&nbsp;</span> , que será a forma com o qual esses dados serão repassados para o arquivo definido no <span class="DESTQ_html">&nbsp;action&nbsp;</span> . Podem ser do tipo <span style="font-style: italic;" class="DESTQ_html">&nbsp;method = "post"&nbsp;</span> e do tipo <span style="font-style: italic;" class="DESTQ_html">&nbsp;method = "get"&nbsp;</span> . Quando o valor é <span style="font-style: italic;" class="DESTQ_html">&nbsp;"get"&nbsp;</span> , quer dizer que os dados serão visíveis pela URL do site. Ao contrário do método <span style="font-style: italic;" class="DESTQ_html">&nbsp;"post"&nbsp;</span> , que não exibe.</p>
+            <br>
+            <p>Depois de toda essa explicação teríamos o seguinte:</P><br>
+                <figure>
+                    <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft25_Captura de tela 2022-02-18 222643.jpg">
+                </figure>
+                <br><br>
+            <p>Mais um detalhe: não é muito adequado fazer uso do <span class="DESTQ_html">&nbsp;onclick&nbsp;</span> , como vinhamos fazendo. Há uma forma melhor: utilizando o atributo <span class="DESTQ_html">&nbsp;onsubmit&nbsp;</span> na tag &lt;form&gt;</P> :<br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft26_Captura de tela 2022-02-18 223105.jpg">
+            </figure>
+            <br><br>
+            <p>Ao tentar clicar agora no botão Enviar, veja o que acontece:</P>
+                <br>
+                <figure>
+                    <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_PRATC_ft27_Captura de tela 2022-02-18 223805.jpg">
+                </figure>
+                <br><br>
+            <p>Isso porque o site está tentando acessar aquele arquivo <i>cadastro.php</I> definido anteriormente, sendo que ele não é alvo deste curso de JS. </P><br>
+            <p>Vale a pena ressaltar mais um detalhe: mesmo que as informações colocadas para teste não sejam válidas, como por exemplo, nome "abc", o site vai tentar carregar a página <i>cadastra.php</i>, mesmo sem o usuário corrijir as suas informações...</P><br>
+            <p>Para resolver essa questão, ao definirmos a função no atributo <span class="DESTQ_html">&nbsp;onsubmit&nbsp;</span> , devemos utilizar uma <big><u>FUNÇÃO COM RETORNO</U></big>: </P>
+            <br>
+            <figure>
+                <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_HTML_ft28_Captura de tela 2022-02-18 230045.jpg">
+            </figure>
+            <br><br>
+            <p>Assim, a função vai retornar se autoriza o envio das informações ou não, após as validações, através dos valores booleanos/lógicos: <span class="DESTQ_html">&nbsp;true&nbsp;</span> or <span class="DESTQ_html">&nbsp;false&nbsp;</span>. E para isso, vamos realizar alguma adaptações no nosso script JavaScript.</P><br>
+            <p>Para isso, vamos trabalhar com uma variável chamada <span class="DESTQ_html">&nbsp;ok&nbsp;</span> , que será responsável pelo controle desse valor booleano. Note, no código abaixo, que ela só sera verdadeira, quando, tanto as condições para o nome, quanto as condições o email, forem verdadeiras. Caso contrário, onde há mensagens de erro, o ok recebe o valor de <i>false</I> , observe:</P><br>
+                <figure>
+                    <img class="redImg--MaxWidfix" src="img/CDG_códgExem02_JS_ft29_Captura de tela 2022-02-18 232435.jpg
+                    ">
+                </figure>
+                <br><br>
 
+            <p Style="text-align:center;">SUGESTÃO DE LEITURA: <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">https://www.w3schools.com/html/html_forms.asp</a></P>
+                
             
-            
-
-            
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br>
             <h2>Sobre o Desenvolvedor:</h2>
             <p>Aluno: <a href="https://github.com/emanuel18-iec" target="_blank">Gabriel Emanuel</a> - 3° Info Manhã</p>
             <p>Professor e Orientador: Francis Baranoski</p>
@@ -262,10 +350,10 @@
             <p><a href="https://www.google.com/maps/search/R.+Pedro+Koppe,+100+-+Vila+Sao+Joao/@-25.4920265,-50.6382501,17z/data=!3m1!4b1" target="_blank">R. Pedro Koppe, 100</a> - Vila Sao Joao, Irati - PR, 84507-302</p>
             <p style="text-align: right;"><a href="#topo">TOPO</a></p>
 
-            <h2>ULTIMA MODIFICAÇÃO EM</h2><p>18/02/2022 às 09:12, horário oficial de Brasilia - Brasil</b></p><br>
-            <footer>
+            <h2>ULTIMA MODIFICAÇÃO EM:</h2><p>19/02/2022 às 09:04, horário oficial de Brasilia - Brasil</b></p><br>
+            <!--<footer>
                 <object width="100%" data="rodapéFinal.html"></object>
-            </footer>   
+            </footer>   -->
                  
         </div>
     </body>

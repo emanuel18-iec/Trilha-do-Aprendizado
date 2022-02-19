@@ -184,7 +184,7 @@ figure{
 
 .DESTQ_html, .DESTQ_css, .DESTQ_js{
     background-color: #000;
-    font-family: 'Georama', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 
 }
 .DESTQ_html{
@@ -195,4 +195,8 @@ figure{
 }
 .DESTQ_js{
     color:rgb(253, 216, 5)
+}
+
+object{
+    height: 300px;
 }
